@@ -1,4 +1,4 @@
-﻿using App1.Models;
+﻿using ShellCommandManager.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 
-namespace App1.Services;
+namespace ShellCommandManager.Services;
 
 public sealed class TemplateImportService
 {

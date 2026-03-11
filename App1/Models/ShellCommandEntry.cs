@@ -1,4 +1,4 @@
-namespace App1.Models;
+namespace ShellCommandManager.Models;
 
 public sealed class ShellCommandEntry
 {

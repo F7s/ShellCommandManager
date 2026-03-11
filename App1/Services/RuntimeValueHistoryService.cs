@@ -1,10 +1,10 @@
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 using System;
 
-namespace App1.Services;
+namespace ShellCommandManager.Services;
 
 public sealed class RuntimeValueHistoryService
 {
@@ -19,7 +19,7 @@ public sealed class RuntimeValueHistoryService
     {
         get
         {
-            string root = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "App1");
+            string root = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ShellCommandManager");
             return Path.Combine(root, "runtime-value-history.json");
         }
     }

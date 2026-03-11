@@ -1,9 +1,9 @@
-{
+﻿{
   "profiles": {
-    "App1 (Package)": {
+    "ShellCommandManager (Package)": {
       "commandName": "MsixPackage"
     },
-    "App1 (Unpackaged)": {
+    "ShellCommandManager (Unpackaged)": {
       "commandName": "Project"
     }
   }

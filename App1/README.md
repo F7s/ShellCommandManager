@@ -15,7 +15,7 @@ A WinUI 3 desktop app for managing and running PowerShell commands with template
 
 ## Project Structure
 
-- `App1.csproj`: project file
+- `ShellCommandManager.csproj`: project file
 - `MainWindow.xaml` / `MainWindow.xaml.cs`: main UI and logic
 - `Models/`: command and template models
 - `Services/`: storage, import, rendering, runner services
@@ -25,19 +25,19 @@ A WinUI 3 desktop app for managing and running PowerShell commands with template
 ## Build
 
 ```powershell
-dotnet build .\App1.csproj -p:Platform=x64
+dotnet build .\ShellCommandManager.csproj -p:Platform=x64
 ```
 
 ARM64 build:
 
 ```powershell
-dotnet build .\App1.csproj -c Release -p:Platform=ARM64
+dotnet build .\ShellCommandManager.csproj -c Release -p:Platform=ARM64
 ```
 
 ## Run
 
 ```powershell
-dotnet run --project .\App1.csproj -p:Platform=x64
+dotnet run --project .\ShellCommandManager.csproj -p:Platform=x64
 ```
 
 ## Local Data

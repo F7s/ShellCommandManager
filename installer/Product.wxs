@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package
+    Name="Shell Command Manager"
+    Manufacturer="F7s"
+    Version="1.0.0"
+    UpgradeCode="F5E7DDF7-913D-4700-A1F1-9C45A7B4C419"
+    Language="1033">
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version is already installed." />
+    <MediaTemplate EmbedCab="yes" />
+
+    <StandardDirectory Id="ProgramFiles64Folder">
+      <Directory Id="INSTALLFOLDER" Name="ShellCommandManager" />
+    </StandardDirectory>
+
+    <StandardDirectory Id="ProgramMenuFolder">
+      <Directory Id="ProgramMenuDir" Name="Shell Command Manager" />
+    </StandardDirectory>
+
+    <Feature Id="MainFeature" Title="Shell Command Manager" Level="1">
+      <ComponentGroupRef Id="AppFiles" />
+      <ComponentRef Id="StartMenuShortcutComponent" />
+    </Feature>
+
+    <Component Id="StartMenuShortcutComponent" Directory="ProgramMenuDir" Guid="*">
+      <Shortcut
+        Id="StartMenuShortcut"
+        Name="Shell Command Manager"
+        Target="[INSTALLFOLDER]App1.exe"
+        WorkingDirectory="INSTALLFOLDER" />
+      <RemoveFolder Id="RemoveProgramMenuDir" On="uninstall" />
+      <RegistryValue Root="HKCU" Key="Software\\F7s\\ShellCommandManager" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+    </Component>
+  </Package>
+</Wix>

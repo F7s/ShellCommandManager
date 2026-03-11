@@ -1,4 +1,4 @@
-# App1 - Shell 命令管理器（WinUI 3）
+﻿# App1 - Shell 命令管理器（WinUI 3）
 
 一个基于 WinUI 3 的桌面应用，用于集中管理并运行常用 PowerShell 命令，支持模板化参数配置、运行前动态参数输入和本地持久化。
 
@@ -15,7 +15,7 @@
 
 ## 项目结构
 
-- `App1/App1.csproj`：项目文件
+- `App1/ShellCommandManager.csproj`：项目文件
 - `App1/MainWindow.xaml`：主界面
 - `App1/MainWindow.xaml.cs`：交互逻辑
 - `App1/Models/`：数据模型（命令、模板、参数）
@@ -30,21 +30,21 @@
 在项目根目录执行：
 
 ```powershell
-dotnet build .\App1\App1.csproj -p:Platform=x64
-dotnet run --project .\App1\App1.csproj -p:Platform=x64
+dotnet build .\\App1\\ShellCommandManager.csproj -p:Platform=x64
+dotnet run --project .\\App1\\ShellCommandManager.csproj -p:Platform=x64
 ```
 
 说明：
-- 如遇 `App1.exe` 被占用导致构建失败，请先关闭正在运行的应用进程后重试。
+- 如遇 `ShellCommandManager.exe` 被占用导致构建失败，请先关闭正在运行的应用进程后重试。
 
 ## 本地数据存储
 
 应用数据默认保存在：
 
-- `%LocalAppData%\App1\shell-commands.json`（已保存命令）
-- `%LocalAppData%\App1\command-templates.json`（模板）
-- `%LocalAppData%\App1\runtime-value-history.json`（运行前参数历史）
-- `%LocalAppData%\App1\ui-settings.json`（UI 语言设置）
+- `%LocalAppData%\\ShellCommandManager\\shell-commands.json`（已保存命令）
+- `%LocalAppData%\\ShellCommandManager\\command-templates.json`（模板）
+- `%LocalAppData%\\ShellCommandManager\\runtime-value-history.json`（运行前参数历史）
+- `%LocalAppData%\\ShellCommandManager\\ui-settings.json`（UI 语言设置）
 
 ## 模板使用
 
@@ -60,7 +60,7 @@ dotnet run --project .\App1\App1.csproj -p:Platform=x64
 ## 国际化说明
 
 - 支持应用内语言切换：`简体中文` / `English`
-- 语言选择会持久化到 `%LocalAppData%\App1\ui-settings.json`
+- 语言选择会持久化到 `%LocalAppData%\\ShellCommandManager\\ui-settings.json`
 - XAML 静态文案通过控件映射更新
 - 代码侧提示文案通过统一 `T(key)` 管理（中英双语）
 
