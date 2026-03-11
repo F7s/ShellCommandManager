@@ -14,7 +14,7 @@
         <MicaBackdrop />
     </Window.SystemBackdrop>
 
-    <Grid x:Name="RootGrid" Loaded="RootGrid_Loaded">
+    <Grid x:Name="RootGrid" Loaded="RootGrid_Loaded" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
@@ -26,7 +26,12 @@
                 <ComboBoxItem Content="简体中文" Tag="zh-CN" />
                 <ComboBoxItem Content="English" Tag="en-US" />
             </ComboBox>
-            <Grid x:Name="TitleBarDragArea" Height="36" Padding="12,0,12,0" ColumnSpacing="8">
+            <Grid
+                x:Name="TitleBarDragArea"
+                Height="36"
+                Padding="12,0,12,0"
+                ColumnSpacing="8"
+                Background="{ThemeResource LayerFillColorDefaultBrush}">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
@@ -43,6 +48,7 @@
                     Grid.Column="1"
                     VerticalAlignment="Center"
                     Style="{StaticResource BodyStrongTextBlockStyle}"
+                    Foreground="{ThemeResource TextFillColorPrimaryBrush}"
                     Text="Shell 命令管理器" />
             </Grid>
 

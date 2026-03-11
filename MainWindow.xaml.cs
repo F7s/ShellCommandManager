@@ -5,6 +5,7 @@ using Microsoft.UI.Dispatching;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Media;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -51,6 +52,8 @@ namespace ShellCommandManager
         private IntPtr _originalWndProc;
         private CommandTemplate? _selectedTemplate;
         private string _languageCode = string.Empty;
+        private bool _blurBackgroundEnabled = true;
+        private string _themePreference = "Default";
 
         private readonly Dictionary<string, FrameworkElement> _templateInputControls = new(StringComparer.OrdinalIgnoreCase);
         private readonly Dictionary<string, ToggleSwitch> _templateRuntimePromptToggles = new(StringComparer.OrdinalIgnoreCase);
@@ -91,6 +94,7 @@ namespace ShellCommandManager
             }
 
             _isInitialized = true;
+            await InitializeVisualSettingsAsync();
             await InitializeLanguageAsync();
             ApplyLocalizedUi();
             await LoadTemplatesAsync();
@@ -1139,6 +1143,15 @@ namespace ShellCommandManager
             languageBox.Items.Add(new ComboBoxItem { Content = "简体中文", Tag = "zh-CN" });
             languageBox.Items.Add(new ComboBoxItem { Content = "English", Tag = "en-US" });
             SetLanguageComboSelection(languageBox, _languageCode);
+            ComboBox themeBox = new() { MinWidth = 220 };
+            themeBox.Items.Add(new ComboBoxItem { Content = T("More.Theme.System"), Tag = "Default" });
+            themeBox.Items.Add(new ComboBoxItem { Content = T("More.Theme.Light"), Tag = "Light" });
+            themeBox.Items.Add(new ComboBoxItem { Content = T("More.Theme.Dark"), Tag = "Dark" });
+            SetLanguageComboSelection(themeBox, _themePreference);
+            ToggleSwitch blurToggle = new()
+            {
+                IsOn = _blurBackgroundEnabled
+            };
 
             Button exportRulesButton = new()
             {
@@ -1150,6 +1163,10 @@ namespace ShellCommandManager
             panel.Children.Add(versionLabel);
             panel.Children.Add(new TextBlock { Text = T("More.Language"), Opacity = 0.8 });
             panel.Children.Add(languageBox);
+            panel.Children.Add(new TextBlock { Text = T("More.Theme"), Opacity = 0.8 });
+            panel.Children.Add(themeBox);
+            panel.Children.Add(new TextBlock { Text = T("More.BlurBackground"), Opacity = 0.8 });
+            panel.Children.Add(blurToggle);
             panel.Children.Add(exportRulesButton);
 
             ContentDialog dialog = new()
@@ -1169,6 +1186,16 @@ namespace ShellCommandManager
             {
                 await ApplyLanguageCodeAsync(languageCode);
             }
+
+            if (result == ContentDialogResult.Primary)
+            {
+                if (themeBox.SelectedItem is ComboBoxItem themeItem && themeItem.Tag is string theme)
+                {
+                    await ApplyThemeAsync(theme);
+                }
+
+                await ApplyBlurBackgroundSettingAsync(blurToggle.IsOn);
+            }
         }
 
         private async Task ApplyLanguageCodeAsync(string languageCode)
@@ -1177,6 +1204,59 @@ namespace ShellCommandManager
             ApplyLanguageSelectionUi();
             ApplyLocalizedUi();
             await _uiSettingsService.SaveLanguageAsync(_languageCode);
+        }
+
+        private async Task InitializeVisualSettingsAsync()
+        {
+            try
+            {
+                _blurBackgroundEnabled = await _uiSettingsService.LoadBlurBackgroundEnabledAsync() ?? true;
+                _themePreference = await _uiSettingsService.LoadThemeAsync() ?? "Default";
+            }
+            catch (Exception ex)
+            {
+                await LogErrorAsync("InitializeVisualSettingsAsync", ex);
+                _blurBackgroundEnabled = true;
+                _themePreference = "Default";
+            }
+
+            ApplyThemePreference();
+            ApplyBackdrop();
+        }
+
+        private async Task ApplyThemeAsync(string theme)
+        {
+            _themePreference = string.IsNullOrWhiteSpace(theme) ? "Default" : theme;
+            ApplyThemePreference();
+            await _uiSettingsService.SaveThemeAsync(_themePreference);
+        }
+
+        private void ApplyThemePreference()
+        {
+            ElementTheme theme = _themePreference switch
+            {
+                "Light" => ElementTheme.Light,
+                "Dark" => ElementTheme.Dark,
+                _ => ElementTheme.Default
+            };
+
+            RootGrid.RequestedTheme = theme;
+            if (Content is FrameworkElement contentRoot)
+            {
+                contentRoot.RequestedTheme = theme;
+            }
+        }
+
+        private async Task ApplyBlurBackgroundSettingAsync(bool enabled)
+        {
+            _blurBackgroundEnabled = enabled;
+            ApplyBackdrop();
+            await _uiSettingsService.SaveBlurBackgroundEnabledAsync(_blurBackgroundEnabled);
+        }
+
+        private void ApplyBackdrop()
+        {
+            SystemBackdrop = _blurBackgroundEnabled ? new MicaBackdrop() : null;
         }
 
         private static void SetLanguageComboSelection(ComboBox comboBox, string languageCode)
@@ -1314,6 +1394,11 @@ namespace ShellCommandManager
                 "More.Title" => zh ? "更多" : "More",
                 "More.VersionText" => zh ? "版本：{0}" : "Version: {0}",
                 "More.Language" => zh ? "语言" : "Language",
+                "More.Theme" => zh ? "主题" : "Theme",
+                "More.Theme.System" => zh ? "跟随系统" : "Use system",
+                "More.Theme.Light" => zh ? "浅色" : "Light",
+                "More.Theme.Dark" => zh ? "深色" : "Dark",
+                "More.BlurBackground" => zh ? "背景模糊（Mica）" : "Blur Background (Mica)",
                 "More.ExportTemplateRules" => zh ? "导出模板规则" : "Export Template Rules",
                 "Common.Confirm" => zh ? "确定" : "Confirm",
                 _ => key
