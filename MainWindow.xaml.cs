@@ -14,6 +14,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Text.Json;
 using System.Threading.Tasks;
+using System.Reflection;
 using Windows.Graphics;
 using Windows.Storage.Pickers;
 
@@ -256,6 +257,11 @@ namespace ShellCommandManager
             {
                 await LogErrorAsync("LanguageComboBox_SelectionChanged", ex);
             }
+        }
+
+        private async void MoreButton_Click(object sender, RoutedEventArgs e)
+        {
+            await ShowMoreDialogAsync();
         }
 
         private void CommandsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -1119,6 +1125,123 @@ namespace ShellCommandManager
             StatusInfoBar.IsOpen = false;
         }
 
+        private async Task ShowMoreDialogAsync()
+        {
+            string version = Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "1.0.0";
+
+            TextBlock versionLabel = new()
+            {
+                Text = string.Format(T("More.VersionText"), version),
+                TextWrapping = TextWrapping.Wrap
+            };
+
+            ComboBox languageBox = new() { MinWidth = 220 };
+            languageBox.Items.Add(new ComboBoxItem { Content = "简体中文", Tag = "zh-CN" });
+            languageBox.Items.Add(new ComboBoxItem { Content = "English", Tag = "en-US" });
+            SetLanguageComboSelection(languageBox, _languageCode);
+
+            Button exportRulesButton = new()
+            {
+                Content = T("More.ExportTemplateRules")
+            };
+            exportRulesButton.Click += async (_, _) => await ExportTemplateRulesAsync();
+
+            StackPanel panel = new() { Spacing = 12 };
+            panel.Children.Add(versionLabel);
+            panel.Children.Add(new TextBlock { Text = T("More.Language"), Opacity = 0.8 });
+            panel.Children.Add(languageBox);
+            panel.Children.Add(exportRulesButton);
+
+            ContentDialog dialog = new()
+            {
+                XamlRoot = RootGrid.XamlRoot,
+                Title = string.Empty,
+                PrimaryButtonText = T("Common.Confirm"),
+                CloseButtonText = T("Dialog.RuntimeArgs.CancelButton"),
+                DefaultButton = ContentDialogButton.Primary,
+                Content = panel
+            };
+
+            ContentDialogResult result = await dialog.ShowAsync();
+            if (result == ContentDialogResult.Primary
+                && languageBox.SelectedItem is ComboBoxItem item
+                && item.Tag is string languageCode)
+            {
+                await ApplyLanguageCodeAsync(languageCode);
+            }
+        }
+
+        private async Task ApplyLanguageCodeAsync(string languageCode)
+        {
+            _languageCode = languageCode;
+            ApplyLanguageSelectionUi();
+            ApplyLocalizedUi();
+            await _uiSettingsService.SaveLanguageAsync(_languageCode);
+        }
+
+        private static void SetLanguageComboSelection(ComboBox comboBox, string languageCode)
+        {
+            foreach (object item in comboBox.Items)
+            {
+                if (item is ComboBoxItem comboItem
+                    && comboItem.Tag is string tag
+                    && string.Equals(tag, languageCode, StringComparison.OrdinalIgnoreCase))
+                {
+                    comboBox.SelectedItem = comboItem;
+                    return;
+                }
+            }
+
+            if (comboBox.Items.Count > 0)
+            {
+                comboBox.SelectedIndex = 0;
+            }
+        }
+
+        private async Task ExportTemplateRulesAsync()
+        {
+            try
+            {
+                string sourcePath = Path.Combine(AppContext.BaseDirectory, "TEMPLATE_RULES.md");
+                if (!File.Exists(sourcePath))
+                {
+                    sourcePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TEMPLATE_RULES.md");
+                }
+
+                if (!File.Exists(sourcePath))
+                {
+                    // Fallback to project-relative path while debugging.
+                    sourcePath = Path.Combine(Environment.CurrentDirectory, "TEMPLATE_RULES.md");
+                }
+
+                if (!File.Exists(sourcePath))
+                {
+                    ShowStatus(T("Status.TemplateRulesNotFound"), InfoBarSeverity.Warning);
+                    return;
+                }
+
+                FileSavePicker picker = new();
+                picker.FileTypeChoices.Add("Markdown", new List<string> { ".md" });
+                picker.SuggestedFileName = "TEMPLATE_RULES";
+                WinRT.Interop.InitializeWithWindow.Initialize(picker, WinRT.Interop.WindowNative.GetWindowHandle(this));
+
+                var file = await picker.PickSaveFileAsync();
+                if (file is null)
+                {
+                    return;
+                }
+
+                string content = await File.ReadAllTextAsync(sourcePath);
+                await File.WriteAllTextAsync(file.Path, content);
+                ShowStatus(string.Format(T("Status.TemplateRulesExported"), file.Name), InfoBarSeverity.Success);
+            }
+            catch (Exception ex)
+            {
+                await LogErrorAsync("ExportTemplateRulesAsync", ex);
+                ShowStatus(T("Status.TemplateRulesExportFailed"), InfoBarSeverity.Error);
+            }
+        }
+
         private string T(string key)
         {
             bool zh = IsChineseUi();
@@ -1140,6 +1263,9 @@ namespace ShellCommandManager
                 "Status.TemplateCleared" => zh ? "已清空当前模板应用。" : "Cleared current template selection.",
                 "Status.ImportTemplateFailedSimple" => zh ? "导入模板失败，请检查 JSON/YAML 结构。" : "Template import failed. Check JSON/YAML structure.",
                 "Status.ImportTemplateCodeFailedSimple" => zh ? "代码导入失败，请检查粘贴内容格式。" : "Code import failed. Check pasted content.",
+                "Status.TemplateRulesNotFound" => zh ? "未找到模板规则文档 TEMPLATE_RULES.md。" : "Template rules file TEMPLATE_RULES.md was not found.",
+                "Status.TemplateRulesExported" => zh ? "模板规则已导出：{0}" : "Template rules exported: {0}",
+                "Status.TemplateRulesExportFailed" => zh ? "导出模板规则失败。" : "Failed to export template rules.",
                 "Dialog.ImportTemplateCode.Placeholder" => zh ? "粘贴 JSON/YAML 模板内容" : "Paste JSON/YAML template content",
                 "Dialog.ImportTemplateCode.Title" => zh ? "代码导入模板" : "Import Template from Code",
                 "Dialog.ImportTemplateCode.ImportButton" => zh ? "导入" : "Import",
@@ -1184,6 +1310,12 @@ namespace ShellCommandManager
                 "AppBar.RunSelected" => zh ? "运行所选" : "Run Selected",
                 "AppBar.DeleteSelected" => zh ? "删除所选" : "Delete Selected",
                 "AppBar.ClearInput" => zh ? "清空输入" : "Clear Input",
+                "AppBar.More" => zh ? "更多" : "More",
+                "More.Title" => zh ? "更多" : "More",
+                "More.VersionText" => zh ? "版本：{0}" : "Version: {0}",
+                "More.Language" => zh ? "语言" : "Language",
+                "More.ExportTemplateRules" => zh ? "导出模板规则" : "Export Template Rules",
+                "Common.Confirm" => zh ? "确定" : "Confirm",
                 _ => key
             };
         }
@@ -1264,6 +1396,7 @@ namespace ShellCommandManager
             RunSelectedAppBarButton.Label = T("AppBar.RunSelected");
             DeleteSelectedAppBarButton.Label = T("AppBar.DeleteSelected");
             ClearInputAppBarButton.Label = T("AppBar.ClearInput");
+            MoreButton.Label = string.Empty;
             ToggleEditorButton.Label = _isEditorVisible ? T("AppBar.CollapseAdd") : T("AppBar.AddCommand");
         }
 
@@ -1331,10 +1464,7 @@ namespace ShellCommandManager
             UpdateSelectionActionVisibility();
 
             _currentMinWindowWidth = isVisible ? ExpandedMinWidth : CollapsedMinWidth;
-            if (CanResizeWindowForEditorToggle())
-            {
-                ResizeWindowAnchoredRight(isVisible ? ExpandedWindowWidth : CollapsedWindowWidth);
-            }
+            // Keep window geometry stable; only toggle panel visibility/layout.
         }
 
         private void ResizeWindow(int width)
@@ -1357,15 +1487,7 @@ namespace ShellCommandManager
             AppWindow.Resize(new SizeInt32(width, WindowHeight));
         }
 
-        private bool CanResizeWindowForEditorToggle()
-        {
-            if (AppWindow.Presenter is OverlappedPresenter overlapped)
-            {
-                return overlapped.State == OverlappedPresenterState.Restored;
-            }
-
-            return false;
-        }
+        // Intentionally no window resize/move on editor toggle.
 
         private void ConfigureTitleBarButtons()
         {

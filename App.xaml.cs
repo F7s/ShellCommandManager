@@ -6,11 +6,13 @@ using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
 using Microsoft.UI.Xaml.Shapes;
+using Microsoft.Windows.ApplicationModel.DynamicDependency;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
@@ -34,7 +36,55 @@ namespace ShellCommandManager
         /// </summary>
         public App()
         {
+            try
+            {
+                NormalizeProcessPath();
+                Bootstrap.Initialize(0x00010008);
+            }
+            catch
+            {
+                // Fallback: app may still run when runtime is already initialized.
+            }
+
             InitializeComponent();
+        }
+
+        private static void NormalizeProcessPath()
+        {
+            try
+            {
+                string machinePath = Environment.GetEnvironmentVariable("Path", EnvironmentVariableTarget.Machine) ?? string.Empty;
+                string userPath = Environment.GetEnvironmentVariable("Path", EnvironmentVariableTarget.User) ?? string.Empty;
+                string currentPath = Environment.GetEnvironmentVariable("Path") ?? string.Empty;
+                string windowsApps = System.IO.Path.Combine(
+                    Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                    "Microsoft",
+                    "WindowsApps");
+
+                HashSet<string> seen = new(StringComparer.OrdinalIgnoreCase);
+                StringBuilder merged = new();
+                foreach (string segment in $"{machinePath};{userPath};{currentPath};{windowsApps}".Split(';'))
+                {
+                    string part = segment.Trim();
+                    if (string.IsNullOrWhiteSpace(part) || !seen.Add(part))
+                    {
+                        continue;
+                    }
+
+                    if (merged.Length > 0)
+                    {
+                        merged.Append(';');
+                    }
+
+                    merged.Append(part);
+                }
+
+                Environment.SetEnvironmentVariable("Path", merged.ToString(), EnvironmentVariableTarget.Process);
+            }
+            catch
+            {
+                // Ignore env patch failures; keep startup resilient.
+            }
         }
 
         /// <summary>
@@ -46,5 +96,6 @@ namespace ShellCommandManager
             _window = new MainWindow();
             _window.Activate();
         }
+
     }
 }
