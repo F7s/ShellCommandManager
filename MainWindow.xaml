@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="App1.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:models="using:App1.Models"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Shell 命令管理器">
+
+    <Window.SystemBackdrop>
+        <MicaBackdrop />
+    </Window.SystemBackdrop>
+
+    <Grid x:Name="RootGrid" Loaded="RootGrid_Loaded">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Spacing="0">
+            <Grid x:Name="TitleBarDragArea" Height="36" Padding="12,0,12,0" ColumnSpacing="8">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image
+                    Grid.Column="0"
+                    Width="16"
+                    Height="16"
+                    VerticalAlignment="Center"
+                    Source="Assets/Square44x44Logo.scale-200.png" />
+                <TextBlock
+                    x:Uid="TitleText"
+                    x:Name="TitleText"
+                    Grid.Column="1"
+                    VerticalAlignment="Center"
+                    Style="{StaticResource BodyStrongTextBlockStyle}"
+                    Text="Shell 命令管理器" />
+            </Grid>
+
+            <CommandBar DefaultLabelPosition="Right">
+                <AppBarButton x:Uid="SaveCommandAppBarButton" x:Name="SaveCommandAppBarButton" Icon="Save" Label="保存命令" Click="SaveCommandButton_Click" Visibility="Collapsed" />
+                <AppBarButton x:Uid="RunSelectedAppBarButton" x:Name="RunSelectedAppBarButton" Icon="Play" Label="运行所选" Click="RunSelectedButton_Click" Visibility="Collapsed" />
+                <AppBarButton x:Uid="DeleteSelectedAppBarButton" x:Name="DeleteSelectedAppBarButton" Icon="Delete" Label="删除所选" Click="DeleteSelectedButton_Click" Visibility="Collapsed" />
+                <AppBarButton x:Uid="ClearInputAppBarButton" x:Name="ClearInputAppBarButton" Icon="Clear" Label="清空输入" Click="ClearEditorButton_Click" Visibility="Collapsed" />
+                <AppBarButton x:Uid="ImportTemplateButton" x:Name="ImportTemplateButton" Icon="OpenFile" Label="导入模板" Click="ImportTemplateButton_Click" Visibility="Collapsed" />
+                <AppBarButton x:Uid="ImportTemplateCodeButton" x:Name="ImportTemplateCodeButton" Icon="Paste" Label="代码导入" Click="ImportTemplateCodeButton_Click" Visibility="Collapsed" />
+                <AppBarButton x:Uid="ClearTemplateButton" x:Name="ClearTemplateButton" Icon="ClearSelection" Label="删除模板" Click="ClearTemplateButton_Click" Visibility="Collapsed" />
+                <AppBarButton x:Uid="ToggleEditorButton" x:Name="ToggleEditorButton" Icon="Add" Label="添加命令" Click="ToggleEditorButton_Click" />
+                <AppBarSeparator />
+                <AppBarElementContainer Visibility="Collapsed">
+                    <ComboBox x:Name="LanguageComboBox" Width="120" SelectionChanged="LanguageComboBox_SelectionChanged">
+                        <ComboBoxItem Content="简体中文" Tag="zh-CN" />
+                        <ComboBoxItem Content="English" Tag="en-US" />
+                    </ComboBox>
+                </AppBarElementContainer>
+            </CommandBar>
+        </StackPanel>
+
+        <Grid Grid.Row="1" ColumnSpacing="20" Padding="16">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Name="EditorColumn" Width="0" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <ScrollViewer x:Name="EditorPanel" Grid.Column="0" VerticalScrollBarVisibility="Auto" Visibility="Collapsed" Padding="0,0,12,0">
+                <StackPanel Spacing="12">
+                    <TextBlock x:Uid="EditorTitleTextBlock" x:Name="EditorTitleTextBlock" Text="命令配置" Style="{StaticResource TitleTextBlockStyle}" />
+                    <TextBlock x:Uid="TemplateLabelTextBlock" x:Name="TemplateLabelTextBlock" Text="命令模板" />
+                    <ComboBox
+                        x:Uid="TemplateComboBox"
+                        x:Name="TemplateComboBox"
+                        ItemsSource="{x:Bind Templates, Mode=OneWay}"
+                        DisplayMemberPath="Name"
+                        SelectionChanged="TemplateComboBox_SelectionChanged"
+                        PlaceholderText="选择已导入模板" />
+                    <TextBlock x:Name="TemplateDescriptionTextBlock" Opacity="0.75" TextWrapping="Wrap" Visibility="Collapsed" />
+
+                    <TextBlock x:Uid="NameLabelTextBlock" x:Name="NameLabelTextBlock" Text="名称" />
+                    <TextBox x:Uid="NameTextBox" x:Name="NameTextBox" PlaceholderText="例如：启动 API 服务" />
+
+                    <TextBlock x:Uid="CommandLabelTextBlock" x:Name="CommandLabelTextBlock" Text="PowerShell 命令" />
+                    <TextBox x:Uid="CommandTextBox" x:Name="CommandTextBox" PlaceholderText="例如：dotnet run --project .\Api\Api.csproj" TextWrapping="Wrap" AcceptsReturn="True" MinHeight="72" />
+
+                    <StackPanel x:Name="ManualArgsPanel" Spacing="6">
+                        <TextBlock x:Uid="ManualArgsLabelTextBlock" x:Name="ManualArgsLabelTextBlock" Text="启动参数（会附加到命令后）" />
+                        <TextBox x:Uid="ArgsTextBox" x:Name="ArgsTextBox" PlaceholderText="例如：--environment Development" />
+                    </StackPanel>
+
+                    <StackPanel x:Name="TemplateArgsPanel" Spacing="8" Visibility="Collapsed">
+                        <TextBlock x:Uid="TemplateArgsLabelTextBlock" x:Name="TemplateArgsLabelTextBlock" Text="模板参数" />
+                        <StackPanel x:Name="TemplateArgsContainer" Spacing="10" />
+                    </StackPanel>
+
+                    <TextBlock x:Uid="WorkingDirectoryLabelTextBlock" x:Name="WorkingDirectoryLabelTextBlock" Text="工作目录（可选）" />
+                    <TextBox x:Uid="WorkingDirectoryTextBox" x:Name="WorkingDirectoryTextBox" PlaceholderText="例如：C:\Projects\MyApp" />
+                </StackPanel>
+            </ScrollViewer>
+
+            <Grid x:Name="ListPanel" Grid.Column="1" RowSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <TextBlock x:Uid="SavedCommandsTitleTextBlock" x:Name="SavedCommandsTitleTextBlock" Grid.Row="0" Text="已保存命令" Style="{StaticResource TitleTextBlockStyle}" />
+                <TextBlock x:Uid="SavedCommandsHintTextBlock" x:Name="SavedCommandsHintTextBlock" Grid.Row="1" Text="选中后可直接运行，也可编辑后点击“保存命令”覆盖更新。" />
+                <ListView
+                    x:Name="CommandsListView"
+                    Grid.Row="2"
+                    ItemsSource="{x:Bind Commands, Mode=OneWay}"
+                    SelectionMode="Extended"
+                    SelectionChanged="CommandsListView_SelectionChanged">
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="models:ShellCommandEntry">
+                            <StackPanel Spacing="4" Padding="4">
+                                <TextBlock Text="{x:Bind Name, Mode=OneWay}" FontWeight="SemiBold" />
+                                <TextBlock Text="{x:Bind PowerShellCommand, Mode=OneWay}" TextWrapping="WrapWholeWords" />
+                                <TextBlock Text="{x:Bind StartupArguments, Mode=OneWay}" Opacity="0.8" TextWrapping="WrapWholeWords" />
+                                <TextBlock Text="{x:Bind WorkingDirectory, Mode=OneWay}" Opacity="0.6" TextWrapping="WrapWholeWords" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </Grid>
+
+        <InfoBar
+            x:Name="StatusInfoBar"
+            Grid.Row="2"
+            Margin="16,0,16,16"
+            IsOpen="False"
+            IsClosable="True"
+            Severity="Informational" />
+    </Grid>
+</Window>
+
+
