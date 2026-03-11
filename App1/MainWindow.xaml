@@ -22,6 +22,10 @@
         </Grid.RowDefinitions>
 
         <StackPanel Spacing="0">
+            <ComboBox x:Name="LanguageComboBox" Visibility="Collapsed" SelectionChanged="LanguageComboBox_SelectionChanged">
+                <ComboBoxItem Content="简体中文" Tag="zh-CN" />
+                <ComboBoxItem Content="English" Tag="en-US" />
+            </ComboBox>
             <Grid x:Name="TitleBarDragArea" Height="36" Padding="12,0,12,0" ColumnSpacing="8">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
@@ -51,13 +55,7 @@
                 <AppBarButton x:Uid="ImportTemplateCodeButton" x:Name="ImportTemplateCodeButton" Icon="Paste" Label="代码导入" Click="ImportTemplateCodeButton_Click" Visibility="Collapsed" />
                 <AppBarButton x:Uid="ClearTemplateButton" x:Name="ClearTemplateButton" Icon="ClearSelection" Label="删除模板" Click="ClearTemplateButton_Click" Visibility="Collapsed" />
                 <AppBarButton x:Uid="ToggleEditorButton" x:Name="ToggleEditorButton" Icon="Add" Label="添加命令" Click="ToggleEditorButton_Click" />
-                <AppBarSeparator />
-                <AppBarElementContainer Visibility="Collapsed">
-                    <ComboBox x:Name="LanguageComboBox" Width="120" SelectionChanged="LanguageComboBox_SelectionChanged">
-                        <ComboBoxItem Content="简体中文" Tag="zh-CN" />
-                        <ComboBoxItem Content="English" Tag="en-US" />
-                    </ComboBox>
-                </AppBarElementContainer>
+                <AppBarButton x:Uid="MoreButton" x:Name="MoreButton" Icon="Setting" Label="" IsCompact="True" Click="MoreButton_Click" />
             </CommandBar>
         </StackPanel>
 

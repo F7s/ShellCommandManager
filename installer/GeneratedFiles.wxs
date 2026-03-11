@@ -2,918 +2,1022 @@
 <Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
   <Fragment>
     <DirectoryRef Id="INSTALLFOLDER">
-      <Component Id="cmp_1_App1.deps.json" Guid="*">
-        <File Id="fil_1_App1.deps.json" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\App1.deps.json" KeyPath="yes" />
+      <Component Id="cmp_1_App.xbf" Guid="*">
+        <File Id="fil_1_App.xbf" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\App.xbf" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_2_App1.dll" Guid="*">
-        <File Id="fil_2_App1.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\App1.dll" KeyPath="yes" />
+      <Component Id="cmp_2_App1.deps.json" Guid="*">
+        <File Id="fil_2_App1.deps.json" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\App1.deps.json" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_3_App1.exe" Guid="*">
-        <File Id="fil_3_App1.exe" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\App1.exe" KeyPath="yes" />
+      <Component Id="cmp_3_App1.dll" Guid="*">
+        <File Id="fil_3_App1.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\App1.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_4_App1.pdb" Guid="*">
-        <File Id="fil_4_App1.pdb" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\App1.pdb" KeyPath="yes" />
+      <Component Id="cmp_4_App1.exe" Guid="*">
+        <File Id="fil_4_App1.exe" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\App1.exe" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_5_App1.runtimeconfig.json" Guid="*">
-        <File Id="fil_5_App1.runtimeconfig.json" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\App1.runtimeconfig.json" KeyPath="yes" />
+      <Component Id="cmp_5_App1.pdb" Guid="*">
+        <File Id="fil_5_App1.pdb" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\App1.pdb" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_6_AppIcon.ico" Guid="*">
-        <File Id="fil_6_AppIcon.ico" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\AppIcon.ico" KeyPath="yes" />
+      <Component Id="cmp_6_App1.pri" Guid="*">
+        <File Id="fil_6_App1.pri" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\App1.pri" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_7_clretwrc.dll" Guid="*">
-        <File Id="fil_7_clretwrc.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\clretwrc.dll" KeyPath="yes" />
+      <Component Id="cmp_7_App1.runtimeconfig.json" Guid="*">
+        <File Id="fil_7_App1.runtimeconfig.json" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\App1.runtimeconfig.json" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_8_clrgc.dll" Guid="*">
-        <File Id="fil_8_clrgc.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\clrgc.dll" KeyPath="yes" />
+      <Component Id="cmp_8_AppIcon.ico" Guid="*">
+        <File Id="fil_8_AppIcon.ico" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\AppIcon.ico" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_9_clrjit.dll" Guid="*">
-        <File Id="fil_9_clrjit.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\clrjit.dll" KeyPath="yes" />
+      <Component Id="cmp_9_AppIcon.png" Guid="*">
+        <File Id="fil_9_AppIcon.png" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\AppIcon.png" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_10_coreclr.dll" Guid="*">
-        <File Id="fil_10_coreclr.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\coreclr.dll" KeyPath="yes" />
+      <Component Id="cmp_10_Assets_AppIcon_redesign_256.png" Guid="*">
+        <File Id="fil_10_Assets_AppIcon_redesign_256.png" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Assets\AppIcon-redesign-256.png" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_11_createdump.exe" Guid="*">
-        <File Id="fil_11_createdump.exe" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\createdump.exe" KeyPath="yes" />
+      <Component Id="cmp_11_Assets_AppIcon_redesign_512.png" Guid="*">
+        <File Id="fil_11_Assets_AppIcon_redesign_512.png" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Assets\AppIcon-redesign-512.png" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_12_hostfxr.dll" Guid="*">
-        <File Id="fil_12_hostfxr.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\hostfxr.dll" KeyPath="yes" />
+      <Component Id="cmp_12_Assets_icon_concepts_icon_A_512.png" Guid="*">
+        <File Id="fil_12_Assets_icon_concepts_icon_A_512.png" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Assets\icon-concepts\icon-A-512.png" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_13_hostpolicy.dll" Guid="*">
-        <File Id="fil_13_hostpolicy.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\hostpolicy.dll" KeyPath="yes" />
+      <Component Id="cmp_13_Assets_icon_concepts_icon_B_512.png" Guid="*">
+        <File Id="fil_13_Assets_icon_concepts_icon_B_512.png" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Assets\icon-concepts\icon-B-512.png" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_14_Microsoft.CSharp.dll" Guid="*">
-        <File Id="fil_14_Microsoft.CSharp.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.CSharp.dll" KeyPath="yes" />
+      <Component Id="cmp_14_Assets_icon_concepts_icon_C_512.png" Guid="*">
+        <File Id="fil_14_Assets_icon_concepts_icon_C_512.png" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Assets\icon-concepts\icon-C-512.png" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_15_Microsoft.DiaSymReader.Native.amd64.dll" Guid="*">
-        <File Id="fil_15_Microsoft.DiaSymReader.Native.amd64.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.DiaSymReader.Native.amd64.dll" KeyPath="yes" />
+      <Component Id="cmp_15_Assets_LockScreenLogo.scale_200.png" Guid="*">
+        <File Id="fil_15_Assets_LockScreenLogo.scale_200.png" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Assets\LockScreenLogo.scale-200.png" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_16_Microsoft.Graphics.Imaging.Projection.dll" Guid="*">
-        <File Id="fil_16_Microsoft.Graphics.Imaging.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Graphics.Imaging.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_16_Assets_SplashScreen.scale_200.png" Guid="*">
+        <File Id="fil_16_Assets_SplashScreen.scale_200.png" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Assets\SplashScreen.scale-200.png" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_17_Microsoft.InteractiveExperiences.Projection.dll" Guid="*">
-        <File Id="fil_17_Microsoft.InteractiveExperiences.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.InteractiveExperiences.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_17_Assets_Square150x150Logo.scale_200.png" Guid="*">
+        <File Id="fil_17_Assets_Square150x150Logo.scale_200.png" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Assets\Square150x150Logo.scale-200.png" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_18_Microsoft.ML.OnnxRuntime.dll" Guid="*">
-        <File Id="fil_18_Microsoft.ML.OnnxRuntime.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.ML.OnnxRuntime.dll" KeyPath="yes" />
+      <Component Id="cmp_18_Assets_Square200x200Logo.scale_200.png" Guid="*">
+        <File Id="fil_18_Assets_Square200x200Logo.scale_200.png" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Assets\Square200x200Logo.scale-200.png" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_19_Microsoft.Security.Authentication.OAuth.Projection.dll" Guid="*">
-        <File Id="fil_19_Microsoft.Security.Authentication.OAuth.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Security.Authentication.OAuth.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_19_Assets_Square24x24Logo.scale_200.png" Guid="*">
+        <File Id="fil_19_Assets_Square24x24Logo.scale_200.png" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Assets\Square24x24Logo.scale-200.png" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_20_Microsoft.VisualBasic.Core.dll" Guid="*">
-        <File Id="fil_20_Microsoft.VisualBasic.Core.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.VisualBasic.Core.dll" KeyPath="yes" />
+      <Component Id="cmp_20_Assets_Square44x44Logo.scale_200.png" Guid="*">
+        <File Id="fil_20_Assets_Square44x44Logo.scale_200.png" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Assets\Square44x44Logo.scale-200.png" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_21_Microsoft.VisualBasic.dll" Guid="*">
-        <File Id="fil_21_Microsoft.VisualBasic.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.VisualBasic.dll" KeyPath="yes" />
+      <Component Id="cmp_21_Assets_Square44x44Logo.targetsize_24_altform_unplated.png" Guid="*">
+        <File Id="fil_21_Assets_Square44x44Logo.targetsize_24_altform_unplated.png" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Assets\Square44x44Logo.targetsize-24_altform-unplated.png" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_22_Microsoft.Web.WebView2.Core.dll" Guid="*">
-        <File Id="fil_22_Microsoft.Web.WebView2.Core.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Web.WebView2.Core.dll" KeyPath="yes" />
+      <Component Id="cmp_22_Assets_StoreLogo.png" Guid="*">
+        <File Id="fil_22_Assets_StoreLogo.png" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Assets\StoreLogo.png" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_23_Microsoft.Web.WebView2.Core.Projection.dll" Guid="*">
-        <File Id="fil_23_Microsoft.Web.WebView2.Core.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Web.WebView2.Core.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_23_Assets_Wide310x150Logo.scale_200.png" Guid="*">
+        <File Id="fil_23_Assets_Wide310x150Logo.scale_200.png" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Assets\Wide310x150Logo.scale-200.png" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_24_Microsoft.Win32.Primitives.dll" Guid="*">
-        <File Id="fil_24_Microsoft.Win32.Primitives.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Win32.Primitives.dll" KeyPath="yes" />
+      <Component Id="cmp_24_clretwrc.dll" Guid="*">
+        <File Id="fil_24_clretwrc.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\clretwrc.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_25_Microsoft.Win32.Registry.dll" Guid="*">
-        <File Id="fil_25_Microsoft.Win32.Registry.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Win32.Registry.dll" KeyPath="yes" />
+      <Component Id="cmp_25_clrgc.dll" Guid="*">
+        <File Id="fil_25_clrgc.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\clrgc.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_26_Microsoft.Windows.AI.ContentSafety.Projection.dll" Guid="*">
-        <File Id="fil_26_Microsoft.Windows.AI.ContentSafety.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.AI.ContentSafety.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_26_clrjit.dll" Guid="*">
+        <File Id="fil_26_clrjit.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\clrjit.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_27_Microsoft.Windows.AI.Foundation.Projection.dll" Guid="*">
-        <File Id="fil_27_Microsoft.Windows.AI.Foundation.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.AI.Foundation.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_27_coreclr.dll" Guid="*">
+        <File Id="fil_27_coreclr.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\coreclr.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_28_Microsoft.Windows.AI.Imaging.Projection.dll" Guid="*">
-        <File Id="fil_28_Microsoft.Windows.AI.Imaging.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.AI.Imaging.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_28_createdump.exe" Guid="*">
+        <File Id="fil_28_createdump.exe" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\createdump.exe" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_29_Microsoft.Windows.AI.MachineLearning.Projection.dll" Guid="*">
-        <File Id="fil_29_Microsoft.Windows.AI.MachineLearning.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.AI.MachineLearning.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_29_hostfxr.dll" Guid="*">
+        <File Id="fil_29_hostfxr.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\hostfxr.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_30_Microsoft.Windows.AI.Projection.dll" Guid="*">
-        <File Id="fil_30_Microsoft.Windows.AI.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.AI.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_30_hostpolicy.dll" Guid="*">
+        <File Id="fil_30_hostpolicy.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\hostpolicy.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_31_Microsoft.Windows.AI.Text.Projection.dll" Guid="*">
-        <File Id="fil_31_Microsoft.Windows.AI.Text.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.AI.Text.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_31_LaunchShellCommandManager.cmd" Guid="*">
+        <File Id="fil_31_LaunchShellCommandManager.cmd" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\LaunchShellCommandManager.cmd" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_32_Microsoft.Windows.ApplicationModel.Background.Projection.dll" Guid="*">
-        <File Id="fil_32_Microsoft.Windows.ApplicationModel.Background.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.ApplicationModel.Background.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_32_MainWindow.xbf" Guid="*">
+        <File Id="fil_32_MainWindow.xbf" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\MainWindow.xbf" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_33_Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.d" Guid="*">
-        <File Id="fil_33_Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.d" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll" KeyPath="yes" />
+      <Component Id="cmp_33_Microsoft.CSharp.dll" Guid="*">
+        <File Id="fil_33_Microsoft.CSharp.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.CSharp.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_34_Microsoft.Windows.ApplicationModel.DynamicDependency.Projection" Guid="*">
-        <File Id="fil_34_Microsoft.Windows.ApplicationModel.DynamicDependency.Projection" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_34_Microsoft.DiaSymReader.Native.amd64.dll" Guid="*">
+        <File Id="fil_34_Microsoft.DiaSymReader.Native.amd64.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.DiaSymReader.Native.amd64.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_35_Microsoft.Windows.ApplicationModel.Resources.Projection.dll" Guid="*">
-        <File Id="fil_35_Microsoft.Windows.ApplicationModel.Resources.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.ApplicationModel.Resources.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_35_Microsoft.Graphics.Imaging.Projection.dll" Guid="*">
+        <File Id="fil_35_Microsoft.Graphics.Imaging.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Graphics.Imaging.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_36_Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection" Guid="*">
-        <File Id="fil_36_Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_36_Microsoft.InteractiveExperiences.Projection.dll" Guid="*">
+        <File Id="fil_36_Microsoft.InteractiveExperiences.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.InteractiveExperiences.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_37_Microsoft.Windows.AppLifecycle.Projection.dll" Guid="*">
-        <File Id="fil_37_Microsoft.Windows.AppLifecycle.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.AppLifecycle.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_37_Microsoft.ML.OnnxRuntime.dll" Guid="*">
+        <File Id="fil_37_Microsoft.ML.OnnxRuntime.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.ML.OnnxRuntime.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_38_Microsoft.Windows.AppNotifications.Builder.Projection.dll" Guid="*">
-        <File Id="fil_38_Microsoft.Windows.AppNotifications.Builder.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.AppNotifications.Builder.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_38_Microsoft.Security.Authentication.OAuth.Projection.dll" Guid="*">
+        <File Id="fil_38_Microsoft.Security.Authentication.OAuth.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Security.Authentication.OAuth.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_39_Microsoft.Windows.AppNotifications.Projection.dll" Guid="*">
-        <File Id="fil_39_Microsoft.Windows.AppNotifications.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.AppNotifications.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_39_Microsoft.VisualBasic.Core.dll" Guid="*">
+        <File Id="fil_39_Microsoft.VisualBasic.Core.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.VisualBasic.Core.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_40_Microsoft.Windows.BadgeNotifications.Projection.dll" Guid="*">
-        <File Id="fil_40_Microsoft.Windows.BadgeNotifications.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.BadgeNotifications.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_40_Microsoft.VisualBasic.dll" Guid="*">
+        <File Id="fil_40_Microsoft.VisualBasic.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.VisualBasic.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_41_Microsoft.Windows.Foundation.Projection.dll" Guid="*">
-        <File Id="fil_41_Microsoft.Windows.Foundation.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.Foundation.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_41_Microsoft.Web.WebView2.Core.dll" Guid="*">
+        <File Id="fil_41_Microsoft.Web.WebView2.Core.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Web.WebView2.Core.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_42_Microsoft.Windows.Management.Deployment.Projection.dll" Guid="*">
-        <File Id="fil_42_Microsoft.Windows.Management.Deployment.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.Management.Deployment.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_42_Microsoft.Web.WebView2.Core.Projection.dll" Guid="*">
+        <File Id="fil_42_Microsoft.Web.WebView2.Core.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Web.WebView2.Core.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_43_Microsoft.Windows.Media.Capture.Projection.dll" Guid="*">
-        <File Id="fil_43_Microsoft.Windows.Media.Capture.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.Media.Capture.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_43_Microsoft.Win32.Primitives.dll" Guid="*">
+        <File Id="fil_43_Microsoft.Win32.Primitives.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Win32.Primitives.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_44_Microsoft.Windows.PushNotifications.Projection.dll" Guid="*">
-        <File Id="fil_44_Microsoft.Windows.PushNotifications.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.PushNotifications.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_44_Microsoft.Win32.Registry.dll" Guid="*">
+        <File Id="fil_44_Microsoft.Win32.Registry.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Win32.Registry.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_45_Microsoft.Windows.SDK.NET.dll" Guid="*">
-        <File Id="fil_45_Microsoft.Windows.SDK.NET.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.SDK.NET.dll" KeyPath="yes" />
+      <Component Id="cmp_45_Microsoft.Windows.AI.ContentSafety.Projection.dll" Guid="*">
+        <File Id="fil_45_Microsoft.Windows.AI.ContentSafety.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AI.ContentSafety.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_46_Microsoft.Windows.Security.AccessControl.Projection.dll" Guid="*">
-        <File Id="fil_46_Microsoft.Windows.Security.AccessControl.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.Security.AccessControl.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_46_Microsoft.Windows.AI.Foundation.Projection.dll" Guid="*">
+        <File Id="fil_46_Microsoft.Windows.AI.Foundation.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AI.Foundation.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_47_Microsoft.Windows.Storage.Pickers.Projection.dll" Guid="*">
-        <File Id="fil_47_Microsoft.Windows.Storage.Pickers.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.Storage.Pickers.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_47_Microsoft.Windows.AI.Imaging.Projection.dll" Guid="*">
+        <File Id="fil_47_Microsoft.Windows.AI.Imaging.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AI.Imaging.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_48_Microsoft.Windows.Storage.Projection.dll" Guid="*">
-        <File Id="fil_48_Microsoft.Windows.Storage.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.Storage.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_48_Microsoft.Windows.AI.MachineLearning.Projection.dll" Guid="*">
+        <File Id="fil_48_Microsoft.Windows.AI.MachineLearning.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AI.MachineLearning.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_49_Microsoft.Windows.System.Power.Projection.dll" Guid="*">
-        <File Id="fil_49_Microsoft.Windows.System.Power.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.System.Power.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_49_Microsoft.Windows.AI.Projection.dll" Guid="*">
+        <File Id="fil_49_Microsoft.Windows.AI.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AI.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_50_Microsoft.Windows.System.Projection.dll" Guid="*">
-        <File Id="fil_50_Microsoft.Windows.System.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.System.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_50_Microsoft.Windows.AI.Text.Projection.dll" Guid="*">
+        <File Id="fil_50_Microsoft.Windows.AI.Text.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AI.Text.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_51_Microsoft.Windows.Widgets.Projection.dll" Guid="*">
-        <File Id="fil_51_Microsoft.Windows.Widgets.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.Widgets.Projection.dll" KeyPath="yes" />
+      <Component Id="cmp_51_Microsoft.Windows.ApplicationModel.Background.Projection.dll" Guid="*">
+        <File Id="fil_51_Microsoft.Windows.ApplicationModel.Background.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.ApplicationModel.Background.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_52_Microsoft.WindowsAppRuntime.Bootstrap.dll" Guid="*">
-        <File Id="fil_52_Microsoft.WindowsAppRuntime.Bootstrap.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.WindowsAppRuntime.Bootstrap.dll" KeyPath="yes" />
+      <Component Id="cmp_52_Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.d" Guid="*">
+        <File Id="fil_52_Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.d" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_53_Microsoft.WindowsAppRuntime.Bootstrap.Net.dll" Guid="*">
-        <File Id="fil_53_Microsoft.WindowsAppRuntime.Bootstrap.Net.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll" KeyPath="yes" />
+      <Component Id="cmp_53_Microsoft.Windows.ApplicationModel.DynamicDependency.Projection" Guid="*">
+        <File Id="fil_53_Microsoft.Windows.ApplicationModel.DynamicDependency.Projection" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_54_Microsoft.WinUI.dll" Guid="*">
-        <File Id="fil_54_Microsoft.WinUI.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.WinUI.dll" KeyPath="yes" />
+      <Component Id="cmp_54_Microsoft.Windows.ApplicationModel.Resources.Projection.dll" Guid="*">
+        <File Id="fil_54_Microsoft.Windows.ApplicationModel.Resources.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.ApplicationModel.Resources.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_55_mscordaccore.dll" Guid="*">
-        <File Id="fil_55_mscordaccore.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\mscordaccore.dll" KeyPath="yes" />
+      <Component Id="cmp_55_Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection" Guid="*">
+        <File Id="fil_55_Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_56_mscordaccore_amd64_amd64_8.0.2526.11203.dll" Guid="*">
-        <File Id="fil_56_mscordaccore_amd64_amd64_8.0.2526.11203.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\mscordaccore_amd64_amd64_8.0.2526.11203.dll" KeyPath="yes" />
+      <Component Id="cmp_56_Microsoft.Windows.AppLifecycle.Projection.dll" Guid="*">
+        <File Id="fil_56_Microsoft.Windows.AppLifecycle.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AppLifecycle.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_57_mscordbi.dll" Guid="*">
-        <File Id="fil_57_mscordbi.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\mscordbi.dll" KeyPath="yes" />
+      <Component Id="cmp_57_Microsoft.Windows.AppNotifications.Builder.Projection.dll" Guid="*">
+        <File Id="fil_57_Microsoft.Windows.AppNotifications.Builder.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AppNotifications.Builder.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_58_mscorlib.dll" Guid="*">
-        <File Id="fil_58_mscorlib.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\mscorlib.dll" KeyPath="yes" />
+      <Component Id="cmp_58_Microsoft.Windows.AppNotifications.Projection.dll" Guid="*">
+        <File Id="fil_58_Microsoft.Windows.AppNotifications.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AppNotifications.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_59_mscorrc.dll" Guid="*">
-        <File Id="fil_59_mscorrc.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\mscorrc.dll" KeyPath="yes" />
+      <Component Id="cmp_59_Microsoft.Windows.BadgeNotifications.Projection.dll" Guid="*">
+        <File Id="fil_59_Microsoft.Windows.BadgeNotifications.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.BadgeNotifications.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_60_msquic.dll" Guid="*">
-        <File Id="fil_60_msquic.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\msquic.dll" KeyPath="yes" />
+      <Component Id="cmp_60_Microsoft.Windows.Foundation.Projection.dll" Guid="*">
+        <File Id="fil_60_Microsoft.Windows.Foundation.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Foundation.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_61_netstandard.dll" Guid="*">
-        <File Id="fil_61_netstandard.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\netstandard.dll" KeyPath="yes" />
+      <Component Id="cmp_61_Microsoft.Windows.Management.Deployment.Projection.dll" Guid="*">
+        <File Id="fil_61_Microsoft.Windows.Management.Deployment.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Management.Deployment.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_62_System.AppContext.dll" Guid="*">
-        <File Id="fil_62_System.AppContext.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.AppContext.dll" KeyPath="yes" />
+      <Component Id="cmp_62_Microsoft.Windows.Media.Capture.Projection.dll" Guid="*">
+        <File Id="fil_62_Microsoft.Windows.Media.Capture.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Media.Capture.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_63_System.Buffers.dll" Guid="*">
-        <File Id="fil_63_System.Buffers.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Buffers.dll" KeyPath="yes" />
+      <Component Id="cmp_63_Microsoft.Windows.PushNotifications.Projection.dll" Guid="*">
+        <File Id="fil_63_Microsoft.Windows.PushNotifications.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.PushNotifications.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_64_System.Collections.Concurrent.dll" Guid="*">
-        <File Id="fil_64_System.Collections.Concurrent.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Collections.Concurrent.dll" KeyPath="yes" />
+      <Component Id="cmp_64_Microsoft.Windows.SDK.NET.dll" Guid="*">
+        <File Id="fil_64_Microsoft.Windows.SDK.NET.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.SDK.NET.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_65_System.Collections.dll" Guid="*">
-        <File Id="fil_65_System.Collections.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Collections.dll" KeyPath="yes" />
+      <Component Id="cmp_65_Microsoft.Windows.Security.AccessControl.Projection.dll" Guid="*">
+        <File Id="fil_65_Microsoft.Windows.Security.AccessControl.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Security.AccessControl.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_66_System.Collections.Immutable.dll" Guid="*">
-        <File Id="fil_66_System.Collections.Immutable.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Collections.Immutable.dll" KeyPath="yes" />
+      <Component Id="cmp_66_Microsoft.Windows.Storage.Pickers.Projection.dll" Guid="*">
+        <File Id="fil_66_Microsoft.Windows.Storage.Pickers.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Storage.Pickers.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_67_System.Collections.NonGeneric.dll" Guid="*">
-        <File Id="fil_67_System.Collections.NonGeneric.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Collections.NonGeneric.dll" KeyPath="yes" />
+      <Component Id="cmp_67_Microsoft.Windows.Storage.Projection.dll" Guid="*">
+        <File Id="fil_67_Microsoft.Windows.Storage.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Storage.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_68_System.Collections.Specialized.dll" Guid="*">
-        <File Id="fil_68_System.Collections.Specialized.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Collections.Specialized.dll" KeyPath="yes" />
+      <Component Id="cmp_68_Microsoft.Windows.System.Power.Projection.dll" Guid="*">
+        <File Id="fil_68_Microsoft.Windows.System.Power.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.System.Power.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_69_System.ComponentModel.Annotations.dll" Guid="*">
-        <File Id="fil_69_System.ComponentModel.Annotations.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.ComponentModel.Annotations.dll" KeyPath="yes" />
+      <Component Id="cmp_69_Microsoft.Windows.System.Projection.dll" Guid="*">
+        <File Id="fil_69_Microsoft.Windows.System.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.System.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_70_System.ComponentModel.DataAnnotations.dll" Guid="*">
-        <File Id="fil_70_System.ComponentModel.DataAnnotations.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.ComponentModel.DataAnnotations.dll" KeyPath="yes" />
+      <Component Id="cmp_70_Microsoft.Windows.Widgets.Projection.dll" Guid="*">
+        <File Id="fil_70_Microsoft.Windows.Widgets.Projection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Widgets.Projection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_71_System.ComponentModel.dll" Guid="*">
-        <File Id="fil_71_System.ComponentModel.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.ComponentModel.dll" KeyPath="yes" />
+      <Component Id="cmp_71_Microsoft.WindowsAppRuntime.Bootstrap.dll" Guid="*">
+        <File Id="fil_71_Microsoft.WindowsAppRuntime.Bootstrap.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.WindowsAppRuntime.Bootstrap.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_72_System.ComponentModel.EventBasedAsync.dll" Guid="*">
-        <File Id="fil_72_System.ComponentModel.EventBasedAsync.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.ComponentModel.EventBasedAsync.dll" KeyPath="yes" />
+      <Component Id="cmp_72_Microsoft.WindowsAppRuntime.Bootstrap.Net.dll" Guid="*">
+        <File Id="fil_72_Microsoft.WindowsAppRuntime.Bootstrap.Net.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_73_System.ComponentModel.Primitives.dll" Guid="*">
-        <File Id="fil_73_System.ComponentModel.Primitives.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.ComponentModel.Primitives.dll" KeyPath="yes" />
+      <Component Id="cmp_73_Microsoft.WinUI.dll" Guid="*">
+        <File Id="fil_73_Microsoft.WinUI.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\Microsoft.WinUI.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_74_System.ComponentModel.TypeConverter.dll" Guid="*">
-        <File Id="fil_74_System.ComponentModel.TypeConverter.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.ComponentModel.TypeConverter.dll" KeyPath="yes" />
+      <Component Id="cmp_74_mscordaccore.dll" Guid="*">
+        <File Id="fil_74_mscordaccore.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\mscordaccore.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_75_System.Configuration.dll" Guid="*">
-        <File Id="fil_75_System.Configuration.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Configuration.dll" KeyPath="yes" />
+      <Component Id="cmp_75_mscordaccore_amd64_amd64_8.0.2526.11203.dll" Guid="*">
+        <File Id="fil_75_mscordaccore_amd64_amd64_8.0.2526.11203.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\mscordaccore_amd64_amd64_8.0.2526.11203.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_76_System.Console.dll" Guid="*">
-        <File Id="fil_76_System.Console.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Console.dll" KeyPath="yes" />
+      <Component Id="cmp_76_mscordbi.dll" Guid="*">
+        <File Id="fil_76_mscordbi.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\mscordbi.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_77_System.Core.dll" Guid="*">
-        <File Id="fil_77_System.Core.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Core.dll" KeyPath="yes" />
+      <Component Id="cmp_77_mscorlib.dll" Guid="*">
+        <File Id="fil_77_mscorlib.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\mscorlib.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_78_System.Data.Common.dll" Guid="*">
-        <File Id="fil_78_System.Data.Common.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Data.Common.dll" KeyPath="yes" />
+      <Component Id="cmp_78_mscorrc.dll" Guid="*">
+        <File Id="fil_78_mscorrc.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\mscorrc.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_79_System.Data.DataSetExtensions.dll" Guid="*">
-        <File Id="fil_79_System.Data.DataSetExtensions.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Data.DataSetExtensions.dll" KeyPath="yes" />
+      <Component Id="cmp_79_msquic.dll" Guid="*">
+        <File Id="fil_79_msquic.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\msquic.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_80_System.Data.dll" Guid="*">
-        <File Id="fil_80_System.Data.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Data.dll" KeyPath="yes" />
+      <Component Id="cmp_80_netstandard.dll" Guid="*">
+        <File Id="fil_80_netstandard.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\netstandard.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_81_System.Diagnostics.Contracts.dll" Guid="*">
-        <File Id="fil_81_System.Diagnostics.Contracts.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Diagnostics.Contracts.dll" KeyPath="yes" />
+      <Component Id="cmp_81_ShellCommandManager.deps.json" Guid="*">
+        <File Id="fil_81_ShellCommandManager.deps.json" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\ShellCommandManager.deps.json" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_82_System.Diagnostics.Debug.dll" Guid="*">
-        <File Id="fil_82_System.Diagnostics.Debug.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Diagnostics.Debug.dll" KeyPath="yes" />
+      <Component Id="cmp_82_ShellCommandManager.dll" Guid="*">
+        <File Id="fil_82_ShellCommandManager.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\ShellCommandManager.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_83_System.Diagnostics.DiagnosticSource.dll" Guid="*">
-        <File Id="fil_83_System.Diagnostics.DiagnosticSource.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Diagnostics.DiagnosticSource.dll" KeyPath="yes" />
+      <Component Id="cmp_83_ShellCommandManager.exe" Guid="*">
+        <File Id="fil_83_ShellCommandManager.exe" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\ShellCommandManager.exe" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_84_System.Diagnostics.FileVersionInfo.dll" Guid="*">
-        <File Id="fil_84_System.Diagnostics.FileVersionInfo.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Diagnostics.FileVersionInfo.dll" KeyPath="yes" />
+      <Component Id="cmp_84_ShellCommandManager.pdb" Guid="*">
+        <File Id="fil_84_ShellCommandManager.pdb" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\ShellCommandManager.pdb" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_85_System.Diagnostics.Process.dll" Guid="*">
-        <File Id="fil_85_System.Diagnostics.Process.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Diagnostics.Process.dll" KeyPath="yes" />
+      <Component Id="cmp_85_ShellCommandManager.pri" Guid="*">
+        <File Id="fil_85_ShellCommandManager.pri" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\ShellCommandManager.pri" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_86_System.Diagnostics.StackTrace.dll" Guid="*">
-        <File Id="fil_86_System.Diagnostics.StackTrace.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Diagnostics.StackTrace.dll" KeyPath="yes" />
+      <Component Id="cmp_86_ShellCommandManager.runtimeconfig.json" Guid="*">
+        <File Id="fil_86_ShellCommandManager.runtimeconfig.json" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\ShellCommandManager.runtimeconfig.json" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_87_System.Diagnostics.TextWriterTraceListener.dll" Guid="*">
-        <File Id="fil_87_System.Diagnostics.TextWriterTraceListener.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Diagnostics.TextWriterTraceListener.dll" KeyPath="yes" />
+      <Component Id="cmp_87_System.AppContext.dll" Guid="*">
+        <File Id="fil_87_System.AppContext.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.AppContext.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_88_System.Diagnostics.Tools.dll" Guid="*">
-        <File Id="fil_88_System.Diagnostics.Tools.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Diagnostics.Tools.dll" KeyPath="yes" />
+      <Component Id="cmp_88_System.Buffers.dll" Guid="*">
+        <File Id="fil_88_System.Buffers.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Buffers.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_89_System.Diagnostics.TraceSource.dll" Guid="*">
-        <File Id="fil_89_System.Diagnostics.TraceSource.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Diagnostics.TraceSource.dll" KeyPath="yes" />
+      <Component Id="cmp_89_System.Collections.Concurrent.dll" Guid="*">
+        <File Id="fil_89_System.Collections.Concurrent.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Collections.Concurrent.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_90_System.Diagnostics.Tracing.dll" Guid="*">
-        <File Id="fil_90_System.Diagnostics.Tracing.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Diagnostics.Tracing.dll" KeyPath="yes" />
+      <Component Id="cmp_90_System.Collections.dll" Guid="*">
+        <File Id="fil_90_System.Collections.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Collections.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_91_System.dll" Guid="*">
-        <File Id="fil_91_System.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.dll" KeyPath="yes" />
+      <Component Id="cmp_91_System.Collections.Immutable.dll" Guid="*">
+        <File Id="fil_91_System.Collections.Immutable.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Collections.Immutable.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_92_System.Drawing.dll" Guid="*">
-        <File Id="fil_92_System.Drawing.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Drawing.dll" KeyPath="yes" />
+      <Component Id="cmp_92_System.Collections.NonGeneric.dll" Guid="*">
+        <File Id="fil_92_System.Collections.NonGeneric.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Collections.NonGeneric.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_93_System.Drawing.Primitives.dll" Guid="*">
-        <File Id="fil_93_System.Drawing.Primitives.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Drawing.Primitives.dll" KeyPath="yes" />
+      <Component Id="cmp_93_System.Collections.Specialized.dll" Guid="*">
+        <File Id="fil_93_System.Collections.Specialized.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Collections.Specialized.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_94_System.Dynamic.Runtime.dll" Guid="*">
-        <File Id="fil_94_System.Dynamic.Runtime.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Dynamic.Runtime.dll" KeyPath="yes" />
+      <Component Id="cmp_94_System.ComponentModel.Annotations.dll" Guid="*">
+        <File Id="fil_94_System.ComponentModel.Annotations.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.ComponentModel.Annotations.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_95_System.Formats.Asn1.dll" Guid="*">
-        <File Id="fil_95_System.Formats.Asn1.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Formats.Asn1.dll" KeyPath="yes" />
+      <Component Id="cmp_95_System.ComponentModel.DataAnnotations.dll" Guid="*">
+        <File Id="fil_95_System.ComponentModel.DataAnnotations.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.ComponentModel.DataAnnotations.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_96_System.Formats.Tar.dll" Guid="*">
-        <File Id="fil_96_System.Formats.Tar.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Formats.Tar.dll" KeyPath="yes" />
+      <Component Id="cmp_96_System.ComponentModel.dll" Guid="*">
+        <File Id="fil_96_System.ComponentModel.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.ComponentModel.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_97_System.Globalization.Calendars.dll" Guid="*">
-        <File Id="fil_97_System.Globalization.Calendars.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Globalization.Calendars.dll" KeyPath="yes" />
+      <Component Id="cmp_97_System.ComponentModel.EventBasedAsync.dll" Guid="*">
+        <File Id="fil_97_System.ComponentModel.EventBasedAsync.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.ComponentModel.EventBasedAsync.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_98_System.Globalization.dll" Guid="*">
-        <File Id="fil_98_System.Globalization.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Globalization.dll" KeyPath="yes" />
+      <Component Id="cmp_98_System.ComponentModel.Primitives.dll" Guid="*">
+        <File Id="fil_98_System.ComponentModel.Primitives.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.ComponentModel.Primitives.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_99_System.Globalization.Extensions.dll" Guid="*">
-        <File Id="fil_99_System.Globalization.Extensions.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Globalization.Extensions.dll" KeyPath="yes" />
+      <Component Id="cmp_99_System.ComponentModel.TypeConverter.dll" Guid="*">
+        <File Id="fil_99_System.ComponentModel.TypeConverter.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.ComponentModel.TypeConverter.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_100_System.IO.Compression.Brotli.dll" Guid="*">
-        <File Id="fil_100_System.IO.Compression.Brotli.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.IO.Compression.Brotli.dll" KeyPath="yes" />
+      <Component Id="cmp_100_System.Configuration.dll" Guid="*">
+        <File Id="fil_100_System.Configuration.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Configuration.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_101_System.IO.Compression.dll" Guid="*">
-        <File Id="fil_101_System.IO.Compression.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.IO.Compression.dll" KeyPath="yes" />
+      <Component Id="cmp_101_System.Console.dll" Guid="*">
+        <File Id="fil_101_System.Console.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Console.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_102_System.IO.Compression.FileSystem.dll" Guid="*">
-        <File Id="fil_102_System.IO.Compression.FileSystem.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.IO.Compression.FileSystem.dll" KeyPath="yes" />
+      <Component Id="cmp_102_System.Core.dll" Guid="*">
+        <File Id="fil_102_System.Core.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Core.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_103_System.IO.Compression.Native.dll" Guid="*">
-        <File Id="fil_103_System.IO.Compression.Native.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.IO.Compression.Native.dll" KeyPath="yes" />
+      <Component Id="cmp_103_System.Data.Common.dll" Guid="*">
+        <File Id="fil_103_System.Data.Common.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Data.Common.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_104_System.IO.Compression.ZipFile.dll" Guid="*">
-        <File Id="fil_104_System.IO.Compression.ZipFile.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.IO.Compression.ZipFile.dll" KeyPath="yes" />
+      <Component Id="cmp_104_System.Data.DataSetExtensions.dll" Guid="*">
+        <File Id="fil_104_System.Data.DataSetExtensions.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Data.DataSetExtensions.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_105_System.IO.dll" Guid="*">
-        <File Id="fil_105_System.IO.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.IO.dll" KeyPath="yes" />
+      <Component Id="cmp_105_System.Data.dll" Guid="*">
+        <File Id="fil_105_System.Data.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Data.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_106_System.IO.FileSystem.AccessControl.dll" Guid="*">
-        <File Id="fil_106_System.IO.FileSystem.AccessControl.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.IO.FileSystem.AccessControl.dll" KeyPath="yes" />
+      <Component Id="cmp_106_System.Diagnostics.Contracts.dll" Guid="*">
+        <File Id="fil_106_System.Diagnostics.Contracts.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.Contracts.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_107_System.IO.FileSystem.dll" Guid="*">
-        <File Id="fil_107_System.IO.FileSystem.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.IO.FileSystem.dll" KeyPath="yes" />
+      <Component Id="cmp_107_System.Diagnostics.Debug.dll" Guid="*">
+        <File Id="fil_107_System.Diagnostics.Debug.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.Debug.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_108_System.IO.FileSystem.DriveInfo.dll" Guid="*">
-        <File Id="fil_108_System.IO.FileSystem.DriveInfo.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.IO.FileSystem.DriveInfo.dll" KeyPath="yes" />
+      <Component Id="cmp_108_System.Diagnostics.DiagnosticSource.dll" Guid="*">
+        <File Id="fil_108_System.Diagnostics.DiagnosticSource.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.DiagnosticSource.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_109_System.IO.FileSystem.Primitives.dll" Guid="*">
-        <File Id="fil_109_System.IO.FileSystem.Primitives.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.IO.FileSystem.Primitives.dll" KeyPath="yes" />
+      <Component Id="cmp_109_System.Diagnostics.FileVersionInfo.dll" Guid="*">
+        <File Id="fil_109_System.Diagnostics.FileVersionInfo.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.FileVersionInfo.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_110_System.IO.FileSystem.Watcher.dll" Guid="*">
-        <File Id="fil_110_System.IO.FileSystem.Watcher.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.IO.FileSystem.Watcher.dll" KeyPath="yes" />
+      <Component Id="cmp_110_System.Diagnostics.Process.dll" Guid="*">
+        <File Id="fil_110_System.Diagnostics.Process.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.Process.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_111_System.IO.IsolatedStorage.dll" Guid="*">
-        <File Id="fil_111_System.IO.IsolatedStorage.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.IO.IsolatedStorage.dll" KeyPath="yes" />
+      <Component Id="cmp_111_System.Diagnostics.StackTrace.dll" Guid="*">
+        <File Id="fil_111_System.Diagnostics.StackTrace.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.StackTrace.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_112_System.IO.MemoryMappedFiles.dll" Guid="*">
-        <File Id="fil_112_System.IO.MemoryMappedFiles.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.IO.MemoryMappedFiles.dll" KeyPath="yes" />
+      <Component Id="cmp_112_System.Diagnostics.TextWriterTraceListener.dll" Guid="*">
+        <File Id="fil_112_System.Diagnostics.TextWriterTraceListener.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.TextWriterTraceListener.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_113_System.IO.Pipes.AccessControl.dll" Guid="*">
-        <File Id="fil_113_System.IO.Pipes.AccessControl.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.IO.Pipes.AccessControl.dll" KeyPath="yes" />
+      <Component Id="cmp_113_System.Diagnostics.Tools.dll" Guid="*">
+        <File Id="fil_113_System.Diagnostics.Tools.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.Tools.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_114_System.IO.Pipes.dll" Guid="*">
-        <File Id="fil_114_System.IO.Pipes.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.IO.Pipes.dll" KeyPath="yes" />
+      <Component Id="cmp_114_System.Diagnostics.TraceSource.dll" Guid="*">
+        <File Id="fil_114_System.Diagnostics.TraceSource.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.TraceSource.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_115_System.IO.UnmanagedMemoryStream.dll" Guid="*">
-        <File Id="fil_115_System.IO.UnmanagedMemoryStream.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.IO.UnmanagedMemoryStream.dll" KeyPath="yes" />
+      <Component Id="cmp_115_System.Diagnostics.Tracing.dll" Guid="*">
+        <File Id="fil_115_System.Diagnostics.Tracing.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.Tracing.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_116_System.Linq.dll" Guid="*">
-        <File Id="fil_116_System.Linq.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Linq.dll" KeyPath="yes" />
+      <Component Id="cmp_116_System.dll" Guid="*">
+        <File Id="fil_116_System.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_117_System.Linq.Expressions.dll" Guid="*">
-        <File Id="fil_117_System.Linq.Expressions.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Linq.Expressions.dll" KeyPath="yes" />
+      <Component Id="cmp_117_System.Drawing.dll" Guid="*">
+        <File Id="fil_117_System.Drawing.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Drawing.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_118_System.Linq.Parallel.dll" Guid="*">
-        <File Id="fil_118_System.Linq.Parallel.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Linq.Parallel.dll" KeyPath="yes" />
+      <Component Id="cmp_118_System.Drawing.Primitives.dll" Guid="*">
+        <File Id="fil_118_System.Drawing.Primitives.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Drawing.Primitives.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_119_System.Linq.Queryable.dll" Guid="*">
-        <File Id="fil_119_System.Linq.Queryable.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Linq.Queryable.dll" KeyPath="yes" />
+      <Component Id="cmp_119_System.Dynamic.Runtime.dll" Guid="*">
+        <File Id="fil_119_System.Dynamic.Runtime.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Dynamic.Runtime.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_120_System.Memory.dll" Guid="*">
-        <File Id="fil_120_System.Memory.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Memory.dll" KeyPath="yes" />
+      <Component Id="cmp_120_System.Formats.Asn1.dll" Guid="*">
+        <File Id="fil_120_System.Formats.Asn1.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Formats.Asn1.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_121_System.Net.dll" Guid="*">
-        <File Id="fil_121_System.Net.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Net.dll" KeyPath="yes" />
+      <Component Id="cmp_121_System.Formats.Tar.dll" Guid="*">
+        <File Id="fil_121_System.Formats.Tar.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Formats.Tar.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_122_System.Net.Http.dll" Guid="*">
-        <File Id="fil_122_System.Net.Http.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Net.Http.dll" KeyPath="yes" />
+      <Component Id="cmp_122_System.Globalization.Calendars.dll" Guid="*">
+        <File Id="fil_122_System.Globalization.Calendars.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Globalization.Calendars.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_123_System.Net.Http.Json.dll" Guid="*">
-        <File Id="fil_123_System.Net.Http.Json.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Net.Http.Json.dll" KeyPath="yes" />
+      <Component Id="cmp_123_System.Globalization.dll" Guid="*">
+        <File Id="fil_123_System.Globalization.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Globalization.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_124_System.Net.HttpListener.dll" Guid="*">
-        <File Id="fil_124_System.Net.HttpListener.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Net.HttpListener.dll" KeyPath="yes" />
+      <Component Id="cmp_124_System.Globalization.Extensions.dll" Guid="*">
+        <File Id="fil_124_System.Globalization.Extensions.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Globalization.Extensions.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_125_System.Net.Mail.dll" Guid="*">
-        <File Id="fil_125_System.Net.Mail.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Net.Mail.dll" KeyPath="yes" />
+      <Component Id="cmp_125_System.IO.Compression.Brotli.dll" Guid="*">
+        <File Id="fil_125_System.IO.Compression.Brotli.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.IO.Compression.Brotli.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_126_System.Net.NameResolution.dll" Guid="*">
-        <File Id="fil_126_System.Net.NameResolution.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Net.NameResolution.dll" KeyPath="yes" />
+      <Component Id="cmp_126_System.IO.Compression.dll" Guid="*">
+        <File Id="fil_126_System.IO.Compression.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.IO.Compression.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_127_System.Net.NetworkInformation.dll" Guid="*">
-        <File Id="fil_127_System.Net.NetworkInformation.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Net.NetworkInformation.dll" KeyPath="yes" />
+      <Component Id="cmp_127_System.IO.Compression.FileSystem.dll" Guid="*">
+        <File Id="fil_127_System.IO.Compression.FileSystem.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.IO.Compression.FileSystem.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_128_System.Net.Ping.dll" Guid="*">
-        <File Id="fil_128_System.Net.Ping.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Net.Ping.dll" KeyPath="yes" />
+      <Component Id="cmp_128_System.IO.Compression.Native.dll" Guid="*">
+        <File Id="fil_128_System.IO.Compression.Native.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.IO.Compression.Native.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_129_System.Net.Primitives.dll" Guid="*">
-        <File Id="fil_129_System.Net.Primitives.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Net.Primitives.dll" KeyPath="yes" />
+      <Component Id="cmp_129_System.IO.Compression.ZipFile.dll" Guid="*">
+        <File Id="fil_129_System.IO.Compression.ZipFile.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.IO.Compression.ZipFile.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_130_System.Net.Quic.dll" Guid="*">
-        <File Id="fil_130_System.Net.Quic.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Net.Quic.dll" KeyPath="yes" />
+      <Component Id="cmp_130_System.IO.dll" Guid="*">
+        <File Id="fil_130_System.IO.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.IO.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_131_System.Net.Requests.dll" Guid="*">
-        <File Id="fil_131_System.Net.Requests.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Net.Requests.dll" KeyPath="yes" />
+      <Component Id="cmp_131_System.IO.FileSystem.AccessControl.dll" Guid="*">
+        <File Id="fil_131_System.IO.FileSystem.AccessControl.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.IO.FileSystem.AccessControl.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_132_System.Net.Security.dll" Guid="*">
-        <File Id="fil_132_System.Net.Security.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Net.Security.dll" KeyPath="yes" />
+      <Component Id="cmp_132_System.IO.FileSystem.dll" Guid="*">
+        <File Id="fil_132_System.IO.FileSystem.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.IO.FileSystem.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_133_System.Net.ServicePoint.dll" Guid="*">
-        <File Id="fil_133_System.Net.ServicePoint.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Net.ServicePoint.dll" KeyPath="yes" />
+      <Component Id="cmp_133_System.IO.FileSystem.DriveInfo.dll" Guid="*">
+        <File Id="fil_133_System.IO.FileSystem.DriveInfo.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.IO.FileSystem.DriveInfo.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_134_System.Net.Sockets.dll" Guid="*">
-        <File Id="fil_134_System.Net.Sockets.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Net.Sockets.dll" KeyPath="yes" />
+      <Component Id="cmp_134_System.IO.FileSystem.Primitives.dll" Guid="*">
+        <File Id="fil_134_System.IO.FileSystem.Primitives.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.IO.FileSystem.Primitives.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_135_System.Net.WebClient.dll" Guid="*">
-        <File Id="fil_135_System.Net.WebClient.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Net.WebClient.dll" KeyPath="yes" />
+      <Component Id="cmp_135_System.IO.FileSystem.Watcher.dll" Guid="*">
+        <File Id="fil_135_System.IO.FileSystem.Watcher.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.IO.FileSystem.Watcher.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_136_System.Net.WebHeaderCollection.dll" Guid="*">
-        <File Id="fil_136_System.Net.WebHeaderCollection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Net.WebHeaderCollection.dll" KeyPath="yes" />
+      <Component Id="cmp_136_System.IO.IsolatedStorage.dll" Guid="*">
+        <File Id="fil_136_System.IO.IsolatedStorage.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.IO.IsolatedStorage.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_137_System.Net.WebProxy.dll" Guid="*">
-        <File Id="fil_137_System.Net.WebProxy.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Net.WebProxy.dll" KeyPath="yes" />
+      <Component Id="cmp_137_System.IO.MemoryMappedFiles.dll" Guid="*">
+        <File Id="fil_137_System.IO.MemoryMappedFiles.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.IO.MemoryMappedFiles.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_138_System.Net.WebSockets.Client.dll" Guid="*">
-        <File Id="fil_138_System.Net.WebSockets.Client.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Net.WebSockets.Client.dll" KeyPath="yes" />
+      <Component Id="cmp_138_System.IO.Pipes.AccessControl.dll" Guid="*">
+        <File Id="fil_138_System.IO.Pipes.AccessControl.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.IO.Pipes.AccessControl.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_139_System.Net.WebSockets.dll" Guid="*">
-        <File Id="fil_139_System.Net.WebSockets.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Net.WebSockets.dll" KeyPath="yes" />
+      <Component Id="cmp_139_System.IO.Pipes.dll" Guid="*">
+        <File Id="fil_139_System.IO.Pipes.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.IO.Pipes.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_140_System.Numerics.dll" Guid="*">
-        <File Id="fil_140_System.Numerics.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Numerics.dll" KeyPath="yes" />
+      <Component Id="cmp_140_System.IO.UnmanagedMemoryStream.dll" Guid="*">
+        <File Id="fil_140_System.IO.UnmanagedMemoryStream.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.IO.UnmanagedMemoryStream.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_141_System.Numerics.Tensors.dll" Guid="*">
-        <File Id="fil_141_System.Numerics.Tensors.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Numerics.Tensors.dll" KeyPath="yes" />
+      <Component Id="cmp_141_System.Linq.dll" Guid="*">
+        <File Id="fil_141_System.Linq.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Linq.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_142_System.Numerics.Vectors.dll" Guid="*">
-        <File Id="fil_142_System.Numerics.Vectors.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Numerics.Vectors.dll" KeyPath="yes" />
+      <Component Id="cmp_142_System.Linq.Expressions.dll" Guid="*">
+        <File Id="fil_142_System.Linq.Expressions.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Linq.Expressions.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_143_System.ObjectModel.dll" Guid="*">
-        <File Id="fil_143_System.ObjectModel.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.ObjectModel.dll" KeyPath="yes" />
+      <Component Id="cmp_143_System.Linq.Parallel.dll" Guid="*">
+        <File Id="fil_143_System.Linq.Parallel.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Linq.Parallel.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_144_System.Private.CoreLib.dll" Guid="*">
-        <File Id="fil_144_System.Private.CoreLib.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Private.CoreLib.dll" KeyPath="yes" />
+      <Component Id="cmp_144_System.Linq.Queryable.dll" Guid="*">
+        <File Id="fil_144_System.Linq.Queryable.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Linq.Queryable.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_145_System.Private.DataContractSerialization.dll" Guid="*">
-        <File Id="fil_145_System.Private.DataContractSerialization.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Private.DataContractSerialization.dll" KeyPath="yes" />
+      <Component Id="cmp_145_System.Memory.dll" Guid="*">
+        <File Id="fil_145_System.Memory.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Memory.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_146_System.Private.Uri.dll" Guid="*">
-        <File Id="fil_146_System.Private.Uri.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Private.Uri.dll" KeyPath="yes" />
+      <Component Id="cmp_146_System.Net.dll" Guid="*">
+        <File Id="fil_146_System.Net.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Net.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_147_System.Private.Xml.dll" Guid="*">
-        <File Id="fil_147_System.Private.Xml.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Private.Xml.dll" KeyPath="yes" />
+      <Component Id="cmp_147_System.Net.Http.dll" Guid="*">
+        <File Id="fil_147_System.Net.Http.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Net.Http.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_148_System.Private.Xml.Linq.dll" Guid="*">
-        <File Id="fil_148_System.Private.Xml.Linq.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Private.Xml.Linq.dll" KeyPath="yes" />
+      <Component Id="cmp_148_System.Net.Http.Json.dll" Guid="*">
+        <File Id="fil_148_System.Net.Http.Json.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Net.Http.Json.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_149_System.Reflection.DispatchProxy.dll" Guid="*">
-        <File Id="fil_149_System.Reflection.DispatchProxy.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Reflection.DispatchProxy.dll" KeyPath="yes" />
+      <Component Id="cmp_149_System.Net.HttpListener.dll" Guid="*">
+        <File Id="fil_149_System.Net.HttpListener.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Net.HttpListener.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_150_System.Reflection.dll" Guid="*">
-        <File Id="fil_150_System.Reflection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Reflection.dll" KeyPath="yes" />
+      <Component Id="cmp_150_System.Net.Mail.dll" Guid="*">
+        <File Id="fil_150_System.Net.Mail.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Net.Mail.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_151_System.Reflection.Emit.dll" Guid="*">
-        <File Id="fil_151_System.Reflection.Emit.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Reflection.Emit.dll" KeyPath="yes" />
+      <Component Id="cmp_151_System.Net.NameResolution.dll" Guid="*">
+        <File Id="fil_151_System.Net.NameResolution.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Net.NameResolution.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_152_System.Reflection.Emit.ILGeneration.dll" Guid="*">
-        <File Id="fil_152_System.Reflection.Emit.ILGeneration.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Reflection.Emit.ILGeneration.dll" KeyPath="yes" />
+      <Component Id="cmp_152_System.Net.NetworkInformation.dll" Guid="*">
+        <File Id="fil_152_System.Net.NetworkInformation.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Net.NetworkInformation.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_153_System.Reflection.Emit.Lightweight.dll" Guid="*">
-        <File Id="fil_153_System.Reflection.Emit.Lightweight.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Reflection.Emit.Lightweight.dll" KeyPath="yes" />
+      <Component Id="cmp_153_System.Net.Ping.dll" Guid="*">
+        <File Id="fil_153_System.Net.Ping.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Net.Ping.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_154_System.Reflection.Extensions.dll" Guid="*">
-        <File Id="fil_154_System.Reflection.Extensions.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Reflection.Extensions.dll" KeyPath="yes" />
+      <Component Id="cmp_154_System.Net.Primitives.dll" Guid="*">
+        <File Id="fil_154_System.Net.Primitives.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Net.Primitives.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_155_System.Reflection.Metadata.dll" Guid="*">
-        <File Id="fil_155_System.Reflection.Metadata.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Reflection.Metadata.dll" KeyPath="yes" />
+      <Component Id="cmp_155_System.Net.Quic.dll" Guid="*">
+        <File Id="fil_155_System.Net.Quic.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Net.Quic.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_156_System.Reflection.Primitives.dll" Guid="*">
-        <File Id="fil_156_System.Reflection.Primitives.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Reflection.Primitives.dll" KeyPath="yes" />
+      <Component Id="cmp_156_System.Net.Requests.dll" Guid="*">
+        <File Id="fil_156_System.Net.Requests.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Net.Requests.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_157_System.Reflection.TypeExtensions.dll" Guid="*">
-        <File Id="fil_157_System.Reflection.TypeExtensions.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Reflection.TypeExtensions.dll" KeyPath="yes" />
+      <Component Id="cmp_157_System.Net.Security.dll" Guid="*">
+        <File Id="fil_157_System.Net.Security.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Net.Security.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_158_System.Resources.Reader.dll" Guid="*">
-        <File Id="fil_158_System.Resources.Reader.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Resources.Reader.dll" KeyPath="yes" />
+      <Component Id="cmp_158_System.Net.ServicePoint.dll" Guid="*">
+        <File Id="fil_158_System.Net.ServicePoint.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Net.ServicePoint.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_159_System.Resources.ResourceManager.dll" Guid="*">
-        <File Id="fil_159_System.Resources.ResourceManager.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Resources.ResourceManager.dll" KeyPath="yes" />
+      <Component Id="cmp_159_System.Net.Sockets.dll" Guid="*">
+        <File Id="fil_159_System.Net.Sockets.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Net.Sockets.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_160_System.Resources.Writer.dll" Guid="*">
-        <File Id="fil_160_System.Resources.Writer.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Resources.Writer.dll" KeyPath="yes" />
+      <Component Id="cmp_160_System.Net.WebClient.dll" Guid="*">
+        <File Id="fil_160_System.Net.WebClient.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Net.WebClient.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_161_System.Runtime.CompilerServices.Unsafe.dll" Guid="*">
-        <File Id="fil_161_System.Runtime.CompilerServices.Unsafe.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Runtime.CompilerServices.Unsafe.dll" KeyPath="yes" />
+      <Component Id="cmp_161_System.Net.WebHeaderCollection.dll" Guid="*">
+        <File Id="fil_161_System.Net.WebHeaderCollection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Net.WebHeaderCollection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_162_System.Runtime.CompilerServices.VisualC.dll" Guid="*">
-        <File Id="fil_162_System.Runtime.CompilerServices.VisualC.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Runtime.CompilerServices.VisualC.dll" KeyPath="yes" />
+      <Component Id="cmp_162_System.Net.WebProxy.dll" Guid="*">
+        <File Id="fil_162_System.Net.WebProxy.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Net.WebProxy.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_163_System.Runtime.dll" Guid="*">
-        <File Id="fil_163_System.Runtime.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Runtime.dll" KeyPath="yes" />
+      <Component Id="cmp_163_System.Net.WebSockets.Client.dll" Guid="*">
+        <File Id="fil_163_System.Net.WebSockets.Client.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Net.WebSockets.Client.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_164_System.Runtime.Extensions.dll" Guid="*">
-        <File Id="fil_164_System.Runtime.Extensions.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Runtime.Extensions.dll" KeyPath="yes" />
+      <Component Id="cmp_164_System.Net.WebSockets.dll" Guid="*">
+        <File Id="fil_164_System.Net.WebSockets.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Net.WebSockets.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_165_System.Runtime.Handles.dll" Guid="*">
-        <File Id="fil_165_System.Runtime.Handles.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Runtime.Handles.dll" KeyPath="yes" />
+      <Component Id="cmp_165_System.Numerics.dll" Guid="*">
+        <File Id="fil_165_System.Numerics.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Numerics.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_166_System.Runtime.InteropServices.dll" Guid="*">
-        <File Id="fil_166_System.Runtime.InteropServices.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Runtime.InteropServices.dll" KeyPath="yes" />
+      <Component Id="cmp_166_System.Numerics.Tensors.dll" Guid="*">
+        <File Id="fil_166_System.Numerics.Tensors.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Numerics.Tensors.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_167_System.Runtime.InteropServices.JavaScript.dll" Guid="*">
-        <File Id="fil_167_System.Runtime.InteropServices.JavaScript.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Runtime.InteropServices.JavaScript.dll" KeyPath="yes" />
+      <Component Id="cmp_167_System.Numerics.Vectors.dll" Guid="*">
+        <File Id="fil_167_System.Numerics.Vectors.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Numerics.Vectors.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_168_System.Runtime.InteropServices.RuntimeInformation.dll" Guid="*">
-        <File Id="fil_168_System.Runtime.InteropServices.RuntimeInformation.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Runtime.InteropServices.RuntimeInformation.dll" KeyPath="yes" />
+      <Component Id="cmp_168_System.ObjectModel.dll" Guid="*">
+        <File Id="fil_168_System.ObjectModel.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.ObjectModel.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_169_System.Runtime.Intrinsics.dll" Guid="*">
-        <File Id="fil_169_System.Runtime.Intrinsics.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Runtime.Intrinsics.dll" KeyPath="yes" />
+      <Component Id="cmp_169_System.Private.CoreLib.dll" Guid="*">
+        <File Id="fil_169_System.Private.CoreLib.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Private.CoreLib.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_170_System.Runtime.Loader.dll" Guid="*">
-        <File Id="fil_170_System.Runtime.Loader.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Runtime.Loader.dll" KeyPath="yes" />
+      <Component Id="cmp_170_System.Private.DataContractSerialization.dll" Guid="*">
+        <File Id="fil_170_System.Private.DataContractSerialization.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Private.DataContractSerialization.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_171_System.Runtime.Numerics.dll" Guid="*">
-        <File Id="fil_171_System.Runtime.Numerics.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Runtime.Numerics.dll" KeyPath="yes" />
+      <Component Id="cmp_171_System.Private.Uri.dll" Guid="*">
+        <File Id="fil_171_System.Private.Uri.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Private.Uri.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_172_System.Runtime.Serialization.dll" Guid="*">
-        <File Id="fil_172_System.Runtime.Serialization.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Runtime.Serialization.dll" KeyPath="yes" />
+      <Component Id="cmp_172_System.Private.Xml.dll" Guid="*">
+        <File Id="fil_172_System.Private.Xml.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Private.Xml.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_173_System.Runtime.Serialization.Formatters.dll" Guid="*">
-        <File Id="fil_173_System.Runtime.Serialization.Formatters.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Runtime.Serialization.Formatters.dll" KeyPath="yes" />
+      <Component Id="cmp_173_System.Private.Xml.Linq.dll" Guid="*">
+        <File Id="fil_173_System.Private.Xml.Linq.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Private.Xml.Linq.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_174_System.Runtime.Serialization.Json.dll" Guid="*">
-        <File Id="fil_174_System.Runtime.Serialization.Json.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Runtime.Serialization.Json.dll" KeyPath="yes" />
+      <Component Id="cmp_174_System.Reflection.DispatchProxy.dll" Guid="*">
+        <File Id="fil_174_System.Reflection.DispatchProxy.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Reflection.DispatchProxy.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_175_System.Runtime.Serialization.Primitives.dll" Guid="*">
-        <File Id="fil_175_System.Runtime.Serialization.Primitives.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Runtime.Serialization.Primitives.dll" KeyPath="yes" />
+      <Component Id="cmp_175_System.Reflection.dll" Guid="*">
+        <File Id="fil_175_System.Reflection.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Reflection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_176_System.Runtime.Serialization.Xml.dll" Guid="*">
-        <File Id="fil_176_System.Runtime.Serialization.Xml.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Runtime.Serialization.Xml.dll" KeyPath="yes" />
+      <Component Id="cmp_176_System.Reflection.Emit.dll" Guid="*">
+        <File Id="fil_176_System.Reflection.Emit.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Reflection.Emit.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_177_System.Security.AccessControl.dll" Guid="*">
-        <File Id="fil_177_System.Security.AccessControl.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Security.AccessControl.dll" KeyPath="yes" />
+      <Component Id="cmp_177_System.Reflection.Emit.ILGeneration.dll" Guid="*">
+        <File Id="fil_177_System.Reflection.Emit.ILGeneration.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Reflection.Emit.ILGeneration.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_178_System.Security.Claims.dll" Guid="*">
-        <File Id="fil_178_System.Security.Claims.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Security.Claims.dll" KeyPath="yes" />
+      <Component Id="cmp_178_System.Reflection.Emit.Lightweight.dll" Guid="*">
+        <File Id="fil_178_System.Reflection.Emit.Lightweight.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Reflection.Emit.Lightweight.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_179_System.Security.Cryptography.Algorithms.dll" Guid="*">
-        <File Id="fil_179_System.Security.Cryptography.Algorithms.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Security.Cryptography.Algorithms.dll" KeyPath="yes" />
+      <Component Id="cmp_179_System.Reflection.Extensions.dll" Guid="*">
+        <File Id="fil_179_System.Reflection.Extensions.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Reflection.Extensions.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_180_System.Security.Cryptography.Cng.dll" Guid="*">
-        <File Id="fil_180_System.Security.Cryptography.Cng.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Security.Cryptography.Cng.dll" KeyPath="yes" />
+      <Component Id="cmp_180_System.Reflection.Metadata.dll" Guid="*">
+        <File Id="fil_180_System.Reflection.Metadata.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Reflection.Metadata.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_181_System.Security.Cryptography.Csp.dll" Guid="*">
-        <File Id="fil_181_System.Security.Cryptography.Csp.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Security.Cryptography.Csp.dll" KeyPath="yes" />
+      <Component Id="cmp_181_System.Reflection.Primitives.dll" Guid="*">
+        <File Id="fil_181_System.Reflection.Primitives.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Reflection.Primitives.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_182_System.Security.Cryptography.dll" Guid="*">
-        <File Id="fil_182_System.Security.Cryptography.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Security.Cryptography.dll" KeyPath="yes" />
+      <Component Id="cmp_182_System.Reflection.TypeExtensions.dll" Guid="*">
+        <File Id="fil_182_System.Reflection.TypeExtensions.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Reflection.TypeExtensions.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_183_System.Security.Cryptography.Encoding.dll" Guid="*">
-        <File Id="fil_183_System.Security.Cryptography.Encoding.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Security.Cryptography.Encoding.dll" KeyPath="yes" />
+      <Component Id="cmp_183_System.Resources.Reader.dll" Guid="*">
+        <File Id="fil_183_System.Resources.Reader.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Resources.Reader.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_184_System.Security.Cryptography.OpenSsl.dll" Guid="*">
-        <File Id="fil_184_System.Security.Cryptography.OpenSsl.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Security.Cryptography.OpenSsl.dll" KeyPath="yes" />
+      <Component Id="cmp_184_System.Resources.ResourceManager.dll" Guid="*">
+        <File Id="fil_184_System.Resources.ResourceManager.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Resources.ResourceManager.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_185_System.Security.Cryptography.Primitives.dll" Guid="*">
-        <File Id="fil_185_System.Security.Cryptography.Primitives.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Security.Cryptography.Primitives.dll" KeyPath="yes" />
+      <Component Id="cmp_185_System.Resources.Writer.dll" Guid="*">
+        <File Id="fil_185_System.Resources.Writer.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Resources.Writer.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_186_System.Security.Cryptography.X509Certificates.dll" Guid="*">
-        <File Id="fil_186_System.Security.Cryptography.X509Certificates.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Security.Cryptography.X509Certificates.dll" KeyPath="yes" />
+      <Component Id="cmp_186_System.Runtime.CompilerServices.Unsafe.dll" Guid="*">
+        <File Id="fil_186_System.Runtime.CompilerServices.Unsafe.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Runtime.CompilerServices.Unsafe.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_187_System.Security.dll" Guid="*">
-        <File Id="fil_187_System.Security.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Security.dll" KeyPath="yes" />
+      <Component Id="cmp_187_System.Runtime.CompilerServices.VisualC.dll" Guid="*">
+        <File Id="fil_187_System.Runtime.CompilerServices.VisualC.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Runtime.CompilerServices.VisualC.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_188_System.Security.Principal.dll" Guid="*">
-        <File Id="fil_188_System.Security.Principal.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Security.Principal.dll" KeyPath="yes" />
+      <Component Id="cmp_188_System.Runtime.dll" Guid="*">
+        <File Id="fil_188_System.Runtime.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Runtime.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_189_System.Security.Principal.Windows.dll" Guid="*">
-        <File Id="fil_189_System.Security.Principal.Windows.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Security.Principal.Windows.dll" KeyPath="yes" />
+      <Component Id="cmp_189_System.Runtime.Extensions.dll" Guid="*">
+        <File Id="fil_189_System.Runtime.Extensions.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Extensions.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_190_System.Security.SecureString.dll" Guid="*">
-        <File Id="fil_190_System.Security.SecureString.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Security.SecureString.dll" KeyPath="yes" />
+      <Component Id="cmp_190_System.Runtime.Handles.dll" Guid="*">
+        <File Id="fil_190_System.Runtime.Handles.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Handles.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_191_System.ServiceModel.Web.dll" Guid="*">
-        <File Id="fil_191_System.ServiceModel.Web.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.ServiceModel.Web.dll" KeyPath="yes" />
+      <Component Id="cmp_191_System.Runtime.InteropServices.dll" Guid="*">
+        <File Id="fil_191_System.Runtime.InteropServices.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Runtime.InteropServices.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_192_System.ServiceProcess.dll" Guid="*">
-        <File Id="fil_192_System.ServiceProcess.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.ServiceProcess.dll" KeyPath="yes" />
+      <Component Id="cmp_192_System.Runtime.InteropServices.JavaScript.dll" Guid="*">
+        <File Id="fil_192_System.Runtime.InteropServices.JavaScript.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Runtime.InteropServices.JavaScript.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_193_System.Text.Encoding.CodePages.dll" Guid="*">
-        <File Id="fil_193_System.Text.Encoding.CodePages.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Text.Encoding.CodePages.dll" KeyPath="yes" />
+      <Component Id="cmp_193_System.Runtime.InteropServices.RuntimeInformation.dll" Guid="*">
+        <File Id="fil_193_System.Runtime.InteropServices.RuntimeInformation.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Runtime.InteropServices.RuntimeInformation.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_194_System.Text.Encoding.dll" Guid="*">
-        <File Id="fil_194_System.Text.Encoding.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Text.Encoding.dll" KeyPath="yes" />
+      <Component Id="cmp_194_System.Runtime.Intrinsics.dll" Guid="*">
+        <File Id="fil_194_System.Runtime.Intrinsics.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Intrinsics.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_195_System.Text.Encoding.Extensions.dll" Guid="*">
-        <File Id="fil_195_System.Text.Encoding.Extensions.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Text.Encoding.Extensions.dll" KeyPath="yes" />
+      <Component Id="cmp_195_System.Runtime.Loader.dll" Guid="*">
+        <File Id="fil_195_System.Runtime.Loader.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Loader.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_196_System.Text.Encodings.Web.dll" Guid="*">
-        <File Id="fil_196_System.Text.Encodings.Web.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Text.Encodings.Web.dll" KeyPath="yes" />
+      <Component Id="cmp_196_System.Runtime.Numerics.dll" Guid="*">
+        <File Id="fil_196_System.Runtime.Numerics.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Numerics.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_197_System.Text.Json.dll" Guid="*">
-        <File Id="fil_197_System.Text.Json.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Text.Json.dll" KeyPath="yes" />
+      <Component Id="cmp_197_System.Runtime.Serialization.dll" Guid="*">
+        <File Id="fil_197_System.Runtime.Serialization.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Serialization.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_198_System.Text.RegularExpressions.dll" Guid="*">
-        <File Id="fil_198_System.Text.RegularExpressions.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Text.RegularExpressions.dll" KeyPath="yes" />
+      <Component Id="cmp_198_System.Runtime.Serialization.Formatters.dll" Guid="*">
+        <File Id="fil_198_System.Runtime.Serialization.Formatters.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Serialization.Formatters.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_199_System.Threading.Channels.dll" Guid="*">
-        <File Id="fil_199_System.Threading.Channels.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Threading.Channels.dll" KeyPath="yes" />
+      <Component Id="cmp_199_System.Runtime.Serialization.Json.dll" Guid="*">
+        <File Id="fil_199_System.Runtime.Serialization.Json.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Serialization.Json.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_200_System.Threading.dll" Guid="*">
-        <File Id="fil_200_System.Threading.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Threading.dll" KeyPath="yes" />
+      <Component Id="cmp_200_System.Runtime.Serialization.Primitives.dll" Guid="*">
+        <File Id="fil_200_System.Runtime.Serialization.Primitives.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Serialization.Primitives.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_201_System.Threading.Overlapped.dll" Guid="*">
-        <File Id="fil_201_System.Threading.Overlapped.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Threading.Overlapped.dll" KeyPath="yes" />
+      <Component Id="cmp_201_System.Runtime.Serialization.Xml.dll" Guid="*">
+        <File Id="fil_201_System.Runtime.Serialization.Xml.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Serialization.Xml.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_202_System.Threading.Tasks.Dataflow.dll" Guid="*">
-        <File Id="fil_202_System.Threading.Tasks.Dataflow.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Threading.Tasks.Dataflow.dll" KeyPath="yes" />
+      <Component Id="cmp_202_System.Security.AccessControl.dll" Guid="*">
+        <File Id="fil_202_System.Security.AccessControl.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Security.AccessControl.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_203_System.Threading.Tasks.dll" Guid="*">
-        <File Id="fil_203_System.Threading.Tasks.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Threading.Tasks.dll" KeyPath="yes" />
+      <Component Id="cmp_203_System.Security.Claims.dll" Guid="*">
+        <File Id="fil_203_System.Security.Claims.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Security.Claims.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_204_System.Threading.Tasks.Extensions.dll" Guid="*">
-        <File Id="fil_204_System.Threading.Tasks.Extensions.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Threading.Tasks.Extensions.dll" KeyPath="yes" />
+      <Component Id="cmp_204_System.Security.Cryptography.Algorithms.dll" Guid="*">
+        <File Id="fil_204_System.Security.Cryptography.Algorithms.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.Algorithms.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_205_System.Threading.Tasks.Parallel.dll" Guid="*">
-        <File Id="fil_205_System.Threading.Tasks.Parallel.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Threading.Tasks.Parallel.dll" KeyPath="yes" />
+      <Component Id="cmp_205_System.Security.Cryptography.Cng.dll" Guid="*">
+        <File Id="fil_205_System.Security.Cryptography.Cng.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.Cng.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_206_System.Threading.Thread.dll" Guid="*">
-        <File Id="fil_206_System.Threading.Thread.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Threading.Thread.dll" KeyPath="yes" />
+      <Component Id="cmp_206_System.Security.Cryptography.Csp.dll" Guid="*">
+        <File Id="fil_206_System.Security.Cryptography.Csp.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.Csp.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_207_System.Threading.ThreadPool.dll" Guid="*">
-        <File Id="fil_207_System.Threading.ThreadPool.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Threading.ThreadPool.dll" KeyPath="yes" />
+      <Component Id="cmp_207_System.Security.Cryptography.dll" Guid="*">
+        <File Id="fil_207_System.Security.Cryptography.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_208_System.Threading.Timer.dll" Guid="*">
-        <File Id="fil_208_System.Threading.Timer.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Threading.Timer.dll" KeyPath="yes" />
+      <Component Id="cmp_208_System.Security.Cryptography.Encoding.dll" Guid="*">
+        <File Id="fil_208_System.Security.Cryptography.Encoding.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.Encoding.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_209_System.Transactions.dll" Guid="*">
-        <File Id="fil_209_System.Transactions.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Transactions.dll" KeyPath="yes" />
+      <Component Id="cmp_209_System.Security.Cryptography.OpenSsl.dll" Guid="*">
+        <File Id="fil_209_System.Security.Cryptography.OpenSsl.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.OpenSsl.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_210_System.Transactions.Local.dll" Guid="*">
-        <File Id="fil_210_System.Transactions.Local.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Transactions.Local.dll" KeyPath="yes" />
+      <Component Id="cmp_210_System.Security.Cryptography.Primitives.dll" Guid="*">
+        <File Id="fil_210_System.Security.Cryptography.Primitives.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.Primitives.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_211_System.ValueTuple.dll" Guid="*">
-        <File Id="fil_211_System.ValueTuple.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.ValueTuple.dll" KeyPath="yes" />
+      <Component Id="cmp_211_System.Security.Cryptography.X509Certificates.dll" Guid="*">
+        <File Id="fil_211_System.Security.Cryptography.X509Certificates.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.X509Certificates.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_212_System.Web.dll" Guid="*">
-        <File Id="fil_212_System.Web.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Web.dll" KeyPath="yes" />
+      <Component Id="cmp_212_System.Security.dll" Guid="*">
+        <File Id="fil_212_System.Security.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Security.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_213_System.Web.HttpUtility.dll" Guid="*">
-        <File Id="fil_213_System.Web.HttpUtility.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Web.HttpUtility.dll" KeyPath="yes" />
+      <Component Id="cmp_213_System.Security.Principal.dll" Guid="*">
+        <File Id="fil_213_System.Security.Principal.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Security.Principal.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_214_System.Windows.dll" Guid="*">
-        <File Id="fil_214_System.Windows.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Windows.dll" KeyPath="yes" />
+      <Component Id="cmp_214_System.Security.Principal.Windows.dll" Guid="*">
+        <File Id="fil_214_System.Security.Principal.Windows.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Security.Principal.Windows.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_215_System.Xml.dll" Guid="*">
-        <File Id="fil_215_System.Xml.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Xml.dll" KeyPath="yes" />
+      <Component Id="cmp_215_System.Security.SecureString.dll" Guid="*">
+        <File Id="fil_215_System.Security.SecureString.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Security.SecureString.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_216_System.Xml.Linq.dll" Guid="*">
-        <File Id="fil_216_System.Xml.Linq.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Xml.Linq.dll" KeyPath="yes" />
+      <Component Id="cmp_216_System.ServiceModel.Web.dll" Guid="*">
+        <File Id="fil_216_System.ServiceModel.Web.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.ServiceModel.Web.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_217_System.Xml.ReaderWriter.dll" Guid="*">
-        <File Id="fil_217_System.Xml.ReaderWriter.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Xml.ReaderWriter.dll" KeyPath="yes" />
+      <Component Id="cmp_217_System.ServiceProcess.dll" Guid="*">
+        <File Id="fil_217_System.ServiceProcess.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.ServiceProcess.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_218_System.Xml.Serialization.dll" Guid="*">
-        <File Id="fil_218_System.Xml.Serialization.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Xml.Serialization.dll" KeyPath="yes" />
+      <Component Id="cmp_218_System.Text.Encoding.CodePages.dll" Guid="*">
+        <File Id="fil_218_System.Text.Encoding.CodePages.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Text.Encoding.CodePages.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_219_System.Xml.XDocument.dll" Guid="*">
-        <File Id="fil_219_System.Xml.XDocument.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Xml.XDocument.dll" KeyPath="yes" />
+      <Component Id="cmp_219_System.Text.Encoding.dll" Guid="*">
+        <File Id="fil_219_System.Text.Encoding.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Text.Encoding.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_220_System.Xml.XmlDocument.dll" Guid="*">
-        <File Id="fil_220_System.Xml.XmlDocument.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Xml.XmlDocument.dll" KeyPath="yes" />
+      <Component Id="cmp_220_System.Text.Encoding.Extensions.dll" Guid="*">
+        <File Id="fil_220_System.Text.Encoding.Extensions.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Text.Encoding.Extensions.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_221_System.Xml.XmlSerializer.dll" Guid="*">
-        <File Id="fil_221_System.Xml.XmlSerializer.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Xml.XmlSerializer.dll" KeyPath="yes" />
+      <Component Id="cmp_221_System.Text.Encodings.Web.dll" Guid="*">
+        <File Id="fil_221_System.Text.Encodings.Web.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Text.Encodings.Web.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_222_System.Xml.XPath.dll" Guid="*">
-        <File Id="fil_222_System.Xml.XPath.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Xml.XPath.dll" KeyPath="yes" />
+      <Component Id="cmp_222_System.Text.Json.dll" Guid="*">
+        <File Id="fil_222_System.Text.Json.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Text.Json.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_223_System.Xml.XPath.XDocument.dll" Guid="*">
-        <File Id="fil_223_System.Xml.XPath.XDocument.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Xml.XPath.XDocument.dll" KeyPath="yes" />
+      <Component Id="cmp_223_System.Text.RegularExpressions.dll" Guid="*">
+        <File Id="fil_223_System.Text.RegularExpressions.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Text.RegularExpressions.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_224_WebView2Loader.dll" Guid="*">
-        <File Id="fil_224_WebView2Loader.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\WebView2Loader.dll" KeyPath="yes" />
+      <Component Id="cmp_224_System.Threading.Channels.dll" Guid="*">
+        <File Id="fil_224_System.Threading.Channels.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Threading.Channels.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_225_WindowsBase.dll" Guid="*">
-        <File Id="fil_225_WindowsBase.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\WindowsBase.dll" KeyPath="yes" />
+      <Component Id="cmp_225_System.Threading.dll" Guid="*">
+        <File Id="fil_225_System.Threading.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Threading.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_226_WinRT.Runtime.dll" Guid="*">
-        <File Id="fil_226_WinRT.Runtime.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\WinRT.Runtime.dll" KeyPath="yes" />
+      <Component Id="cmp_226_System.Threading.Overlapped.dll" Guid="*">
+        <File Id="fil_226_System.Threading.Overlapped.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Threading.Overlapped.dll" KeyPath="yes" />
       </Component>
-      <Component Id="cmp_227_YamlDotNet.dll" Guid="*">
-        <File Id="fil_227_YamlDotNet.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\YamlDotNet.dll" KeyPath="yes" />
+      <Component Id="cmp_227_System.Threading.Tasks.Dataflow.dll" Guid="*">
+        <File Id="fil_227_System.Threading.Tasks.Dataflow.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Threading.Tasks.Dataflow.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_228_System.Threading.Tasks.dll" Guid="*">
+        <File Id="fil_228_System.Threading.Tasks.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Threading.Tasks.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_229_System.Threading.Tasks.Extensions.dll" Guid="*">
+        <File Id="fil_229_System.Threading.Tasks.Extensions.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Threading.Tasks.Extensions.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_230_System.Threading.Tasks.Parallel.dll" Guid="*">
+        <File Id="fil_230_System.Threading.Tasks.Parallel.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Threading.Tasks.Parallel.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_231_System.Threading.Thread.dll" Guid="*">
+        <File Id="fil_231_System.Threading.Thread.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Threading.Thread.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_232_System.Threading.ThreadPool.dll" Guid="*">
+        <File Id="fil_232_System.Threading.ThreadPool.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Threading.ThreadPool.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_233_System.Threading.Timer.dll" Guid="*">
+        <File Id="fil_233_System.Threading.Timer.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Threading.Timer.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_234_System.Transactions.dll" Guid="*">
+        <File Id="fil_234_System.Transactions.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Transactions.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_235_System.Transactions.Local.dll" Guid="*">
+        <File Id="fil_235_System.Transactions.Local.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Transactions.Local.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_236_System.ValueTuple.dll" Guid="*">
+        <File Id="fil_236_System.ValueTuple.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.ValueTuple.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_237_System.Web.dll" Guid="*">
+        <File Id="fil_237_System.Web.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Web.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_238_System.Web.HttpUtility.dll" Guid="*">
+        <File Id="fil_238_System.Web.HttpUtility.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Web.HttpUtility.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_239_System.Windows.dll" Guid="*">
+        <File Id="fil_239_System.Windows.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Windows.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_240_System.Xml.dll" Guid="*">
+        <File Id="fil_240_System.Xml.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Xml.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_241_System.Xml.Linq.dll" Guid="*">
+        <File Id="fil_241_System.Xml.Linq.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Xml.Linq.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_242_System.Xml.ReaderWriter.dll" Guid="*">
+        <File Id="fil_242_System.Xml.ReaderWriter.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Xml.ReaderWriter.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_243_System.Xml.Serialization.dll" Guid="*">
+        <File Id="fil_243_System.Xml.Serialization.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Xml.Serialization.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_244_System.Xml.XDocument.dll" Guid="*">
+        <File Id="fil_244_System.Xml.XDocument.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Xml.XDocument.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_245_System.Xml.XmlDocument.dll" Guid="*">
+        <File Id="fil_245_System.Xml.XmlDocument.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Xml.XmlDocument.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_246_System.Xml.XmlSerializer.dll" Guid="*">
+        <File Id="fil_246_System.Xml.XmlSerializer.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Xml.XmlSerializer.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_247_System.Xml.XPath.dll" Guid="*">
+        <File Id="fil_247_System.Xml.XPath.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Xml.XPath.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_248_System.Xml.XPath.XDocument.dll" Guid="*">
+        <File Id="fil_248_System.Xml.XPath.XDocument.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\System.Xml.XPath.XDocument.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_249_TEMPLATE_RULES.md" Guid="*">
+        <File Id="fil_249_TEMPLATE_RULES.md" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\TEMPLATE_RULES.md" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_250_WebView2Loader.dll" Guid="*">
+        <File Id="fil_250_WebView2Loader.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\WebView2Loader.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_251_WindowsBase.dll" Guid="*">
+        <File Id="fil_251_WindowsBase.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\WindowsBase.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_252_WinRT.Runtime.dll" Guid="*">
+        <File Id="fil_252_WinRT.Runtime.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\WinRT.Runtime.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_253_YamlDotNet.dll" Guid="*">
+        <File Id="fil_253_YamlDotNet.dll" Source="C:\Users\lzh\Documents\Project_file\App1\App1\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\YamlDotNet.dll" KeyPath="yes" />
       </Component>
     </DirectoryRef>
   </Fragment>
   <Fragment>
     <ComponentGroup Id="AppFiles">
-      <ComponentRef Id="cmp_1_App1.deps.json" />
-      <ComponentRef Id="cmp_2_App1.dll" />
-      <ComponentRef Id="cmp_3_App1.exe" />
-      <ComponentRef Id="cmp_4_App1.pdb" />
-      <ComponentRef Id="cmp_5_App1.runtimeconfig.json" />
-      <ComponentRef Id="cmp_6_AppIcon.ico" />
-      <ComponentRef Id="cmp_7_clretwrc.dll" />
-      <ComponentRef Id="cmp_8_clrgc.dll" />
-      <ComponentRef Id="cmp_9_clrjit.dll" />
-      <ComponentRef Id="cmp_10_coreclr.dll" />
-      <ComponentRef Id="cmp_11_createdump.exe" />
-      <ComponentRef Id="cmp_12_hostfxr.dll" />
-      <ComponentRef Id="cmp_13_hostpolicy.dll" />
-      <ComponentRef Id="cmp_14_Microsoft.CSharp.dll" />
-      <ComponentRef Id="cmp_15_Microsoft.DiaSymReader.Native.amd64.dll" />
-      <ComponentRef Id="cmp_16_Microsoft.Graphics.Imaging.Projection.dll" />
-      <ComponentRef Id="cmp_17_Microsoft.InteractiveExperiences.Projection.dll" />
-      <ComponentRef Id="cmp_18_Microsoft.ML.OnnxRuntime.dll" />
-      <ComponentRef Id="cmp_19_Microsoft.Security.Authentication.OAuth.Projection.dll" />
-      <ComponentRef Id="cmp_20_Microsoft.VisualBasic.Core.dll" />
-      <ComponentRef Id="cmp_21_Microsoft.VisualBasic.dll" />
-      <ComponentRef Id="cmp_22_Microsoft.Web.WebView2.Core.dll" />
-      <ComponentRef Id="cmp_23_Microsoft.Web.WebView2.Core.Projection.dll" />
-      <ComponentRef Id="cmp_24_Microsoft.Win32.Primitives.dll" />
-      <ComponentRef Id="cmp_25_Microsoft.Win32.Registry.dll" />
-      <ComponentRef Id="cmp_26_Microsoft.Windows.AI.ContentSafety.Projection.dll" />
-      <ComponentRef Id="cmp_27_Microsoft.Windows.AI.Foundation.Projection.dll" />
-      <ComponentRef Id="cmp_28_Microsoft.Windows.AI.Imaging.Projection.dll" />
-      <ComponentRef Id="cmp_29_Microsoft.Windows.AI.MachineLearning.Projection.dll" />
-      <ComponentRef Id="cmp_30_Microsoft.Windows.AI.Projection.dll" />
-      <ComponentRef Id="cmp_31_Microsoft.Windows.AI.Text.Projection.dll" />
-      <ComponentRef Id="cmp_32_Microsoft.Windows.ApplicationModel.Background.Projection.dll" />
-      <ComponentRef Id="cmp_33_Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.d" />
-      <ComponentRef Id="cmp_34_Microsoft.Windows.ApplicationModel.DynamicDependency.Projection" />
-      <ComponentRef Id="cmp_35_Microsoft.Windows.ApplicationModel.Resources.Projection.dll" />
-      <ComponentRef Id="cmp_36_Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection" />
-      <ComponentRef Id="cmp_37_Microsoft.Windows.AppLifecycle.Projection.dll" />
-      <ComponentRef Id="cmp_38_Microsoft.Windows.AppNotifications.Builder.Projection.dll" />
-      <ComponentRef Id="cmp_39_Microsoft.Windows.AppNotifications.Projection.dll" />
-      <ComponentRef Id="cmp_40_Microsoft.Windows.BadgeNotifications.Projection.dll" />
-      <ComponentRef Id="cmp_41_Microsoft.Windows.Foundation.Projection.dll" />
-      <ComponentRef Id="cmp_42_Microsoft.Windows.Management.Deployment.Projection.dll" />
-      <ComponentRef Id="cmp_43_Microsoft.Windows.Media.Capture.Projection.dll" />
-      <ComponentRef Id="cmp_44_Microsoft.Windows.PushNotifications.Projection.dll" />
-      <ComponentRef Id="cmp_45_Microsoft.Windows.SDK.NET.dll" />
-      <ComponentRef Id="cmp_46_Microsoft.Windows.Security.AccessControl.Projection.dll" />
-      <ComponentRef Id="cmp_47_Microsoft.Windows.Storage.Pickers.Projection.dll" />
-      <ComponentRef Id="cmp_48_Microsoft.Windows.Storage.Projection.dll" />
-      <ComponentRef Id="cmp_49_Microsoft.Windows.System.Power.Projection.dll" />
-      <ComponentRef Id="cmp_50_Microsoft.Windows.System.Projection.dll" />
-      <ComponentRef Id="cmp_51_Microsoft.Windows.Widgets.Projection.dll" />
-      <ComponentRef Id="cmp_52_Microsoft.WindowsAppRuntime.Bootstrap.dll" />
-      <ComponentRef Id="cmp_53_Microsoft.WindowsAppRuntime.Bootstrap.Net.dll" />
-      <ComponentRef Id="cmp_54_Microsoft.WinUI.dll" />
-      <ComponentRef Id="cmp_55_mscordaccore.dll" />
-      <ComponentRef Id="cmp_56_mscordaccore_amd64_amd64_8.0.2526.11203.dll" />
-      <ComponentRef Id="cmp_57_mscordbi.dll" />
-      <ComponentRef Id="cmp_58_mscorlib.dll" />
-      <ComponentRef Id="cmp_59_mscorrc.dll" />
-      <ComponentRef Id="cmp_60_msquic.dll" />
-      <ComponentRef Id="cmp_61_netstandard.dll" />
-      <ComponentRef Id="cmp_62_System.AppContext.dll" />
-      <ComponentRef Id="cmp_63_System.Buffers.dll" />
-      <ComponentRef Id="cmp_64_System.Collections.Concurrent.dll" />
-      <ComponentRef Id="cmp_65_System.Collections.dll" />
-      <ComponentRef Id="cmp_66_System.Collections.Immutable.dll" />
-      <ComponentRef Id="cmp_67_System.Collections.NonGeneric.dll" />
-      <ComponentRef Id="cmp_68_System.Collections.Specialized.dll" />
-      <ComponentRef Id="cmp_69_System.ComponentModel.Annotations.dll" />
-      <ComponentRef Id="cmp_70_System.ComponentModel.DataAnnotations.dll" />
-      <ComponentRef Id="cmp_71_System.ComponentModel.dll" />
-      <ComponentRef Id="cmp_72_System.ComponentModel.EventBasedAsync.dll" />
-      <ComponentRef Id="cmp_73_System.ComponentModel.Primitives.dll" />
-      <ComponentRef Id="cmp_74_System.ComponentModel.TypeConverter.dll" />
-      <ComponentRef Id="cmp_75_System.Configuration.dll" />
-      <ComponentRef Id="cmp_76_System.Console.dll" />
-      <ComponentRef Id="cmp_77_System.Core.dll" />
-      <ComponentRef Id="cmp_78_System.Data.Common.dll" />
-      <ComponentRef Id="cmp_79_System.Data.DataSetExtensions.dll" />
-      <ComponentRef Id="cmp_80_System.Data.dll" />
-      <ComponentRef Id="cmp_81_System.Diagnostics.Contracts.dll" />
-      <ComponentRef Id="cmp_82_System.Diagnostics.Debug.dll" />
-      <ComponentRef Id="cmp_83_System.Diagnostics.DiagnosticSource.dll" />
-      <ComponentRef Id="cmp_84_System.Diagnostics.FileVersionInfo.dll" />
-      <ComponentRef Id="cmp_85_System.Diagnostics.Process.dll" />
-      <ComponentRef Id="cmp_86_System.Diagnostics.StackTrace.dll" />
-      <ComponentRef Id="cmp_87_System.Diagnostics.TextWriterTraceListener.dll" />
-      <ComponentRef Id="cmp_88_System.Diagnostics.Tools.dll" />
-      <ComponentRef Id="cmp_89_System.Diagnostics.TraceSource.dll" />
-      <ComponentRef Id="cmp_90_System.Diagnostics.Tracing.dll" />
-      <ComponentRef Id="cmp_91_System.dll" />
-      <ComponentRef Id="cmp_92_System.Drawing.dll" />
-      <ComponentRef Id="cmp_93_System.Drawing.Primitives.dll" />
-      <ComponentRef Id="cmp_94_System.Dynamic.Runtime.dll" />
-      <ComponentRef Id="cmp_95_System.Formats.Asn1.dll" />
-      <ComponentRef Id="cmp_96_System.Formats.Tar.dll" />
-      <ComponentRef Id="cmp_97_System.Globalization.Calendars.dll" />
-      <ComponentRef Id="cmp_98_System.Globalization.dll" />
-      <ComponentRef Id="cmp_99_System.Globalization.Extensions.dll" />
-      <ComponentRef Id="cmp_100_System.IO.Compression.Brotli.dll" />
-      <ComponentRef Id="cmp_101_System.IO.Compression.dll" />
-      <ComponentRef Id="cmp_102_System.IO.Compression.FileSystem.dll" />
-      <ComponentRef Id="cmp_103_System.IO.Compression.Native.dll" />
-      <ComponentRef Id="cmp_104_System.IO.Compression.ZipFile.dll" />
-      <ComponentRef Id="cmp_105_System.IO.dll" />
-      <ComponentRef Id="cmp_106_System.IO.FileSystem.AccessControl.dll" />
-      <ComponentRef Id="cmp_107_System.IO.FileSystem.dll" />
-      <ComponentRef Id="cmp_108_System.IO.FileSystem.DriveInfo.dll" />
-      <ComponentRef Id="cmp_109_System.IO.FileSystem.Primitives.dll" />
-      <ComponentRef Id="cmp_110_System.IO.FileSystem.Watcher.dll" />
-      <ComponentRef Id="cmp_111_System.IO.IsolatedStorage.dll" />
-      <ComponentRef Id="cmp_112_System.IO.MemoryMappedFiles.dll" />
-      <ComponentRef Id="cmp_113_System.IO.Pipes.AccessControl.dll" />
-      <ComponentRef Id="cmp_114_System.IO.Pipes.dll" />
-      <ComponentRef Id="cmp_115_System.IO.UnmanagedMemoryStream.dll" />
-      <ComponentRef Id="cmp_116_System.Linq.dll" />
-      <ComponentRef Id="cmp_117_System.Linq.Expressions.dll" />
-      <ComponentRef Id="cmp_118_System.Linq.Parallel.dll" />
-      <ComponentRef Id="cmp_119_System.Linq.Queryable.dll" />
-      <ComponentRef Id="cmp_120_System.Memory.dll" />
-      <ComponentRef Id="cmp_121_System.Net.dll" />
-      <ComponentRef Id="cmp_122_System.Net.Http.dll" />
-      <ComponentRef Id="cmp_123_System.Net.Http.Json.dll" />
-      <ComponentRef Id="cmp_124_System.Net.HttpListener.dll" />
-      <ComponentRef Id="cmp_125_System.Net.Mail.dll" />
-      <ComponentRef Id="cmp_126_System.Net.NameResolution.dll" />
-      <ComponentRef Id="cmp_127_System.Net.NetworkInformation.dll" />
-      <ComponentRef Id="cmp_128_System.Net.Ping.dll" />
-      <ComponentRef Id="cmp_129_System.Net.Primitives.dll" />
-      <ComponentRef Id="cmp_130_System.Net.Quic.dll" />
-      <ComponentRef Id="cmp_131_System.Net.Requests.dll" />
-      <ComponentRef Id="cmp_132_System.Net.Security.dll" />
-      <ComponentRef Id="cmp_133_System.Net.ServicePoint.dll" />
-      <ComponentRef Id="cmp_134_System.Net.Sockets.dll" />
-      <ComponentRef Id="cmp_135_System.Net.WebClient.dll" />
-      <ComponentRef Id="cmp_136_System.Net.WebHeaderCollection.dll" />
-      <ComponentRef Id="cmp_137_System.Net.WebProxy.dll" />
-      <ComponentRef Id="cmp_138_System.Net.WebSockets.Client.dll" />
-      <ComponentRef Id="cmp_139_System.Net.WebSockets.dll" />
-      <ComponentRef Id="cmp_140_System.Numerics.dll" />
-      <ComponentRef Id="cmp_141_System.Numerics.Tensors.dll" />
-      <ComponentRef Id="cmp_142_System.Numerics.Vectors.dll" />
-      <ComponentRef Id="cmp_143_System.ObjectModel.dll" />
-      <ComponentRef Id="cmp_144_System.Private.CoreLib.dll" />
-      <ComponentRef Id="cmp_145_System.Private.DataContractSerialization.dll" />
-      <ComponentRef Id="cmp_146_System.Private.Uri.dll" />
-      <ComponentRef Id="cmp_147_System.Private.Xml.dll" />
-      <ComponentRef Id="cmp_148_System.Private.Xml.Linq.dll" />
-      <ComponentRef Id="cmp_149_System.Reflection.DispatchProxy.dll" />
-      <ComponentRef Id="cmp_150_System.Reflection.dll" />
-      <ComponentRef Id="cmp_151_System.Reflection.Emit.dll" />
-      <ComponentRef Id="cmp_152_System.Reflection.Emit.ILGeneration.dll" />
-      <ComponentRef Id="cmp_153_System.Reflection.Emit.Lightweight.dll" />
-      <ComponentRef Id="cmp_154_System.Reflection.Extensions.dll" />
-      <ComponentRef Id="cmp_155_System.Reflection.Metadata.dll" />
-      <ComponentRef Id="cmp_156_System.Reflection.Primitives.dll" />
-      <ComponentRef Id="cmp_157_System.Reflection.TypeExtensions.dll" />
-      <ComponentRef Id="cmp_158_System.Resources.Reader.dll" />
-      <ComponentRef Id="cmp_159_System.Resources.ResourceManager.dll" />
-      <ComponentRef Id="cmp_160_System.Resources.Writer.dll" />
-      <ComponentRef Id="cmp_161_System.Runtime.CompilerServices.Unsafe.dll" />
-      <ComponentRef Id="cmp_162_System.Runtime.CompilerServices.VisualC.dll" />
-      <ComponentRef Id="cmp_163_System.Runtime.dll" />
-      <ComponentRef Id="cmp_164_System.Runtime.Extensions.dll" />
-      <ComponentRef Id="cmp_165_System.Runtime.Handles.dll" />
-      <ComponentRef Id="cmp_166_System.Runtime.InteropServices.dll" />
-      <ComponentRef Id="cmp_167_System.Runtime.InteropServices.JavaScript.dll" />
-      <ComponentRef Id="cmp_168_System.Runtime.InteropServices.RuntimeInformation.dll" />
-      <ComponentRef Id="cmp_169_System.Runtime.Intrinsics.dll" />
-      <ComponentRef Id="cmp_170_System.Runtime.Loader.dll" />
-      <ComponentRef Id="cmp_171_System.Runtime.Numerics.dll" />
-      <ComponentRef Id="cmp_172_System.Runtime.Serialization.dll" />
-      <ComponentRef Id="cmp_173_System.Runtime.Serialization.Formatters.dll" />
-      <ComponentRef Id="cmp_174_System.Runtime.Serialization.Json.dll" />
-      <ComponentRef Id="cmp_175_System.Runtime.Serialization.Primitives.dll" />
-      <ComponentRef Id="cmp_176_System.Runtime.Serialization.Xml.dll" />
-      <ComponentRef Id="cmp_177_System.Security.AccessControl.dll" />
-      <ComponentRef Id="cmp_178_System.Security.Claims.dll" />
-      <ComponentRef Id="cmp_179_System.Security.Cryptography.Algorithms.dll" />
-      <ComponentRef Id="cmp_180_System.Security.Cryptography.Cng.dll" />
-      <ComponentRef Id="cmp_181_System.Security.Cryptography.Csp.dll" />
-      <ComponentRef Id="cmp_182_System.Security.Cryptography.dll" />
-      <ComponentRef Id="cmp_183_System.Security.Cryptography.Encoding.dll" />
-      <ComponentRef Id="cmp_184_System.Security.Cryptography.OpenSsl.dll" />
-      <ComponentRef Id="cmp_185_System.Security.Cryptography.Primitives.dll" />
-      <ComponentRef Id="cmp_186_System.Security.Cryptography.X509Certificates.dll" />
-      <ComponentRef Id="cmp_187_System.Security.dll" />
-      <ComponentRef Id="cmp_188_System.Security.Principal.dll" />
-      <ComponentRef Id="cmp_189_System.Security.Principal.Windows.dll" />
-      <ComponentRef Id="cmp_190_System.Security.SecureString.dll" />
-      <ComponentRef Id="cmp_191_System.ServiceModel.Web.dll" />
-      <ComponentRef Id="cmp_192_System.ServiceProcess.dll" />
-      <ComponentRef Id="cmp_193_System.Text.Encoding.CodePages.dll" />
-      <ComponentRef Id="cmp_194_System.Text.Encoding.dll" />
-      <ComponentRef Id="cmp_195_System.Text.Encoding.Extensions.dll" />
-      <ComponentRef Id="cmp_196_System.Text.Encodings.Web.dll" />
-      <ComponentRef Id="cmp_197_System.Text.Json.dll" />
-      <ComponentRef Id="cmp_198_System.Text.RegularExpressions.dll" />
-      <ComponentRef Id="cmp_199_System.Threading.Channels.dll" />
-      <ComponentRef Id="cmp_200_System.Threading.dll" />
-      <ComponentRef Id="cmp_201_System.Threading.Overlapped.dll" />
-      <ComponentRef Id="cmp_202_System.Threading.Tasks.Dataflow.dll" />
-      <ComponentRef Id="cmp_203_System.Threading.Tasks.dll" />
-      <ComponentRef Id="cmp_204_System.Threading.Tasks.Extensions.dll" />
-      <ComponentRef Id="cmp_205_System.Threading.Tasks.Parallel.dll" />
-      <ComponentRef Id="cmp_206_System.Threading.Thread.dll" />
-      <ComponentRef Id="cmp_207_System.Threading.ThreadPool.dll" />
-      <ComponentRef Id="cmp_208_System.Threading.Timer.dll" />
-      <ComponentRef Id="cmp_209_System.Transactions.dll" />
-      <ComponentRef Id="cmp_210_System.Transactions.Local.dll" />
-      <ComponentRef Id="cmp_211_System.ValueTuple.dll" />
-      <ComponentRef Id="cmp_212_System.Web.dll" />
-      <ComponentRef Id="cmp_213_System.Web.HttpUtility.dll" />
-      <ComponentRef Id="cmp_214_System.Windows.dll" />
-      <ComponentRef Id="cmp_215_System.Xml.dll" />
-      <ComponentRef Id="cmp_216_System.Xml.Linq.dll" />
-      <ComponentRef Id="cmp_217_System.Xml.ReaderWriter.dll" />
-      <ComponentRef Id="cmp_218_System.Xml.Serialization.dll" />
-      <ComponentRef Id="cmp_219_System.Xml.XDocument.dll" />
-      <ComponentRef Id="cmp_220_System.Xml.XmlDocument.dll" />
-      <ComponentRef Id="cmp_221_System.Xml.XmlSerializer.dll" />
-      <ComponentRef Id="cmp_222_System.Xml.XPath.dll" />
-      <ComponentRef Id="cmp_223_System.Xml.XPath.XDocument.dll" />
-      <ComponentRef Id="cmp_224_WebView2Loader.dll" />
-      <ComponentRef Id="cmp_225_WindowsBase.dll" />
-      <ComponentRef Id="cmp_226_WinRT.Runtime.dll" />
-      <ComponentRef Id="cmp_227_YamlDotNet.dll" />
+      <ComponentRef Id="cmp_1_App.xbf" />
+      <ComponentRef Id="cmp_2_App1.deps.json" />
+      <ComponentRef Id="cmp_3_App1.dll" />
+      <ComponentRef Id="cmp_4_App1.exe" />
+      <ComponentRef Id="cmp_5_App1.pdb" />
+      <ComponentRef Id="cmp_6_App1.pri" />
+      <ComponentRef Id="cmp_7_App1.runtimeconfig.json" />
+      <ComponentRef Id="cmp_8_AppIcon.ico" />
+      <ComponentRef Id="cmp_9_AppIcon.png" />
+      <ComponentRef Id="cmp_10_Assets_AppIcon_redesign_256.png" />
+      <ComponentRef Id="cmp_11_Assets_AppIcon_redesign_512.png" />
+      <ComponentRef Id="cmp_12_Assets_icon_concepts_icon_A_512.png" />
+      <ComponentRef Id="cmp_13_Assets_icon_concepts_icon_B_512.png" />
+      <ComponentRef Id="cmp_14_Assets_icon_concepts_icon_C_512.png" />
+      <ComponentRef Id="cmp_15_Assets_LockScreenLogo.scale_200.png" />
+      <ComponentRef Id="cmp_16_Assets_SplashScreen.scale_200.png" />
+      <ComponentRef Id="cmp_17_Assets_Square150x150Logo.scale_200.png" />
+      <ComponentRef Id="cmp_18_Assets_Square200x200Logo.scale_200.png" />
+      <ComponentRef Id="cmp_19_Assets_Square24x24Logo.scale_200.png" />
+      <ComponentRef Id="cmp_20_Assets_Square44x44Logo.scale_200.png" />
+      <ComponentRef Id="cmp_21_Assets_Square44x44Logo.targetsize_24_altform_unplated.png" />
+      <ComponentRef Id="cmp_22_Assets_StoreLogo.png" />
+      <ComponentRef Id="cmp_23_Assets_Wide310x150Logo.scale_200.png" />
+      <ComponentRef Id="cmp_24_clretwrc.dll" />
+      <ComponentRef Id="cmp_25_clrgc.dll" />
+      <ComponentRef Id="cmp_26_clrjit.dll" />
+      <ComponentRef Id="cmp_27_coreclr.dll" />
+      <ComponentRef Id="cmp_28_createdump.exe" />
+      <ComponentRef Id="cmp_29_hostfxr.dll" />
+      <ComponentRef Id="cmp_30_hostpolicy.dll" />
+      <ComponentRef Id="cmp_31_LaunchShellCommandManager.cmd" />
+      <ComponentRef Id="cmp_32_MainWindow.xbf" />
+      <ComponentRef Id="cmp_33_Microsoft.CSharp.dll" />
+      <ComponentRef Id="cmp_34_Microsoft.DiaSymReader.Native.amd64.dll" />
+      <ComponentRef Id="cmp_35_Microsoft.Graphics.Imaging.Projection.dll" />
+      <ComponentRef Id="cmp_36_Microsoft.InteractiveExperiences.Projection.dll" />
+      <ComponentRef Id="cmp_37_Microsoft.ML.OnnxRuntime.dll" />
+      <ComponentRef Id="cmp_38_Microsoft.Security.Authentication.OAuth.Projection.dll" />
+      <ComponentRef Id="cmp_39_Microsoft.VisualBasic.Core.dll" />
+      <ComponentRef Id="cmp_40_Microsoft.VisualBasic.dll" />
+      <ComponentRef Id="cmp_41_Microsoft.Web.WebView2.Core.dll" />
+      <ComponentRef Id="cmp_42_Microsoft.Web.WebView2.Core.Projection.dll" />
+      <ComponentRef Id="cmp_43_Microsoft.Win32.Primitives.dll" />
+      <ComponentRef Id="cmp_44_Microsoft.Win32.Registry.dll" />
+      <ComponentRef Id="cmp_45_Microsoft.Windows.AI.ContentSafety.Projection.dll" />
+      <ComponentRef Id="cmp_46_Microsoft.Windows.AI.Foundation.Projection.dll" />
+      <ComponentRef Id="cmp_47_Microsoft.Windows.AI.Imaging.Projection.dll" />
+      <ComponentRef Id="cmp_48_Microsoft.Windows.AI.MachineLearning.Projection.dll" />
+      <ComponentRef Id="cmp_49_Microsoft.Windows.AI.Projection.dll" />
+      <ComponentRef Id="cmp_50_Microsoft.Windows.AI.Text.Projection.dll" />
+      <ComponentRef Id="cmp_51_Microsoft.Windows.ApplicationModel.Background.Projection.dll" />
+      <ComponentRef Id="cmp_52_Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.d" />
+      <ComponentRef Id="cmp_53_Microsoft.Windows.ApplicationModel.DynamicDependency.Projection" />
+      <ComponentRef Id="cmp_54_Microsoft.Windows.ApplicationModel.Resources.Projection.dll" />
+      <ComponentRef Id="cmp_55_Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection" />
+      <ComponentRef Id="cmp_56_Microsoft.Windows.AppLifecycle.Projection.dll" />
+      <ComponentRef Id="cmp_57_Microsoft.Windows.AppNotifications.Builder.Projection.dll" />
+      <ComponentRef Id="cmp_58_Microsoft.Windows.AppNotifications.Projection.dll" />
+      <ComponentRef Id="cmp_59_Microsoft.Windows.BadgeNotifications.Projection.dll" />
+      <ComponentRef Id="cmp_60_Microsoft.Windows.Foundation.Projection.dll" />
+      <ComponentRef Id="cmp_61_Microsoft.Windows.Management.Deployment.Projection.dll" />
+      <ComponentRef Id="cmp_62_Microsoft.Windows.Media.Capture.Projection.dll" />
+      <ComponentRef Id="cmp_63_Microsoft.Windows.PushNotifications.Projection.dll" />
+      <ComponentRef Id="cmp_64_Microsoft.Windows.SDK.NET.dll" />
+      <ComponentRef Id="cmp_65_Microsoft.Windows.Security.AccessControl.Projection.dll" />
+      <ComponentRef Id="cmp_66_Microsoft.Windows.Storage.Pickers.Projection.dll" />
+      <ComponentRef Id="cmp_67_Microsoft.Windows.Storage.Projection.dll" />
+      <ComponentRef Id="cmp_68_Microsoft.Windows.System.Power.Projection.dll" />
+      <ComponentRef Id="cmp_69_Microsoft.Windows.System.Projection.dll" />
+      <ComponentRef Id="cmp_70_Microsoft.Windows.Widgets.Projection.dll" />
+      <ComponentRef Id="cmp_71_Microsoft.WindowsAppRuntime.Bootstrap.dll" />
+      <ComponentRef Id="cmp_72_Microsoft.WindowsAppRuntime.Bootstrap.Net.dll" />
+      <ComponentRef Id="cmp_73_Microsoft.WinUI.dll" />
+      <ComponentRef Id="cmp_74_mscordaccore.dll" />
+      <ComponentRef Id="cmp_75_mscordaccore_amd64_amd64_8.0.2526.11203.dll" />
+      <ComponentRef Id="cmp_76_mscordbi.dll" />
+      <ComponentRef Id="cmp_77_mscorlib.dll" />
+      <ComponentRef Id="cmp_78_mscorrc.dll" />
+      <ComponentRef Id="cmp_79_msquic.dll" />
+      <ComponentRef Id="cmp_80_netstandard.dll" />
+      <ComponentRef Id="cmp_81_ShellCommandManager.deps.json" />
+      <ComponentRef Id="cmp_82_ShellCommandManager.dll" />
+      <ComponentRef Id="cmp_83_ShellCommandManager.exe" />
+      <ComponentRef Id="cmp_84_ShellCommandManager.pdb" />
+      <ComponentRef Id="cmp_85_ShellCommandManager.pri" />
+      <ComponentRef Id="cmp_86_ShellCommandManager.runtimeconfig.json" />
+      <ComponentRef Id="cmp_87_System.AppContext.dll" />
+      <ComponentRef Id="cmp_88_System.Buffers.dll" />
+      <ComponentRef Id="cmp_89_System.Collections.Concurrent.dll" />
+      <ComponentRef Id="cmp_90_System.Collections.dll" />
+      <ComponentRef Id="cmp_91_System.Collections.Immutable.dll" />
+      <ComponentRef Id="cmp_92_System.Collections.NonGeneric.dll" />
+      <ComponentRef Id="cmp_93_System.Collections.Specialized.dll" />
+      <ComponentRef Id="cmp_94_System.ComponentModel.Annotations.dll" />
+      <ComponentRef Id="cmp_95_System.ComponentModel.DataAnnotations.dll" />
+      <ComponentRef Id="cmp_96_System.ComponentModel.dll" />
+      <ComponentRef Id="cmp_97_System.ComponentModel.EventBasedAsync.dll" />
+      <ComponentRef Id="cmp_98_System.ComponentModel.Primitives.dll" />
+      <ComponentRef Id="cmp_99_System.ComponentModel.TypeConverter.dll" />
+      <ComponentRef Id="cmp_100_System.Configuration.dll" />
+      <ComponentRef Id="cmp_101_System.Console.dll" />
+      <ComponentRef Id="cmp_102_System.Core.dll" />
+      <ComponentRef Id="cmp_103_System.Data.Common.dll" />
+      <ComponentRef Id="cmp_104_System.Data.DataSetExtensions.dll" />
+      <ComponentRef Id="cmp_105_System.Data.dll" />
+      <ComponentRef Id="cmp_106_System.Diagnostics.Contracts.dll" />
+      <ComponentRef Id="cmp_107_System.Diagnostics.Debug.dll" />
+      <ComponentRef Id="cmp_108_System.Diagnostics.DiagnosticSource.dll" />
+      <ComponentRef Id="cmp_109_System.Diagnostics.FileVersionInfo.dll" />
+      <ComponentRef Id="cmp_110_System.Diagnostics.Process.dll" />
+      <ComponentRef Id="cmp_111_System.Diagnostics.StackTrace.dll" />
+      <ComponentRef Id="cmp_112_System.Diagnostics.TextWriterTraceListener.dll" />
+      <ComponentRef Id="cmp_113_System.Diagnostics.Tools.dll" />
+      <ComponentRef Id="cmp_114_System.Diagnostics.TraceSource.dll" />
+      <ComponentRef Id="cmp_115_System.Diagnostics.Tracing.dll" />
+      <ComponentRef Id="cmp_116_System.dll" />
+      <ComponentRef Id="cmp_117_System.Drawing.dll" />
+      <ComponentRef Id="cmp_118_System.Drawing.Primitives.dll" />
+      <ComponentRef Id="cmp_119_System.Dynamic.Runtime.dll" />
+      <ComponentRef Id="cmp_120_System.Formats.Asn1.dll" />
+      <ComponentRef Id="cmp_121_System.Formats.Tar.dll" />
+      <ComponentRef Id="cmp_122_System.Globalization.Calendars.dll" />
+      <ComponentRef Id="cmp_123_System.Globalization.dll" />
+      <ComponentRef Id="cmp_124_System.Globalization.Extensions.dll" />
+      <ComponentRef Id="cmp_125_System.IO.Compression.Brotli.dll" />
+      <ComponentRef Id="cmp_126_System.IO.Compression.dll" />
+      <ComponentRef Id="cmp_127_System.IO.Compression.FileSystem.dll" />
+      <ComponentRef Id="cmp_128_System.IO.Compression.Native.dll" />
+      <ComponentRef Id="cmp_129_System.IO.Compression.ZipFile.dll" />
+      <ComponentRef Id="cmp_130_System.IO.dll" />
+      <ComponentRef Id="cmp_131_System.IO.FileSystem.AccessControl.dll" />
+      <ComponentRef Id="cmp_132_System.IO.FileSystem.dll" />
+      <ComponentRef Id="cmp_133_System.IO.FileSystem.DriveInfo.dll" />
+      <ComponentRef Id="cmp_134_System.IO.FileSystem.Primitives.dll" />
+      <ComponentRef Id="cmp_135_System.IO.FileSystem.Watcher.dll" />
+      <ComponentRef Id="cmp_136_System.IO.IsolatedStorage.dll" />
+      <ComponentRef Id="cmp_137_System.IO.MemoryMappedFiles.dll" />
+      <ComponentRef Id="cmp_138_System.IO.Pipes.AccessControl.dll" />
+      <ComponentRef Id="cmp_139_System.IO.Pipes.dll" />
+      <ComponentRef Id="cmp_140_System.IO.UnmanagedMemoryStream.dll" />
+      <ComponentRef Id="cmp_141_System.Linq.dll" />
+      <ComponentRef Id="cmp_142_System.Linq.Expressions.dll" />
+      <ComponentRef Id="cmp_143_System.Linq.Parallel.dll" />
+      <ComponentRef Id="cmp_144_System.Linq.Queryable.dll" />
+      <ComponentRef Id="cmp_145_System.Memory.dll" />
+      <ComponentRef Id="cmp_146_System.Net.dll" />
+      <ComponentRef Id="cmp_147_System.Net.Http.dll" />
+      <ComponentRef Id="cmp_148_System.Net.Http.Json.dll" />
+      <ComponentRef Id="cmp_149_System.Net.HttpListener.dll" />
+      <ComponentRef Id="cmp_150_System.Net.Mail.dll" />
+      <ComponentRef Id="cmp_151_System.Net.NameResolution.dll" />
+      <ComponentRef Id="cmp_152_System.Net.NetworkInformation.dll" />
+      <ComponentRef Id="cmp_153_System.Net.Ping.dll" />
+      <ComponentRef Id="cmp_154_System.Net.Primitives.dll" />
+      <ComponentRef Id="cmp_155_System.Net.Quic.dll" />
+      <ComponentRef Id="cmp_156_System.Net.Requests.dll" />
+      <ComponentRef Id="cmp_157_System.Net.Security.dll" />
+      <ComponentRef Id="cmp_158_System.Net.ServicePoint.dll" />
+      <ComponentRef Id="cmp_159_System.Net.Sockets.dll" />
+      <ComponentRef Id="cmp_160_System.Net.WebClient.dll" />
+      <ComponentRef Id="cmp_161_System.Net.WebHeaderCollection.dll" />
+      <ComponentRef Id="cmp_162_System.Net.WebProxy.dll" />
+      <ComponentRef Id="cmp_163_System.Net.WebSockets.Client.dll" />
+      <ComponentRef Id="cmp_164_System.Net.WebSockets.dll" />
+      <ComponentRef Id="cmp_165_System.Numerics.dll" />
+      <ComponentRef Id="cmp_166_System.Numerics.Tensors.dll" />
+      <ComponentRef Id="cmp_167_System.Numerics.Vectors.dll" />
+      <ComponentRef Id="cmp_168_System.ObjectModel.dll" />
+      <ComponentRef Id="cmp_169_System.Private.CoreLib.dll" />
+      <ComponentRef Id="cmp_170_System.Private.DataContractSerialization.dll" />
+      <ComponentRef Id="cmp_171_System.Private.Uri.dll" />
+      <ComponentRef Id="cmp_172_System.Private.Xml.dll" />
+      <ComponentRef Id="cmp_173_System.Private.Xml.Linq.dll" />
+      <ComponentRef Id="cmp_174_System.Reflection.DispatchProxy.dll" />
+      <ComponentRef Id="cmp_175_System.Reflection.dll" />
+      <ComponentRef Id="cmp_176_System.Reflection.Emit.dll" />
+      <ComponentRef Id="cmp_177_System.Reflection.Emit.ILGeneration.dll" />
+      <ComponentRef Id="cmp_178_System.Reflection.Emit.Lightweight.dll" />
+      <ComponentRef Id="cmp_179_System.Reflection.Extensions.dll" />
+      <ComponentRef Id="cmp_180_System.Reflection.Metadata.dll" />
+      <ComponentRef Id="cmp_181_System.Reflection.Primitives.dll" />
+      <ComponentRef Id="cmp_182_System.Reflection.TypeExtensions.dll" />
+      <ComponentRef Id="cmp_183_System.Resources.Reader.dll" />
+      <ComponentRef Id="cmp_184_System.Resources.ResourceManager.dll" />
+      <ComponentRef Id="cmp_185_System.Resources.Writer.dll" />
+      <ComponentRef Id="cmp_186_System.Runtime.CompilerServices.Unsafe.dll" />
+      <ComponentRef Id="cmp_187_System.Runtime.CompilerServices.VisualC.dll" />
+      <ComponentRef Id="cmp_188_System.Runtime.dll" />
+      <ComponentRef Id="cmp_189_System.Runtime.Extensions.dll" />
+      <ComponentRef Id="cmp_190_System.Runtime.Handles.dll" />
+      <ComponentRef Id="cmp_191_System.Runtime.InteropServices.dll" />
+      <ComponentRef Id="cmp_192_System.Runtime.InteropServices.JavaScript.dll" />
+      <ComponentRef Id="cmp_193_System.Runtime.InteropServices.RuntimeInformation.dll" />
+      <ComponentRef Id="cmp_194_System.Runtime.Intrinsics.dll" />
+      <ComponentRef Id="cmp_195_System.Runtime.Loader.dll" />
+      <ComponentRef Id="cmp_196_System.Runtime.Numerics.dll" />
+      <ComponentRef Id="cmp_197_System.Runtime.Serialization.dll" />
+      <ComponentRef Id="cmp_198_System.Runtime.Serialization.Formatters.dll" />
+      <ComponentRef Id="cmp_199_System.Runtime.Serialization.Json.dll" />
+      <ComponentRef Id="cmp_200_System.Runtime.Serialization.Primitives.dll" />
+      <ComponentRef Id="cmp_201_System.Runtime.Serialization.Xml.dll" />
+      <ComponentRef Id="cmp_202_System.Security.AccessControl.dll" />
+      <ComponentRef Id="cmp_203_System.Security.Claims.dll" />
+      <ComponentRef Id="cmp_204_System.Security.Cryptography.Algorithms.dll" />
+      <ComponentRef Id="cmp_205_System.Security.Cryptography.Cng.dll" />
+      <ComponentRef Id="cmp_206_System.Security.Cryptography.Csp.dll" />
+      <ComponentRef Id="cmp_207_System.Security.Cryptography.dll" />
+      <ComponentRef Id="cmp_208_System.Security.Cryptography.Encoding.dll" />
+      <ComponentRef Id="cmp_209_System.Security.Cryptography.OpenSsl.dll" />
+      <ComponentRef Id="cmp_210_System.Security.Cryptography.Primitives.dll" />
+      <ComponentRef Id="cmp_211_System.Security.Cryptography.X509Certificates.dll" />
+      <ComponentRef Id="cmp_212_System.Security.dll" />
+      <ComponentRef Id="cmp_213_System.Security.Principal.dll" />
+      <ComponentRef Id="cmp_214_System.Security.Principal.Windows.dll" />
+      <ComponentRef Id="cmp_215_System.Security.SecureString.dll" />
+      <ComponentRef Id="cmp_216_System.ServiceModel.Web.dll" />
+      <ComponentRef Id="cmp_217_System.ServiceProcess.dll" />
+      <ComponentRef Id="cmp_218_System.Text.Encoding.CodePages.dll" />
+      <ComponentRef Id="cmp_219_System.Text.Encoding.dll" />
+      <ComponentRef Id="cmp_220_System.Text.Encoding.Extensions.dll" />
+      <ComponentRef Id="cmp_221_System.Text.Encodings.Web.dll" />
+      <ComponentRef Id="cmp_222_System.Text.Json.dll" />
+      <ComponentRef Id="cmp_223_System.Text.RegularExpressions.dll" />
+      <ComponentRef Id="cmp_224_System.Threading.Channels.dll" />
+      <ComponentRef Id="cmp_225_System.Threading.dll" />
+      <ComponentRef Id="cmp_226_System.Threading.Overlapped.dll" />
+      <ComponentRef Id="cmp_227_System.Threading.Tasks.Dataflow.dll" />
+      <ComponentRef Id="cmp_228_System.Threading.Tasks.dll" />
+      <ComponentRef Id="cmp_229_System.Threading.Tasks.Extensions.dll" />
+      <ComponentRef Id="cmp_230_System.Threading.Tasks.Parallel.dll" />
+      <ComponentRef Id="cmp_231_System.Threading.Thread.dll" />
+      <ComponentRef Id="cmp_232_System.Threading.ThreadPool.dll" />
+      <ComponentRef Id="cmp_233_System.Threading.Timer.dll" />
+      <ComponentRef Id="cmp_234_System.Transactions.dll" />
+      <ComponentRef Id="cmp_235_System.Transactions.Local.dll" />
+      <ComponentRef Id="cmp_236_System.ValueTuple.dll" />
+      <ComponentRef Id="cmp_237_System.Web.dll" />
+      <ComponentRef Id="cmp_238_System.Web.HttpUtility.dll" />
+      <ComponentRef Id="cmp_239_System.Windows.dll" />
+      <ComponentRef Id="cmp_240_System.Xml.dll" />
+      <ComponentRef Id="cmp_241_System.Xml.Linq.dll" />
+      <ComponentRef Id="cmp_242_System.Xml.ReaderWriter.dll" />
+      <ComponentRef Id="cmp_243_System.Xml.Serialization.dll" />
+      <ComponentRef Id="cmp_244_System.Xml.XDocument.dll" />
+      <ComponentRef Id="cmp_245_System.Xml.XmlDocument.dll" />
+      <ComponentRef Id="cmp_246_System.Xml.XmlSerializer.dll" />
+      <ComponentRef Id="cmp_247_System.Xml.XPath.dll" />
+      <ComponentRef Id="cmp_248_System.Xml.XPath.XDocument.dll" />
+      <ComponentRef Id="cmp_249_TEMPLATE_RULES.md" />
+      <ComponentRef Id="cmp_250_WebView2Loader.dll" />
+      <ComponentRef Id="cmp_251_WindowsBase.dll" />
+      <ComponentRef Id="cmp_252_WinRT.Runtime.dll" />
+      <ComponentRef Id="cmp_253_YamlDotNet.dll" />
     </ComponentGroup>
   </Fragment>
 </Wix>

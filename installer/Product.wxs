@@ -3,9 +3,10 @@
   <Package
     Name="Shell Command Manager"
     Manufacturer="F7s"
-    Version="1.0.0"
+    Version="1.0.2"
     UpgradeCode="F5E7DDF7-913D-4700-A1F1-9C45A7B4C419"
-    Language="1033">
+    Language="1033"
+    Scope="perMachine">
 
     <MajorUpgrade DowngradeErrorMessage="A newer version is already installed." />
     <MediaTemplate EmbedCab="yes" />
@@ -17,20 +18,33 @@
     <StandardDirectory Id="ProgramMenuFolder">
       <Directory Id="ProgramMenuDir" Name="Shell Command Manager" />
     </StandardDirectory>
+    <StandardDirectory Id="DesktopFolder" />
 
     <Feature Id="MainFeature" Title="Shell Command Manager" Level="1">
       <ComponentGroupRef Id="AppFiles" />
       <ComponentRef Id="StartMenuShortcutComponent" />
+      <ComponentRef Id="DesktopShortcutComponent" />
     </Feature>
 
     <Component Id="StartMenuShortcutComponent" Directory="ProgramMenuDir" Guid="*">
       <Shortcut
         Id="StartMenuShortcut"
         Name="Shell Command Manager"
-        Target="[INSTALLFOLDER]App1.exe"
+        Target="[SystemFolder]cmd.exe"
+        Arguments="/c &quot;[INSTALLFOLDER]LaunchShellCommandManager.cmd&quot;"
         WorkingDirectory="INSTALLFOLDER" />
       <RemoveFolder Id="RemoveProgramMenuDir" On="uninstall" />
-      <RegistryValue Root="HKCU" Key="Software\\F7s\\ShellCommandManager" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+      <RegistryValue Root="HKLM" Key="Software\\F7s\\ShellCommandManager" Name="StartMenuShortcut" Type="integer" Value="1" KeyPath="yes" />
+    </Component>
+
+    <Component Id="DesktopShortcutComponent" Directory="DesktopFolder" Guid="*">
+      <Shortcut
+        Id="DesktopShortcut"
+        Name="Shell Command Manager"
+        Target="[SystemFolder]cmd.exe"
+        Arguments="/c &quot;[INSTALLFOLDER]LaunchShellCommandManager.cmd&quot;"
+        WorkingDirectory="INSTALLFOLDER" />
+      <RegistryValue Root="HKLM" Key="Software\\F7s\\ShellCommandManager" Name="DesktopShortcut" Type="integer" Value="1" KeyPath="yes" />
     </Component>
   </Package>
 </Wix>

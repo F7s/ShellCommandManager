@@ -1,0 +1,1042 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package Codepage="65001" Manufacturer="F7s" ProductCode="{D8795DC2-CCEC-4A04-BB0F-3861C1B42DF2}" Language="1033" Name="Shell Command Manager" Version="1.0.2" UpgradeCode="{F5E7DDF7-913D-4700-A1F1-9C45A7B4C419}">
+    <StandardDirectory Id="ProgramFiles64Folder">
+      <Directory Id="INSTALLFOLDER" ShortName="i56-_vsn" Name="ShellCommandManager">
+        <Component Id="cmp_1_App.xbf" Guid="{D9C167AB-70F4-596E-8FFF-F36B29F98BD8}" Bitness="always64">
+          <File Id="fil_1_App.xbf" Name="App.xbf" KeyPath="yes" Source="SourceDir\File\fil_1_App.xbf" />
+        </Component>
+        <Component Id="cmp_2_App1.deps.json" Guid="{7B2ACEB4-7C98-51AD-B6EE-51444B588464}" Bitness="always64">
+          <File Id="fil_2_App1.deps.json" ShortName="59ukuob3.jso" Name="App1.deps.json" KeyPath="yes" Source="SourceDir\File\fil_2_App1.deps.json" />
+        </Component>
+        <Component Id="cmp_3_App1.dll" Guid="{EB5C7CAB-E7A4-5FC8-BF73-DEFA252C0DA8}" Bitness="always64">
+          <File Id="fil_3_App1.dll" Name="App1.dll" KeyPath="yes" Source="SourceDir\File\fil_3_App1.dll" />
+        </Component>
+        <Component Id="cmp_4_App1.exe" Guid="{F80C6B03-A1E8-54C0-944D-7263CB653B92}" Bitness="always64">
+          <File Id="fil_4_App1.exe" Name="App1.exe" KeyPath="yes" Source="SourceDir\File\fil_4_App1.exe" />
+        </Component>
+        <Component Id="cmp_5_App1.pdb" Guid="{A7080AFB-357C-57C3-9DF2-127B00500C7E}" Bitness="always64">
+          <File Id="fil_5_App1.pdb" Name="App1.pdb" KeyPath="yes" Source="SourceDir\File\fil_5_App1.pdb" />
+        </Component>
+        <Component Id="cmp_6_App1.pri" Guid="{A9F8F7A0-2123-534C-98D5-4EC06688D174}" Bitness="always64">
+          <File Id="fil_6_App1.pri" Name="App1.pri" KeyPath="yes" Source="SourceDir\File\fil_6_App1.pri" />
+        </Component>
+        <Component Id="cmp_7_App1.runtimeconfig.json" Guid="{A5094E98-765B-5C77-8283-B538BD7562A1}" Bitness="always64">
+          <File Id="fil_7_App1.runtimeconfig.json" ShortName="w8togfpm.jso" Name="App1.runtimeconfig.json" KeyPath="yes" Source="SourceDir\File\fil_7_App1.runtimeconfig.json" />
+        </Component>
+        <Component Id="cmp_8_AppIcon.ico" Guid="{47E341AD-D8D1-5B45-97FC-6B92E8951595}" Bitness="always64">
+          <File Id="fil_8_AppIcon.ico" Name="AppIcon.ico" KeyPath="yes" Source="SourceDir\File\fil_8_AppIcon.ico" />
+        </Component>
+        <Component Id="cmp_9_AppIcon.png" Guid="{19FE0962-016F-56CE-B6FC-27AF892186D2}" Bitness="always64">
+          <File Id="fil_9_AppIcon.png" Name="AppIcon.png" KeyPath="yes" Source="SourceDir\File\fil_9_AppIcon.png" />
+        </Component>
+        <Component Id="cmp_10_Assets_AppIcon_redesign_256.png" Guid="{10C1886D-0796-5473-9538-2D2020271B58}" Bitness="always64">
+          <File Id="fil_10_Assets_AppIcon_redesign_256.png" ShortName="lbjhaj6e.png" Name="AppIcon-redesign-256.png" KeyPath="yes" Source="SourceDir\File\fil_10_Assets_AppIcon_redesign_256.png" />
+        </Component>
+        <Component Id="cmp_11_Assets_AppIcon_redesign_512.png" Guid="{39385404-F8E2-5485-A502-8785113C6E00}" Bitness="always64">
+          <File Id="fil_11_Assets_AppIcon_redesign_512.png" ShortName="ynkzoydi.png" Name="AppIcon-redesign-512.png" KeyPath="yes" Source="SourceDir\File\fil_11_Assets_AppIcon_redesign_512.png" />
+        </Component>
+        <Component Id="cmp_12_Assets_icon_concepts_icon_A_512.png" Guid="{351871CB-6FA0-503A-90AD-EF3B3D6C1755}" Bitness="always64">
+          <File Id="fil_12_Assets_icon_concepts_icon_A_512.png" ShortName="mc0zf7ah.png" Name="icon-A-512.png" KeyPath="yes" Source="SourceDir\File\fil_12_Assets_icon_concepts_icon_A_512.png" />
+        </Component>
+        <Component Id="cmp_13_Assets_icon_concepts_icon_B_512.png" Guid="{00E4C147-6A61-5C71-BFDF-8CF20E5BA2FD}" Bitness="always64">
+          <File Id="fil_13_Assets_icon_concepts_icon_B_512.png" ShortName="rpzbndkf.png" Name="icon-B-512.png" KeyPath="yes" Source="SourceDir\File\fil_13_Assets_icon_concepts_icon_B_512.png" />
+        </Component>
+        <Component Id="cmp_14_Assets_icon_concepts_icon_C_512.png" Guid="{8FEF9235-F66E-552F-832D-5C431C621471}" Bitness="always64">
+          <File Id="fil_14_Assets_icon_concepts_icon_C_512.png" ShortName="6gcskbuj.png" Name="icon-C-512.png" KeyPath="yes" Source="SourceDir\File\fil_14_Assets_icon_concepts_icon_C_512.png" />
+        </Component>
+        <Component Id="cmp_15_Assets_LockScreenLogo.scale_200.png" Guid="{15360BA9-0EB5-59C6-8943-78B5C4757C85}" Bitness="always64">
+          <File Id="fil_15_Assets_LockScreenLogo.scale_200.png" ShortName="iiv-2y3t.png" Name="LockScreenLogo.scale-200.png" KeyPath="yes" Source="SourceDir\File\fil_15_Assets_LockScreenLogo.scale_200.png" />
+        </Component>
+        <Component Id="cmp_16_Assets_SplashScreen.scale_200.png" Guid="{C9201C0A-1BE2-53CD-9469-9FE15AF268F9}" Bitness="always64">
+          <File Id="fil_16_Assets_SplashScreen.scale_200.png" ShortName="gwbirvi7.png" Name="SplashScreen.scale-200.png" KeyPath="yes" Source="SourceDir\File\fil_16_Assets_SplashScreen.scale_200.png" />
+        </Component>
+        <Component Id="cmp_17_Assets_Square150x150Logo.scale_200.png" Guid="{C6236085-89A0-5324-A1B3-AAB377961BB6}" Bitness="always64">
+          <File Id="fil_17_Assets_Square150x150Logo.scale_200.png" ShortName="zdmzoqbn.png" Name="Square150x150Logo.scale-200.png" KeyPath="yes" Source="SourceDir\File\fil_17_Assets_Square150x150Logo.scale_200.png" />
+        </Component>
+        <Component Id="cmp_18_Assets_Square200x200Logo.scale_200.png" Guid="{6FDDEC69-D1B1-5456-9E08-86F28DE9D634}" Bitness="always64">
+          <File Id="fil_18_Assets_Square200x200Logo.scale_200.png" ShortName="y3cnh-zf.png" Name="Square200x200Logo.scale-200.png" KeyPath="yes" Source="SourceDir\File\fil_18_Assets_Square200x200Logo.scale_200.png" />
+        </Component>
+        <Component Id="cmp_19_Assets_Square24x24Logo.scale_200.png" Guid="{C32F5A9E-6B7F-5427-ABC1-89DDF4BF81FC}" Bitness="always64">
+          <File Id="fil_19_Assets_Square24x24Logo.scale_200.png" ShortName="azlu1yre.png" Name="Square24x24Logo.scale-200.png" KeyPath="yes" Source="SourceDir\File\fil_19_Assets_Square24x24Logo.scale_200.png" />
+        </Component>
+        <Component Id="cmp_20_Assets_Square44x44Logo.scale_200.png" Guid="{E7C5D770-9AF4-56C4-B748-F95C1182C538}" Bitness="always64">
+          <File Id="fil_20_Assets_Square44x44Logo.scale_200.png" ShortName="dk7mjcqh.png" Name="Square44x44Logo.scale-200.png" KeyPath="yes" Source="SourceDir\File\fil_20_Assets_Square44x44Logo.scale_200.png" />
+        </Component>
+        <Component Id="cmp_21_Assets_Square44x44Logo.targetsize_24_altform_unplated.png" Guid="{1AEA43E8-C9F4-5932-8D5A-1D6B60A55309}" Bitness="always64">
+          <File Id="fil_21_Assets_Square44x44Logo.targetsize_24_altform_unplated.png" ShortName="mbqaoet7.png" Name="Square44x44Logo.targetsize-24_altform-unplated.png" KeyPath="yes" Source="SourceDir\File\fil_21_Assets_Square44x44Logo.targetsize_24_altform_unplated.png" />
+        </Component>
+        <Component Id="cmp_22_Assets_StoreLogo.png" Guid="{5CDD8A59-D399-5766-A849-46FEAB9F0493}" Bitness="always64">
+          <File Id="fil_22_Assets_StoreLogo.png" ShortName="_p1r3h6w.png" Name="StoreLogo.png" KeyPath="yes" Source="SourceDir\File\fil_22_Assets_StoreLogo.png" />
+        </Component>
+        <Component Id="cmp_23_Assets_Wide310x150Logo.scale_200.png" Guid="{2FEC9144-3A6A-590A-8755-8E3D5EFEA56D}" Bitness="always64">
+          <File Id="fil_23_Assets_Wide310x150Logo.scale_200.png" ShortName="fswd76lg.png" Name="Wide310x150Logo.scale-200.png" KeyPath="yes" Source="SourceDir\File\fil_23_Assets_Wide310x150Logo.scale_200.png" />
+        </Component>
+        <Component Id="cmp_24_clretwrc.dll" Guid="{2F1766AF-666E-5F92-B5AB-760E9279A880}" Bitness="always64">
+          <File Id="fil_24_clretwrc.dll" Name="clretwrc.dll" KeyPath="yes" Source="SourceDir\File\fil_24_clretwrc.dll" />
+        </Component>
+        <Component Id="cmp_25_clrgc.dll" Guid="{36A817B1-541C-5141-9DA1-BE9204CF53D5}" Bitness="always64">
+          <File Id="fil_25_clrgc.dll" Name="clrgc.dll" KeyPath="yes" Source="SourceDir\File\fil_25_clrgc.dll" />
+        </Component>
+        <Component Id="cmp_26_clrjit.dll" Guid="{57887EF0-7EF3-58CD-AD95-7C709CE176BC}" Bitness="always64">
+          <File Id="fil_26_clrjit.dll" Name="clrjit.dll" KeyPath="yes" Source="SourceDir\File\fil_26_clrjit.dll" />
+        </Component>
+        <Component Id="cmp_27_coreclr.dll" Guid="{151C311E-FDCE-5B97-AE59-A5AB9A884767}" Bitness="always64">
+          <File Id="fil_27_coreclr.dll" Name="coreclr.dll" KeyPath="yes" Source="SourceDir\File\fil_27_coreclr.dll" />
+        </Component>
+        <Component Id="cmp_28_createdump.exe" Guid="{A6FB546C-5D5D-546D-BA1C-DE90CDAC0595}" Bitness="always64">
+          <File Id="fil_28_createdump.exe" ShortName="nypq5b2n.exe" Name="createdump.exe" KeyPath="yes" Source="SourceDir\File\fil_28_createdump.exe" />
+        </Component>
+        <Component Id="cmp_29_hostfxr.dll" Guid="{83568D0A-12CD-5B38-BBDC-25F254DF2B0C}" Bitness="always64">
+          <File Id="fil_29_hostfxr.dll" Name="hostfxr.dll" KeyPath="yes" Source="SourceDir\File\fil_29_hostfxr.dll" />
+        </Component>
+        <Component Id="cmp_30_hostpolicy.dll" Guid="{C3AEF1C9-1F4A-5943-A912-0D81D1FCEA10}" Bitness="always64">
+          <File Id="fil_30_hostpolicy.dll" ShortName="7isu13u2.dll" Name="hostpolicy.dll" KeyPath="yes" Source="SourceDir\File\fil_30_hostpolicy.dll" />
+        </Component>
+        <Component Id="cmp_31_LaunchShellCommandManager.cmd" Guid="{24EE9106-C366-5D39-A377-3A13A8AE623A}" Bitness="always64">
+          <File Id="fil_31_LaunchShellCommandManager.cmd" ShortName="v_9mwmcz.cmd" Name="LaunchShellCommandManager.cmd" KeyPath="yes" Source="SourceDir\File\fil_31_LaunchShellCommandManager.cmd" />
+        </Component>
+        <Component Id="cmp_32_MainWindow.xbf" Guid="{E8EF5145-B9F9-5852-9B93-C64788B2B544}" Bitness="always64">
+          <File Id="fil_32_MainWindow.xbf" ShortName="uauqeloh.xbf" Name="MainWindow.xbf" KeyPath="yes" Source="SourceDir\File\fil_32_MainWindow.xbf" />
+        </Component>
+        <Component Id="cmp_33_Microsoft.CSharp.dll" Guid="{14DC3983-17D9-5C39-87D3-FC2838B9B1F6}" Bitness="always64">
+          <File Id="fil_33_Microsoft.CSharp.dll" ShortName="9ui0tiom.dll" Name="Microsoft.CSharp.dll" KeyPath="yes" Source="SourceDir\File\fil_33_Microsoft.CSharp.dll" />
+        </Component>
+        <Component Id="cmp_34_Microsoft.DiaSymReader.Native.amd64.dll" Guid="{B49F9804-1CB6-57EA-A5A6-1FE234676D79}" Bitness="always64">
+          <File Id="fil_34_Microsoft.DiaSymReader.Native.amd64.dll" ShortName="9qrqe_fm.dll" Name="Microsoft.DiaSymReader.Native.amd64.dll" KeyPath="yes" Source="SourceDir\File\fil_34_Microsoft.DiaSymReader.Native.amd64.dll" />
+        </Component>
+        <Component Id="cmp_35_Microsoft.Graphics.Imaging.Projection.dll" Guid="{ACA7B704-4F2F-5FCC-BDF3-B40B04F6C4BD}" Bitness="always64">
+          <File Id="fil_35_Microsoft.Graphics.Imaging.Projection.dll" ShortName="fo5bjqn2.dll" Name="Microsoft.Graphics.Imaging.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_35_Microsoft.Graphics.Imaging.Projection.dll" />
+        </Component>
+        <Component Id="cmp_36_Microsoft.InteractiveExperiences.Projection.dll" Guid="{D0242EE8-072D-5937-B0C6-84F92187177D}" Bitness="always64">
+          <File Id="fil_36_Microsoft.InteractiveExperiences.Projection.dll" ShortName="iutss3lf.dll" Name="Microsoft.InteractiveExperiences.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_36_Microsoft.InteractiveExperiences.Projection.dll" />
+        </Component>
+        <Component Id="cmp_37_Microsoft.ML.OnnxRuntime.dll" Guid="{198C4430-0975-56F0-933E-425BBA682697}" Bitness="always64">
+          <File Id="fil_37_Microsoft.ML.OnnxRuntime.dll" ShortName="-fnwvluq.dll" Name="Microsoft.ML.OnnxRuntime.dll" KeyPath="yes" Source="SourceDir\File\fil_37_Microsoft.ML.OnnxRuntime.dll" />
+        </Component>
+        <Component Id="cmp_38_Microsoft.Security.Authentication.OAuth.Projection.dll" Guid="{D7CFAB82-E25E-5DD9-90CE-71583862F12C}" Bitness="always64">
+          <File Id="fil_38_Microsoft.Security.Authentication.OAuth.Projection.dll" ShortName="q0dvdbon.dll" Name="Microsoft.Security.Authentication.OAuth.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_38_Microsoft.Security.Authentication.OAuth.Projection.dll" />
+        </Component>
+        <Component Id="cmp_39_Microsoft.VisualBasic.Core.dll" Guid="{ADBDF3BD-8101-5473-A0CB-D7EBFF6F3FED}" Bitness="always64">
+          <File Id="fil_39_Microsoft.VisualBasic.Core.dll" ShortName="xxns833e.dll" Name="Microsoft.VisualBasic.Core.dll" KeyPath="yes" Source="SourceDir\File\fil_39_Microsoft.VisualBasic.Core.dll" />
+        </Component>
+        <Component Id="cmp_40_Microsoft.VisualBasic.dll" Guid="{1AF40EFB-7718-5E93-8903-8E31AC9DD6AC}" Bitness="always64">
+          <File Id="fil_40_Microsoft.VisualBasic.dll" ShortName="qjw4n_ia.dll" Name="Microsoft.VisualBasic.dll" KeyPath="yes" Source="SourceDir\File\fil_40_Microsoft.VisualBasic.dll" />
+        </Component>
+        <Component Id="cmp_41_Microsoft.Web.WebView2.Core.dll" Guid="{55C3A5E1-054F-5A30-9978-C981126D0389}" Bitness="always64">
+          <File Id="fil_41_Microsoft.Web.WebView2.Core.dll" ShortName="thzzxdrx.dll" Name="Microsoft.Web.WebView2.Core.dll" KeyPath="yes" Source="SourceDir\File\fil_41_Microsoft.Web.WebView2.Core.dll" />
+        </Component>
+        <Component Id="cmp_42_Microsoft.Web.WebView2.Core.Projection.dll" Guid="{BCB2CB7A-1FAB-5262-B6DA-143B2E5A916A}" Bitness="always64">
+          <File Id="fil_42_Microsoft.Web.WebView2.Core.Projection.dll" ShortName="caixnioq.dll" Name="Microsoft.Web.WebView2.Core.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_42_Microsoft.Web.WebView2.Core.Projection.dll" />
+        </Component>
+        <Component Id="cmp_43_Microsoft.Win32.Primitives.dll" Guid="{618CB512-65F1-512F-BE21-B0BC56E12517}" Bitness="always64">
+          <File Id="fil_43_Microsoft.Win32.Primitives.dll" ShortName="vvuod_c5.dll" Name="Microsoft.Win32.Primitives.dll" KeyPath="yes" Source="SourceDir\File\fil_43_Microsoft.Win32.Primitives.dll" />
+        </Component>
+        <Component Id="cmp_44_Microsoft.Win32.Registry.dll" Guid="{AE7D1C4F-A646-5D30-9FE7-3D128C21FAB6}" Bitness="always64">
+          <File Id="fil_44_Microsoft.Win32.Registry.dll" ShortName="p9gnpsdq.dll" Name="Microsoft.Win32.Registry.dll" KeyPath="yes" Source="SourceDir\File\fil_44_Microsoft.Win32.Registry.dll" />
+        </Component>
+        <Component Id="cmp_45_Microsoft.Windows.AI.ContentSafety.Projection.dll" Guid="{A590D5CB-6BEB-523C-8479-B9EBEBC4823A}" Bitness="always64">
+          <File Id="fil_45_Microsoft.Windows.AI.ContentSafety.Projection.dll" ShortName="xdvrvnmt.dll" Name="Microsoft.Windows.AI.ContentSafety.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_45_Microsoft.Windows.AI.ContentSafety.Projection.dll" />
+        </Component>
+        <Component Id="cmp_46_Microsoft.Windows.AI.Foundation.Projection.dll" Guid="{D1BA3D3D-C26B-5DA4-B437-C44E93A3C291}" Bitness="always64">
+          <File Id="fil_46_Microsoft.Windows.AI.Foundation.Projection.dll" ShortName="t6jnxmjb.dll" Name="Microsoft.Windows.AI.Foundation.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_46_Microsoft.Windows.AI.Foundation.Projection.dll" />
+        </Component>
+        <Component Id="cmp_47_Microsoft.Windows.AI.Imaging.Projection.dll" Guid="{98F23054-E894-5FA7-9A06-0BEF873C92EA}" Bitness="always64">
+          <File Id="fil_47_Microsoft.Windows.AI.Imaging.Projection.dll" ShortName="gzfoqihl.dll" Name="Microsoft.Windows.AI.Imaging.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_47_Microsoft.Windows.AI.Imaging.Projection.dll" />
+        </Component>
+        <Component Id="cmp_48_Microsoft.Windows.AI.MachineLearning.Projection.dll" Guid="{B100B219-E8BB-51DC-BABB-7364F362A640}" Bitness="always64">
+          <File Id="fil_48_Microsoft.Windows.AI.MachineLearning.Projection.dll" ShortName="ivol6ovy.dll" Name="Microsoft.Windows.AI.MachineLearning.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_48_Microsoft.Windows.AI.MachineLearning.Projection.dll" />
+        </Component>
+        <Component Id="cmp_49_Microsoft.Windows.AI.Projection.dll" Guid="{EB7C54A1-A085-5C0A-929A-A7AC19DB952D}" Bitness="always64">
+          <File Id="fil_49_Microsoft.Windows.AI.Projection.dll" ShortName="pz-jlwvi.dll" Name="Microsoft.Windows.AI.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_49_Microsoft.Windows.AI.Projection.dll" />
+        </Component>
+        <Component Id="cmp_50_Microsoft.Windows.AI.Text.Projection.dll" Guid="{9CA0CB6B-6DB1-596D-B0E7-5FDED13B73DC}" Bitness="always64">
+          <File Id="fil_50_Microsoft.Windows.AI.Text.Projection.dll" ShortName="4pawzkrb.dll" Name="Microsoft.Windows.AI.Text.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_50_Microsoft.Windows.AI.Text.Projection.dll" />
+        </Component>
+        <Component Id="cmp_51_Microsoft.Windows.ApplicationModel.Background.Projection.dll" Guid="{BE55EFD4-2B99-5902-AD62-3334EAFF0DCF}" Bitness="always64">
+          <File Id="fil_51_Microsoft.Windows.ApplicationModel.Background.Projection.dll" ShortName="lf4ek-wt.dll" Name="Microsoft.Windows.ApplicationModel.Background.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_51_Microsoft.Windows.ApplicationModel.Background.Projection.dll" />
+        </Component>
+        <Component Id="cmp_52_Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.d" Guid="{0FA77488-E2F4-5F34-85C9-F06463F35381}" Bitness="always64">
+          <File Id="fil_52_Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.d" ShortName="0xtgxfhd.dll" Name="Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll" KeyPath="yes" Source="SourceDir\File\fil_52_Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.d" />
+        </Component>
+        <Component Id="cmp_53_Microsoft.Windows.ApplicationModel.DynamicDependency.Projection" Guid="{533792F9-B9F4-5B1A-A46E-CA35A151C25A}" Bitness="always64">
+          <File Id="fil_53_Microsoft.Windows.ApplicationModel.DynamicDependency.Projection" ShortName="-la3d-3x.dll" Name="Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_53_Microsoft.Windows.ApplicationModel.DynamicDependency.Projection" />
+        </Component>
+        <Component Id="cmp_54_Microsoft.Windows.ApplicationModel.Resources.Projection.dll" Guid="{929339D5-A6ED-5B8A-AF78-D0A0A655A648}" Bitness="always64">
+          <File Id="fil_54_Microsoft.Windows.ApplicationModel.Resources.Projection.dll" ShortName="rhylpb6n.dll" Name="Microsoft.Windows.ApplicationModel.Resources.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_54_Microsoft.Windows.ApplicationModel.Resources.Projection.dll" />
+        </Component>
+        <Component Id="cmp_55_Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection" Guid="{C6E57E13-D489-5F2B-994E-B422048086AB}" Bitness="always64">
+          <File Id="fil_55_Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection" ShortName="tgup94nw.dll" Name="Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_55_Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection" />
+        </Component>
+        <Component Id="cmp_56_Microsoft.Windows.AppLifecycle.Projection.dll" Guid="{6EDFCC72-AA66-571B-91AE-8FB241390471}" Bitness="always64">
+          <File Id="fil_56_Microsoft.Windows.AppLifecycle.Projection.dll" ShortName="3admwugm.dll" Name="Microsoft.Windows.AppLifecycle.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_56_Microsoft.Windows.AppLifecycle.Projection.dll" />
+        </Component>
+        <Component Id="cmp_57_Microsoft.Windows.AppNotifications.Builder.Projection.dll" Guid="{48F98536-3F76-545A-A41E-18C606F86FB3}" Bitness="always64">
+          <File Id="fil_57_Microsoft.Windows.AppNotifications.Builder.Projection.dll" ShortName="sukpf0jp.dll" Name="Microsoft.Windows.AppNotifications.Builder.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_57_Microsoft.Windows.AppNotifications.Builder.Projection.dll" />
+        </Component>
+        <Component Id="cmp_58_Microsoft.Windows.AppNotifications.Projection.dll" Guid="{077C085E-A4A2-52A4-9D01-CCCBE355DCBB}" Bitness="always64">
+          <File Id="fil_58_Microsoft.Windows.AppNotifications.Projection.dll" ShortName="crfu3lxk.dll" Name="Microsoft.Windows.AppNotifications.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_58_Microsoft.Windows.AppNotifications.Projection.dll" />
+        </Component>
+        <Component Id="cmp_59_Microsoft.Windows.BadgeNotifications.Projection.dll" Guid="{47AF15EC-9111-58EC-84CD-A6800369A27C}" Bitness="always64">
+          <File Id="fil_59_Microsoft.Windows.BadgeNotifications.Projection.dll" ShortName="n3xd9uqm.dll" Name="Microsoft.Windows.BadgeNotifications.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_59_Microsoft.Windows.BadgeNotifications.Projection.dll" />
+        </Component>
+        <Component Id="cmp_60_Microsoft.Windows.Foundation.Projection.dll" Guid="{1BB502EB-B5CF-509F-8C01-791679AC3314}" Bitness="always64">
+          <File Id="fil_60_Microsoft.Windows.Foundation.Projection.dll" ShortName="ojmllpv5.dll" Name="Microsoft.Windows.Foundation.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_60_Microsoft.Windows.Foundation.Projection.dll" />
+        </Component>
+        <Component Id="cmp_61_Microsoft.Windows.Management.Deployment.Projection.dll" Guid="{E9CE2DEB-BB25-5C90-8D45-E25049E3AF3E}" Bitness="always64">
+          <File Id="fil_61_Microsoft.Windows.Management.Deployment.Projection.dll" ShortName="fjmpcdjm.dll" Name="Microsoft.Windows.Management.Deployment.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_61_Microsoft.Windows.Management.Deployment.Projection.dll" />
+        </Component>
+        <Component Id="cmp_62_Microsoft.Windows.Media.Capture.Projection.dll" Guid="{072A4B9F-16F4-57CC-8185-B436D8DC41ED}" Bitness="always64">
+          <File Id="fil_62_Microsoft.Windows.Media.Capture.Projection.dll" ShortName="ww0-n6lk.dll" Name="Microsoft.Windows.Media.Capture.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_62_Microsoft.Windows.Media.Capture.Projection.dll" />
+        </Component>
+        <Component Id="cmp_63_Microsoft.Windows.PushNotifications.Projection.dll" Guid="{26C9BB9A-AAC6-5092-B77B-47E9FED91205}" Bitness="always64">
+          <File Id="fil_63_Microsoft.Windows.PushNotifications.Projection.dll" ShortName="lap7iqhf.dll" Name="Microsoft.Windows.PushNotifications.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_63_Microsoft.Windows.PushNotifications.Projection.dll" />
+        </Component>
+        <Component Id="cmp_64_Microsoft.Windows.SDK.NET.dll" Guid="{DB23B184-FE95-595F-92A4-9954E72FD85E}" Bitness="always64">
+          <File Id="fil_64_Microsoft.Windows.SDK.NET.dll" ShortName="lz4txfw_.dll" Name="Microsoft.Windows.SDK.NET.dll" KeyPath="yes" Source="SourceDir\File\fil_64_Microsoft.Windows.SDK.NET.dll" />
+        </Component>
+        <Component Id="cmp_65_Microsoft.Windows.Security.AccessControl.Projection.dll" Guid="{4C1C8D75-2D90-5967-BD9E-2E6F42DDF841}" Bitness="always64">
+          <File Id="fil_65_Microsoft.Windows.Security.AccessControl.Projection.dll" ShortName="zhspzq05.dll" Name="Microsoft.Windows.Security.AccessControl.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_65_Microsoft.Windows.Security.AccessControl.Projection.dll" />
+        </Component>
+        <Component Id="cmp_66_Microsoft.Windows.Storage.Pickers.Projection.dll" Guid="{4CEF0B56-2F4C-5BBA-BFDC-5C9C3DBAE2DF}" Bitness="always64">
+          <File Id="fil_66_Microsoft.Windows.Storage.Pickers.Projection.dll" ShortName="oxrpznzo.dll" Name="Microsoft.Windows.Storage.Pickers.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_66_Microsoft.Windows.Storage.Pickers.Projection.dll" />
+        </Component>
+        <Component Id="cmp_67_Microsoft.Windows.Storage.Projection.dll" Guid="{1CAB91EB-6908-59DF-96BE-AA8FDBE3162A}" Bitness="always64">
+          <File Id="fil_67_Microsoft.Windows.Storage.Projection.dll" ShortName="w3f4e--h.dll" Name="Microsoft.Windows.Storage.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_67_Microsoft.Windows.Storage.Projection.dll" />
+        </Component>
+        <Component Id="cmp_68_Microsoft.Windows.System.Power.Projection.dll" Guid="{7ADFA497-BD48-5A10-B2E8-6817A6075308}" Bitness="always64">
+          <File Id="fil_68_Microsoft.Windows.System.Power.Projection.dll" ShortName="j_xjxvhs.dll" Name="Microsoft.Windows.System.Power.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_68_Microsoft.Windows.System.Power.Projection.dll" />
+        </Component>
+        <Component Id="cmp_69_Microsoft.Windows.System.Projection.dll" Guid="{8366F1F4-4BF2-51D2-886C-25CEF1AFA061}" Bitness="always64">
+          <File Id="fil_69_Microsoft.Windows.System.Projection.dll" ShortName="laubvkii.dll" Name="Microsoft.Windows.System.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_69_Microsoft.Windows.System.Projection.dll" />
+        </Component>
+        <Component Id="cmp_70_Microsoft.Windows.Widgets.Projection.dll" Guid="{018C0B93-500F-5A63-BC31-1B5FDF98EB25}" Bitness="always64">
+          <File Id="fil_70_Microsoft.Windows.Widgets.Projection.dll" ShortName="tqw492pn.dll" Name="Microsoft.Windows.Widgets.Projection.dll" KeyPath="yes" Source="SourceDir\File\fil_70_Microsoft.Windows.Widgets.Projection.dll" />
+        </Component>
+        <Component Id="cmp_71_Microsoft.WindowsAppRuntime.Bootstrap.dll" Guid="{72835E94-2238-54CB-B34C-ED7FFC03F200}" Bitness="always64">
+          <File Id="fil_71_Microsoft.WindowsAppRuntime.Bootstrap.dll" ShortName="ykg8sej5.dll" Name="Microsoft.WindowsAppRuntime.Bootstrap.dll" KeyPath="yes" Source="SourceDir\File\fil_71_Microsoft.WindowsAppRuntime.Bootstrap.dll" />
+        </Component>
+        <Component Id="cmp_72_Microsoft.WindowsAppRuntime.Bootstrap.Net.dll" Guid="{C3D6A7E6-B7EC-5CB2-8E36-8047C49096E8}" Bitness="always64">
+          <File Id="fil_72_Microsoft.WindowsAppRuntime.Bootstrap.Net.dll" ShortName="ucpio4ww.dll" Name="Microsoft.WindowsAppRuntime.Bootstrap.Net.dll" KeyPath="yes" Source="SourceDir\File\fil_72_Microsoft.WindowsAppRuntime.Bootstrap.Net.dll" />
+        </Component>
+        <Component Id="cmp_73_Microsoft.WinUI.dll" Guid="{8E264A83-9917-5C67-A136-76F5C5AFA2B8}" Bitness="always64">
+          <File Id="fil_73_Microsoft.WinUI.dll" ShortName="gp0l0xxh.dll" Name="Microsoft.WinUI.dll" KeyPath="yes" Source="SourceDir\File\fil_73_Microsoft.WinUI.dll" />
+        </Component>
+        <Component Id="cmp_74_mscordaccore.dll" Guid="{1D618934-70D0-5D5E-A965-B30AFA237D6B}" Bitness="always64">
+          <File Id="fil_74_mscordaccore.dll" ShortName="m2nata7e.dll" Name="mscordaccore.dll" KeyPath="yes" Source="SourceDir\File\fil_74_mscordaccore.dll" />
+        </Component>
+        <Component Id="cmp_75_mscordaccore_amd64_amd64_8.0.2526.11203.dll" Guid="{705B5E19-4E30-582D-A048-5E4AF1E09E8A}" Bitness="always64">
+          <File Id="fil_75_mscordaccore_amd64_amd64_8.0.2526.11203.dll" ShortName="sxuxw1id.dll" Name="mscordaccore_amd64_amd64_8.0.2526.11203.dll" KeyPath="yes" Source="SourceDir\File\fil_75_mscordaccore_amd64_amd64_8.0.2526.11203.dll" />
+        </Component>
+        <Component Id="cmp_76_mscordbi.dll" Guid="{7528FD32-5E3F-51AB-A455-35B37E098C9D}" Bitness="always64">
+          <File Id="fil_76_mscordbi.dll" Name="mscordbi.dll" KeyPath="yes" Source="SourceDir\File\fil_76_mscordbi.dll" />
+        </Component>
+        <Component Id="cmp_77_mscorlib.dll" Guid="{CCF99518-2250-5AF9-8794-ED43ED6C528C}" Bitness="always64">
+          <File Id="fil_77_mscorlib.dll" Name="mscorlib.dll" KeyPath="yes" Source="SourceDir\File\fil_77_mscorlib.dll" />
+        </Component>
+        <Component Id="cmp_78_mscorrc.dll" Guid="{5D722DC4-AA7A-5FD8-9A16-63A76312469B}" Bitness="always64">
+          <File Id="fil_78_mscorrc.dll" Name="mscorrc.dll" KeyPath="yes" Source="SourceDir\File\fil_78_mscorrc.dll" />
+        </Component>
+        <Component Id="cmp_79_msquic.dll" Guid="{75592F06-34D9-542F-9501-BE45D4C22497}" Bitness="always64">
+          <File Id="fil_79_msquic.dll" Name="msquic.dll" KeyPath="yes" Source="SourceDir\File\fil_79_msquic.dll" />
+        </Component>
+        <Component Id="cmp_80_netstandard.dll" Guid="{9DC8B200-E877-55A6-A928-1EDC731DEC1C}" Bitness="always64">
+          <File Id="fil_80_netstandard.dll" ShortName="damrvjuu.dll" Name="netstandard.dll" KeyPath="yes" Source="SourceDir\File\fil_80_netstandard.dll" />
+        </Component>
+        <Component Id="cmp_81_ShellCommandManager.deps.json" Guid="{2571394C-88CE-53D6-A6EC-B74C4ACA7E2B}" Bitness="always64">
+          <File Id="fil_81_ShellCommandManager.deps.json" ShortName="cgfaubqc.jso" Name="ShellCommandManager.deps.json" KeyPath="yes" Source="SourceDir\File\fil_81_ShellCommandManager.deps.json" />
+        </Component>
+        <Component Id="cmp_82_ShellCommandManager.dll" Guid="{95096A95-5167-5835-A1C6-8CFBB8086518}" Bitness="always64">
+          <File Id="fil_82_ShellCommandManager.dll" ShortName="sthkchrt.dll" Name="ShellCommandManager.dll" KeyPath="yes" Source="SourceDir\File\fil_82_ShellCommandManager.dll" />
+        </Component>
+        <Component Id="cmp_83_ShellCommandManager.exe" Guid="{6D5CF74F-9FFA-52A3-80F5-716B3C1B725A}" Bitness="always64">
+          <File Id="fil_83_ShellCommandManager.exe" ShortName="zo1x3npe.exe" Name="ShellCommandManager.exe" KeyPath="yes" Source="SourceDir\File\fil_83_ShellCommandManager.exe" />
+        </Component>
+        <Component Id="cmp_84_ShellCommandManager.pdb" Guid="{50667D1A-6895-5BC2-91C4-310F31F39BEE}" Bitness="always64">
+          <File Id="fil_84_ShellCommandManager.pdb" ShortName="u_wq0fam.pdb" Name="ShellCommandManager.pdb" KeyPath="yes" Source="SourceDir\File\fil_84_ShellCommandManager.pdb" />
+        </Component>
+        <Component Id="cmp_85_ShellCommandManager.pri" Guid="{2639B6FC-432D-5619-AB3D-415CD0CAD19F}" Bitness="always64">
+          <File Id="fil_85_ShellCommandManager.pri" ShortName="u3n-72wc.pri" Name="ShellCommandManager.pri" KeyPath="yes" Source="SourceDir\File\fil_85_ShellCommandManager.pri" />
+        </Component>
+        <Component Id="cmp_86_ShellCommandManager.runtimeconfig.json" Guid="{A62DD0B9-CFB4-5D4A-9AEA-58D451232326}" Bitness="always64">
+          <File Id="fil_86_ShellCommandManager.runtimeconfig.json" ShortName="o_mkjppb.jso" Name="ShellCommandManager.runtimeconfig.json" KeyPath="yes" Source="SourceDir\File\fil_86_ShellCommandManager.runtimeconfig.json" />
+        </Component>
+        <Component Id="cmp_87_System.AppContext.dll" Guid="{214A09FD-A256-534B-A1BC-FEF778024738}" Bitness="always64">
+          <File Id="fil_87_System.AppContext.dll" ShortName="q3dz2lq1.dll" Name="System.AppContext.dll" KeyPath="yes" Source="SourceDir\File\fil_87_System.AppContext.dll" />
+        </Component>
+        <Component Id="cmp_88_System.Buffers.dll" Guid="{DD63F980-6D78-5909-88DA-9F3A9A489F8F}" Bitness="always64">
+          <File Id="fil_88_System.Buffers.dll" ShortName="bbnzcy2c.dll" Name="System.Buffers.dll" KeyPath="yes" Source="SourceDir\File\fil_88_System.Buffers.dll" />
+        </Component>
+        <Component Id="cmp_89_System.Collections.Concurrent.dll" Guid="{978B1290-C070-545D-AA12-772D95011F96}" Bitness="always64">
+          <File Id="fil_89_System.Collections.Concurrent.dll" ShortName="y7w2qmo1.dll" Name="System.Collections.Concurrent.dll" KeyPath="yes" Source="SourceDir\File\fil_89_System.Collections.Concurrent.dll" />
+        </Component>
+        <Component Id="cmp_90_System.Collections.dll" Guid="{264B2B6A-A919-5716-B395-257AB7C96F1A}" Bitness="always64">
+          <File Id="fil_90_System.Collections.dll" ShortName="olepphcq.dll" Name="System.Collections.dll" KeyPath="yes" Source="SourceDir\File\fil_90_System.Collections.dll" />
+        </Component>
+        <Component Id="cmp_91_System.Collections.Immutable.dll" Guid="{2959D663-AF33-555C-87F5-38403F8C8E61}" Bitness="always64">
+          <File Id="fil_91_System.Collections.Immutable.dll" ShortName="pxabt8qe.dll" Name="System.Collections.Immutable.dll" KeyPath="yes" Source="SourceDir\File\fil_91_System.Collections.Immutable.dll" />
+        </Component>
+        <Component Id="cmp_92_System.Collections.NonGeneric.dll" Guid="{ED7B7FB3-6228-51DA-B1C3-A375C5C47B55}" Bitness="always64">
+          <File Id="fil_92_System.Collections.NonGeneric.dll" ShortName="-qheiw8z.dll" Name="System.Collections.NonGeneric.dll" KeyPath="yes" Source="SourceDir\File\fil_92_System.Collections.NonGeneric.dll" />
+        </Component>
+        <Component Id="cmp_93_System.Collections.Specialized.dll" Guid="{94A1DD04-9DC9-5D62-A837-EB71D10F05BF}" Bitness="always64">
+          <File Id="fil_93_System.Collections.Specialized.dll" ShortName="4bwn8vdi.dll" Name="System.Collections.Specialized.dll" KeyPath="yes" Source="SourceDir\File\fil_93_System.Collections.Specialized.dll" />
+        </Component>
+        <Component Id="cmp_94_System.ComponentModel.Annotations.dll" Guid="{AF002413-7F0F-5114-B1E7-2365C345B1EB}" Bitness="always64">
+          <File Id="fil_94_System.ComponentModel.Annotations.dll" ShortName="ffkvb6ou.dll" Name="System.ComponentModel.Annotations.dll" KeyPath="yes" Source="SourceDir\File\fil_94_System.ComponentModel.Annotations.dll" />
+        </Component>
+        <Component Id="cmp_95_System.ComponentModel.DataAnnotations.dll" Guid="{289A719E-9D0F-5C81-8E87-17B9B862BD0F}" Bitness="always64">
+          <File Id="fil_95_System.ComponentModel.DataAnnotations.dll" ShortName="l8m_8awv.dll" Name="System.ComponentModel.DataAnnotations.dll" KeyPath="yes" Source="SourceDir\File\fil_95_System.ComponentModel.DataAnnotations.dll" />
+        </Component>
+        <Component Id="cmp_96_System.ComponentModel.dll" Guid="{18378F3F-A8F5-510E-8B86-7A2C39A57912}" Bitness="always64">
+          <File Id="fil_96_System.ComponentModel.dll" ShortName="bwnhcbad.dll" Name="System.ComponentModel.dll" KeyPath="yes" Source="SourceDir\File\fil_96_System.ComponentModel.dll" />
+        </Component>
+        <Component Id="cmp_97_System.ComponentModel.EventBasedAsync.dll" Guid="{2C213D3D-F74C-55FB-8C1D-941F68887C87}" Bitness="always64">
+          <File Id="fil_97_System.ComponentModel.EventBasedAsync.dll" ShortName="sx6im6av.dll" Name="System.ComponentModel.EventBasedAsync.dll" KeyPath="yes" Source="SourceDir\File\fil_97_System.ComponentModel.EventBasedAsync.dll" />
+        </Component>
+        <Component Id="cmp_98_System.ComponentModel.Primitives.dll" Guid="{FC77AA02-1FD6-570C-9937-5B7091FFFA82}" Bitness="always64">
+          <File Id="fil_98_System.ComponentModel.Primitives.dll" ShortName="ucate2pn.dll" Name="System.ComponentModel.Primitives.dll" KeyPath="yes" Source="SourceDir\File\fil_98_System.ComponentModel.Primitives.dll" />
+        </Component>
+        <Component Id="cmp_99_System.ComponentModel.TypeConverter.dll" Guid="{98A0AC23-BE64-516B-AC1E-D7F75A8C5A2F}" Bitness="always64">
+          <File Id="fil_99_System.ComponentModel.TypeConverter.dll" ShortName="fx5sq5tw.dll" Name="System.ComponentModel.TypeConverter.dll" KeyPath="yes" Source="SourceDir\File\fil_99_System.ComponentModel.TypeConverter.dll" />
+        </Component>
+        <Component Id="cmp_100_System.Configuration.dll" Guid="{C0FD13D5-BDB4-5E73-8FB7-69E12C5F3195}" Bitness="always64">
+          <File Id="fil_100_System.Configuration.dll" ShortName="s9vsrntx.dll" Name="System.Configuration.dll" KeyPath="yes" Source="SourceDir\File\fil_100_System.Configuration.dll" />
+        </Component>
+        <Component Id="cmp_101_System.Console.dll" Guid="{6BE89C57-EFDF-507B-8567-D36F3332F45E}" Bitness="always64">
+          <File Id="fil_101_System.Console.dll" ShortName="ee9zvq9h.dll" Name="System.Console.dll" KeyPath="yes" Source="SourceDir\File\fil_101_System.Console.dll" />
+        </Component>
+        <Component Id="cmp_102_System.Core.dll" Guid="{8F3972D3-C9D0-56FD-9322-EE34FECB08EF}" Bitness="always64">
+          <File Id="fil_102_System.Core.dll" ShortName="hanrg4bs.dll" Name="System.Core.dll" KeyPath="yes" Source="SourceDir\File\fil_102_System.Core.dll" />
+        </Component>
+        <Component Id="cmp_103_System.Data.Common.dll" Guid="{B103BF42-8CD4-5D56-BE40-AFD5E59DA070}" Bitness="always64">
+          <File Id="fil_103_System.Data.Common.dll" ShortName="uywzsufn.dll" Name="System.Data.Common.dll" KeyPath="yes" Source="SourceDir\File\fil_103_System.Data.Common.dll" />
+        </Component>
+        <Component Id="cmp_104_System.Data.DataSetExtensions.dll" Guid="{870A9BBA-110A-510D-B043-6CA60017A77C}" Bitness="always64">
+          <File Id="fil_104_System.Data.DataSetExtensions.dll" ShortName="sw-h2ydy.dll" Name="System.Data.DataSetExtensions.dll" KeyPath="yes" Source="SourceDir\File\fil_104_System.Data.DataSetExtensions.dll" />
+        </Component>
+        <Component Id="cmp_105_System.Data.dll" Guid="{EA7B24A2-4D4F-5CE0-AE85-71442DD1557B}" Bitness="always64">
+          <File Id="fil_105_System.Data.dll" ShortName="3owkzcpd.dll" Name="System.Data.dll" KeyPath="yes" Source="SourceDir\File\fil_105_System.Data.dll" />
+        </Component>
+        <Component Id="cmp_106_System.Diagnostics.Contracts.dll" Guid="{CE602CC0-B407-5CFF-ABE0-588A97CD7ED4}" Bitness="always64">
+          <File Id="fil_106_System.Diagnostics.Contracts.dll" ShortName="rduxuuf2.dll" Name="System.Diagnostics.Contracts.dll" KeyPath="yes" Source="SourceDir\File\fil_106_System.Diagnostics.Contracts.dll" />
+        </Component>
+        <Component Id="cmp_107_System.Diagnostics.Debug.dll" Guid="{64D14A3C-53CA-5CF3-8AE9-67B6F05191AD}" Bitness="always64">
+          <File Id="fil_107_System.Diagnostics.Debug.dll" ShortName="vovtzlpo.dll" Name="System.Diagnostics.Debug.dll" KeyPath="yes" Source="SourceDir\File\fil_107_System.Diagnostics.Debug.dll" />
+        </Component>
+        <Component Id="cmp_108_System.Diagnostics.DiagnosticSource.dll" Guid="{1A0AAFDB-E3D3-5A4D-9FAB-62A63437F10A}" Bitness="always64">
+          <File Id="fil_108_System.Diagnostics.DiagnosticSource.dll" ShortName="g66nmekr.dll" Name="System.Diagnostics.DiagnosticSource.dll" KeyPath="yes" Source="SourceDir\File\fil_108_System.Diagnostics.DiagnosticSource.dll" />
+        </Component>
+        <Component Id="cmp_109_System.Diagnostics.FileVersionInfo.dll" Guid="{90276135-2891-5C1F-B8A6-B35F9034ADE2}" Bitness="always64">
+          <File Id="fil_109_System.Diagnostics.FileVersionInfo.dll" ShortName="osgzdhpj.dll" Name="System.Diagnostics.FileVersionInfo.dll" KeyPath="yes" Source="SourceDir\File\fil_109_System.Diagnostics.FileVersionInfo.dll" />
+        </Component>
+        <Component Id="cmp_110_System.Diagnostics.Process.dll" Guid="{A5162963-C971-5A96-9015-F885F3AE495C}" Bitness="always64">
+          <File Id="fil_110_System.Diagnostics.Process.dll" ShortName="77sw92r7.dll" Name="System.Diagnostics.Process.dll" KeyPath="yes" Source="SourceDir\File\fil_110_System.Diagnostics.Process.dll" />
+        </Component>
+        <Component Id="cmp_111_System.Diagnostics.StackTrace.dll" Guid="{8A8B5394-AE50-5987-AB37-2E6992720629}" Bitness="always64">
+          <File Id="fil_111_System.Diagnostics.StackTrace.dll" ShortName="bknlbmpk.dll" Name="System.Diagnostics.StackTrace.dll" KeyPath="yes" Source="SourceDir\File\fil_111_System.Diagnostics.StackTrace.dll" />
+        </Component>
+        <Component Id="cmp_112_System.Diagnostics.TextWriterTraceListener.dll" Guid="{3C4120F7-98E5-570F-88B5-2D0241E86EC9}" Bitness="always64">
+          <File Id="fil_112_System.Diagnostics.TextWriterTraceListener.dll" ShortName="cx0wjxeu.dll" Name="System.Diagnostics.TextWriterTraceListener.dll" KeyPath="yes" Source="SourceDir\File\fil_112_System.Diagnostics.TextWriterTraceListener.dll" />
+        </Component>
+        <Component Id="cmp_113_System.Diagnostics.Tools.dll" Guid="{837960B3-8551-5A83-85BA-A6E1D3EE0BBA}" Bitness="always64">
+          <File Id="fil_113_System.Diagnostics.Tools.dll" ShortName="txxi03n6.dll" Name="System.Diagnostics.Tools.dll" KeyPath="yes" Source="SourceDir\File\fil_113_System.Diagnostics.Tools.dll" />
+        </Component>
+        <Component Id="cmp_114_System.Diagnostics.TraceSource.dll" Guid="{5793789F-9553-5395-9ED6-5BE5140184F3}" Bitness="always64">
+          <File Id="fil_114_System.Diagnostics.TraceSource.dll" ShortName="mvrnfyt-.dll" Name="System.Diagnostics.TraceSource.dll" KeyPath="yes" Source="SourceDir\File\fil_114_System.Diagnostics.TraceSource.dll" />
+        </Component>
+        <Component Id="cmp_115_System.Diagnostics.Tracing.dll" Guid="{15A95193-A4E2-5F1F-9903-9B0BFBA9D84A}" Bitness="always64">
+          <File Id="fil_115_System.Diagnostics.Tracing.dll" ShortName="5kjs-z-p.dll" Name="System.Diagnostics.Tracing.dll" KeyPath="yes" Source="SourceDir\File\fil_115_System.Diagnostics.Tracing.dll" />
+        </Component>
+        <Component Id="cmp_116_System.dll" Guid="{63FE9973-A924-5B99-A2D8-19075C75E94B}" Bitness="always64">
+          <File Id="fil_116_System.dll" Name="System.dll" KeyPath="yes" Source="SourceDir\File\fil_116_System.dll" />
+        </Component>
+        <Component Id="cmp_117_System.Drawing.dll" Guid="{0C98D8D7-684A-5577-A75F-B1D997CB09C3}" Bitness="always64">
+          <File Id="fil_117_System.Drawing.dll" ShortName="wfziblrc.dll" Name="System.Drawing.dll" KeyPath="yes" Source="SourceDir\File\fil_117_System.Drawing.dll" />
+        </Component>
+        <Component Id="cmp_118_System.Drawing.Primitives.dll" Guid="{F4F43771-0698-52A7-9DDE-D19C52B0C9DC}" Bitness="always64">
+          <File Id="fil_118_System.Drawing.Primitives.dll" ShortName="umd0x-kb.dll" Name="System.Drawing.Primitives.dll" KeyPath="yes" Source="SourceDir\File\fil_118_System.Drawing.Primitives.dll" />
+        </Component>
+        <Component Id="cmp_119_System.Dynamic.Runtime.dll" Guid="{6217D173-F26A-5E31-A265-542084A012C4}" Bitness="always64">
+          <File Id="fil_119_System.Dynamic.Runtime.dll" ShortName="aotuwp-v.dll" Name="System.Dynamic.Runtime.dll" KeyPath="yes" Source="SourceDir\File\fil_119_System.Dynamic.Runtime.dll" />
+        </Component>
+        <Component Id="cmp_120_System.Formats.Asn1.dll" Guid="{5C9B6488-2373-5A7E-BFB8-E6D2C8FA9DDE}" Bitness="always64">
+          <File Id="fil_120_System.Formats.Asn1.dll" ShortName="qfvrb093.dll" Name="System.Formats.Asn1.dll" KeyPath="yes" Source="SourceDir\File\fil_120_System.Formats.Asn1.dll" />
+        </Component>
+        <Component Id="cmp_121_System.Formats.Tar.dll" Guid="{E98D5EBC-58CE-5BE6-AE7F-28F954943F50}" Bitness="always64">
+          <File Id="fil_121_System.Formats.Tar.dll" ShortName="7cts4jl5.dll" Name="System.Formats.Tar.dll" KeyPath="yes" Source="SourceDir\File\fil_121_System.Formats.Tar.dll" />
+        </Component>
+        <Component Id="cmp_122_System.Globalization.Calendars.dll" Guid="{528FAF9D-02BB-5B2E-B6D5-85C05AB2103F}" Bitness="always64">
+          <File Id="fil_122_System.Globalization.Calendars.dll" ShortName="5gemmmu-.dll" Name="System.Globalization.Calendars.dll" KeyPath="yes" Source="SourceDir\File\fil_122_System.Globalization.Calendars.dll" />
+        </Component>
+        <Component Id="cmp_123_System.Globalization.dll" Guid="{C616C025-6A2D-5AA5-844F-5C4B7EA5CC06}" Bitness="always64">
+          <File Id="fil_123_System.Globalization.dll" ShortName="ignbd-e8.dll" Name="System.Globalization.dll" KeyPath="yes" Source="SourceDir\File\fil_123_System.Globalization.dll" />
+        </Component>
+        <Component Id="cmp_124_System.Globalization.Extensions.dll" Guid="{E8734337-DBB8-5D60-8F17-DF78660217F8}" Bitness="always64">
+          <File Id="fil_124_System.Globalization.Extensions.dll" ShortName="jf_reyqw.dll" Name="System.Globalization.Extensions.dll" KeyPath="yes" Source="SourceDir\File\fil_124_System.Globalization.Extensions.dll" />
+        </Component>
+        <Component Id="cmp_125_System.IO.Compression.Brotli.dll" Guid="{E937F5A4-3C4B-51C6-813E-9A23EEF61CC1}" Bitness="always64">
+          <File Id="fil_125_System.IO.Compression.Brotli.dll" ShortName="erxgshje.dll" Name="System.IO.Compression.Brotli.dll" KeyPath="yes" Source="SourceDir\File\fil_125_System.IO.Compression.Brotli.dll" />
+        </Component>
+        <Component Id="cmp_126_System.IO.Compression.dll" Guid="{B47EAFBF-DCFC-5365-8AB1-7DDE4B5B85C6}" Bitness="always64">
+          <File Id="fil_126_System.IO.Compression.dll" ShortName="m3f9_c72.dll" Name="System.IO.Compression.dll" KeyPath="yes" Source="SourceDir\File\fil_126_System.IO.Compression.dll" />
+        </Component>
+        <Component Id="cmp_127_System.IO.Compression.FileSystem.dll" Guid="{B096FA1B-EFC8-5E96-99B2-EDC0228D709D}" Bitness="always64">
+          <File Id="fil_127_System.IO.Compression.FileSystem.dll" ShortName="yhe8sx89.dll" Name="System.IO.Compression.FileSystem.dll" KeyPath="yes" Source="SourceDir\File\fil_127_System.IO.Compression.FileSystem.dll" />
+        </Component>
+        <Component Id="cmp_128_System.IO.Compression.Native.dll" Guid="{D3C509CA-1BFD-51E5-A679-2EAD0BFBB56F}" Bitness="always64">
+          <File Id="fil_128_System.IO.Compression.Native.dll" ShortName="ovfkdldv.dll" Name="System.IO.Compression.Native.dll" KeyPath="yes" Source="SourceDir\File\fil_128_System.IO.Compression.Native.dll" />
+        </Component>
+        <Component Id="cmp_129_System.IO.Compression.ZipFile.dll" Guid="{91F76457-7EF8-51DC-8804-113F85704FA1}" Bitness="always64">
+          <File Id="fil_129_System.IO.Compression.ZipFile.dll" ShortName="hrn0g88c.dll" Name="System.IO.Compression.ZipFile.dll" KeyPath="yes" Source="SourceDir\File\fil_129_System.IO.Compression.ZipFile.dll" />
+        </Component>
+        <Component Id="cmp_130_System.IO.dll" Guid="{4169628E-07E4-5824-AE16-D5246D8E9BE6}" Bitness="always64">
+          <File Id="fil_130_System.IO.dll" ShortName="_ak3amfe.dll" Name="System.IO.dll" KeyPath="yes" Source="SourceDir\File\fil_130_System.IO.dll" />
+        </Component>
+        <Component Id="cmp_131_System.IO.FileSystem.AccessControl.dll" Guid="{165092EF-C9B2-5C88-A1BB-6FD92B50A836}" Bitness="always64">
+          <File Id="fil_131_System.IO.FileSystem.AccessControl.dll" ShortName="xu2utbur.dll" Name="System.IO.FileSystem.AccessControl.dll" KeyPath="yes" Source="SourceDir\File\fil_131_System.IO.FileSystem.AccessControl.dll" />
+        </Component>
+        <Component Id="cmp_132_System.IO.FileSystem.dll" Guid="{91E1E4CA-F3BC-501E-B383-2DD0322424AD}" Bitness="always64">
+          <File Id="fil_132_System.IO.FileSystem.dll" ShortName="tzk7qjng.dll" Name="System.IO.FileSystem.dll" KeyPath="yes" Source="SourceDir\File\fil_132_System.IO.FileSystem.dll" />
+        </Component>
+        <Component Id="cmp_133_System.IO.FileSystem.DriveInfo.dll" Guid="{1C7DCF6E-774E-5AB8-BAD4-116B40427851}" Bitness="always64">
+          <File Id="fil_133_System.IO.FileSystem.DriveInfo.dll" ShortName="2ohrpsgf.dll" Name="System.IO.FileSystem.DriveInfo.dll" KeyPath="yes" Source="SourceDir\File\fil_133_System.IO.FileSystem.DriveInfo.dll" />
+        </Component>
+        <Component Id="cmp_134_System.IO.FileSystem.Primitives.dll" Guid="{F3A8306A-6E82-5BE0-B877-8DB8CCDF3FB1}" Bitness="always64">
+          <File Id="fil_134_System.IO.FileSystem.Primitives.dll" ShortName="-x3fzu_u.dll" Name="System.IO.FileSystem.Primitives.dll" KeyPath="yes" Source="SourceDir\File\fil_134_System.IO.FileSystem.Primitives.dll" />
+        </Component>
+        <Component Id="cmp_135_System.IO.FileSystem.Watcher.dll" Guid="{36CF5654-AADE-5577-A116-BC8A098B87D8}" Bitness="always64">
+          <File Id="fil_135_System.IO.FileSystem.Watcher.dll" ShortName="l98f3k_v.dll" Name="System.IO.FileSystem.Watcher.dll" KeyPath="yes" Source="SourceDir\File\fil_135_System.IO.FileSystem.Watcher.dll" />
+        </Component>
+        <Component Id="cmp_136_System.IO.IsolatedStorage.dll" Guid="{A2EDE6BB-A36E-5D7B-B7CD-488A1E557A5B}" Bitness="always64">
+          <File Id="fil_136_System.IO.IsolatedStorage.dll" ShortName="xxrl7tne.dll" Name="System.IO.IsolatedStorage.dll" KeyPath="yes" Source="SourceDir\File\fil_136_System.IO.IsolatedStorage.dll" />
+        </Component>
+        <Component Id="cmp_137_System.IO.MemoryMappedFiles.dll" Guid="{1BA7F92F-1192-57C6-9738-025CF5BE4205}" Bitness="always64">
+          <File Id="fil_137_System.IO.MemoryMappedFiles.dll" ShortName="n_0xqfcq.dll" Name="System.IO.MemoryMappedFiles.dll" KeyPath="yes" Source="SourceDir\File\fil_137_System.IO.MemoryMappedFiles.dll" />
+        </Component>
+        <Component Id="cmp_138_System.IO.Pipes.AccessControl.dll" Guid="{E3B6B126-3E4F-5BE7-ABA8-553361336F1F}" Bitness="always64">
+          <File Id="fil_138_System.IO.Pipes.AccessControl.dll" ShortName="bp2x2t7w.dll" Name="System.IO.Pipes.AccessControl.dll" KeyPath="yes" Source="SourceDir\File\fil_138_System.IO.Pipes.AccessControl.dll" />
+        </Component>
+        <Component Id="cmp_139_System.IO.Pipes.dll" Guid="{EBA19751-D07D-55B1-A4BD-8B990ED747EB}" Bitness="always64">
+          <File Id="fil_139_System.IO.Pipes.dll" ShortName="crd3izba.dll" Name="System.IO.Pipes.dll" KeyPath="yes" Source="SourceDir\File\fil_139_System.IO.Pipes.dll" />
+        </Component>
+        <Component Id="cmp_140_System.IO.UnmanagedMemoryStream.dll" Guid="{FF446959-7CB8-5910-A2C0-B55A18B71246}" Bitness="always64">
+          <File Id="fil_140_System.IO.UnmanagedMemoryStream.dll" ShortName="5ygulxi1.dll" Name="System.IO.UnmanagedMemoryStream.dll" KeyPath="yes" Source="SourceDir\File\fil_140_System.IO.UnmanagedMemoryStream.dll" />
+        </Component>
+        <Component Id="cmp_141_System.Linq.dll" Guid="{EE287A0E-95C9-5317-938F-78065487488D}" Bitness="always64">
+          <File Id="fil_141_System.Linq.dll" ShortName="p3cltfls.dll" Name="System.Linq.dll" KeyPath="yes" Source="SourceDir\File\fil_141_System.Linq.dll" />
+        </Component>
+        <Component Id="cmp_142_System.Linq.Expressions.dll" Guid="{A3BAF521-43D1-5A39-B68A-E682704D98A1}" Bitness="always64">
+          <File Id="fil_142_System.Linq.Expressions.dll" ShortName="elnp5bqs.dll" Name="System.Linq.Expressions.dll" KeyPath="yes" Source="SourceDir\File\fil_142_System.Linq.Expressions.dll" />
+        </Component>
+        <Component Id="cmp_143_System.Linq.Parallel.dll" Guid="{2F10A89F-5940-5F09-8896-8125AAAACEF2}" Bitness="always64">
+          <File Id="fil_143_System.Linq.Parallel.dll" ShortName="oziimmnd.dll" Name="System.Linq.Parallel.dll" KeyPath="yes" Source="SourceDir\File\fil_143_System.Linq.Parallel.dll" />
+        </Component>
+        <Component Id="cmp_144_System.Linq.Queryable.dll" Guid="{985C6FDC-AB72-584A-AF5B-F501F13333DD}" Bitness="always64">
+          <File Id="fil_144_System.Linq.Queryable.dll" ShortName="85iiug3m.dll" Name="System.Linq.Queryable.dll" KeyPath="yes" Source="SourceDir\File\fil_144_System.Linq.Queryable.dll" />
+        </Component>
+        <Component Id="cmp_145_System.Memory.dll" Guid="{1C75B24C-9761-5E74-BA0E-971DDB3C524B}" Bitness="always64">
+          <File Id="fil_145_System.Memory.dll" ShortName="wkmoleb3.dll" Name="System.Memory.dll" KeyPath="yes" Source="SourceDir\File\fil_145_System.Memory.dll" />
+        </Component>
+        <Component Id="cmp_146_System.Net.dll" Guid="{BE6FE11C-6F7D-5304-87B1-E56E33639A08}" Bitness="always64">
+          <File Id="fil_146_System.Net.dll" ShortName="ehondicw.dll" Name="System.Net.dll" KeyPath="yes" Source="SourceDir\File\fil_146_System.Net.dll" />
+        </Component>
+        <Component Id="cmp_147_System.Net.Http.dll" Guid="{7170D1F4-5F22-50D6-8DF9-1CE3BD95D3CB}" Bitness="always64">
+          <File Id="fil_147_System.Net.Http.dll" ShortName="bvwwjslf.dll" Name="System.Net.Http.dll" KeyPath="yes" Source="SourceDir\File\fil_147_System.Net.Http.dll" />
+        </Component>
+        <Component Id="cmp_148_System.Net.Http.Json.dll" Guid="{31B65A0B-0196-5F71-9539-474DF49693B3}" Bitness="always64">
+          <File Id="fil_148_System.Net.Http.Json.dll" ShortName="nh0h2kz5.dll" Name="System.Net.Http.Json.dll" KeyPath="yes" Source="SourceDir\File\fil_148_System.Net.Http.Json.dll" />
+        </Component>
+        <Component Id="cmp_149_System.Net.HttpListener.dll" Guid="{68848A63-9303-53C0-A788-12E600E510E8}" Bitness="always64">
+          <File Id="fil_149_System.Net.HttpListener.dll" ShortName="zodkyx2x.dll" Name="System.Net.HttpListener.dll" KeyPath="yes" Source="SourceDir\File\fil_149_System.Net.HttpListener.dll" />
+        </Component>
+        <Component Id="cmp_150_System.Net.Mail.dll" Guid="{ED08042C-0799-5DD3-A87F-CB44401993B2}" Bitness="always64">
+          <File Id="fil_150_System.Net.Mail.dll" ShortName="1yhjhzqs.dll" Name="System.Net.Mail.dll" KeyPath="yes" Source="SourceDir\File\fil_150_System.Net.Mail.dll" />
+        </Component>
+        <Component Id="cmp_151_System.Net.NameResolution.dll" Guid="{532587E9-81FA-577F-8C67-E93CC45EAF78}" Bitness="always64">
+          <File Id="fil_151_System.Net.NameResolution.dll" ShortName="j_u-x_ew.dll" Name="System.Net.NameResolution.dll" KeyPath="yes" Source="SourceDir\File\fil_151_System.Net.NameResolution.dll" />
+        </Component>
+        <Component Id="cmp_152_System.Net.NetworkInformation.dll" Guid="{FC05DC1A-62FD-5C9F-A033-11C38516EBB9}" Bitness="always64">
+          <File Id="fil_152_System.Net.NetworkInformation.dll" ShortName="kvjvwiaf.dll" Name="System.Net.NetworkInformation.dll" KeyPath="yes" Source="SourceDir\File\fil_152_System.Net.NetworkInformation.dll" />
+        </Component>
+        <Component Id="cmp_153_System.Net.Ping.dll" Guid="{2F77E9E9-E5B0-5124-8B69-0AB385702EDA}" Bitness="always64">
+          <File Id="fil_153_System.Net.Ping.dll" ShortName="hs39zk1g.dll" Name="System.Net.Ping.dll" KeyPath="yes" Source="SourceDir\File\fil_153_System.Net.Ping.dll" />
+        </Component>
+        <Component Id="cmp_154_System.Net.Primitives.dll" Guid="{03347973-339E-5E81-8DD0-4004D3F625C0}" Bitness="always64">
+          <File Id="fil_154_System.Net.Primitives.dll" ShortName="rxwobf1e.dll" Name="System.Net.Primitives.dll" KeyPath="yes" Source="SourceDir\File\fil_154_System.Net.Primitives.dll" />
+        </Component>
+        <Component Id="cmp_155_System.Net.Quic.dll" Guid="{B87F94A0-A2E6-5673-A104-6BCC6EF2E47D}" Bitness="always64">
+          <File Id="fil_155_System.Net.Quic.dll" ShortName="iai96x2a.dll" Name="System.Net.Quic.dll" KeyPath="yes" Source="SourceDir\File\fil_155_System.Net.Quic.dll" />
+        </Component>
+        <Component Id="cmp_156_System.Net.Requests.dll" Guid="{A55A8A1E-1F75-5782-B4BC-134469E32DCA}" Bitness="always64">
+          <File Id="fil_156_System.Net.Requests.dll" ShortName="3xhrl8na.dll" Name="System.Net.Requests.dll" KeyPath="yes" Source="SourceDir\File\fil_156_System.Net.Requests.dll" />
+        </Component>
+        <Component Id="cmp_157_System.Net.Security.dll" Guid="{F5503509-331C-5362-A6D5-103CC4065FFF}" Bitness="always64">
+          <File Id="fil_157_System.Net.Security.dll" ShortName="n_gtwu39.dll" Name="System.Net.Security.dll" KeyPath="yes" Source="SourceDir\File\fil_157_System.Net.Security.dll" />
+        </Component>
+        <Component Id="cmp_158_System.Net.ServicePoint.dll" Guid="{C336E457-F1FB-50DF-AA4B-573A4E7DF4F1}" Bitness="always64">
+          <File Id="fil_158_System.Net.ServicePoint.dll" ShortName="mj5n4m_b.dll" Name="System.Net.ServicePoint.dll" KeyPath="yes" Source="SourceDir\File\fil_158_System.Net.ServicePoint.dll" />
+        </Component>
+        <Component Id="cmp_159_System.Net.Sockets.dll" Guid="{D8170272-6E3D-535D-A991-708899749860}" Bitness="always64">
+          <File Id="fil_159_System.Net.Sockets.dll" ShortName="bn5pc3od.dll" Name="System.Net.Sockets.dll" KeyPath="yes" Source="SourceDir\File\fil_159_System.Net.Sockets.dll" />
+        </Component>
+        <Component Id="cmp_160_System.Net.WebClient.dll" Guid="{AAD33F21-4A3A-5738-9DA8-41247D62924B}" Bitness="always64">
+          <File Id="fil_160_System.Net.WebClient.dll" ShortName="nm8fq4dh.dll" Name="System.Net.WebClient.dll" KeyPath="yes" Source="SourceDir\File\fil_160_System.Net.WebClient.dll" />
+        </Component>
+        <Component Id="cmp_161_System.Net.WebHeaderCollection.dll" Guid="{2312DF63-B935-5CD4-865E-C57141031949}" Bitness="always64">
+          <File Id="fil_161_System.Net.WebHeaderCollection.dll" ShortName="cuz_wvyl.dll" Name="System.Net.WebHeaderCollection.dll" KeyPath="yes" Source="SourceDir\File\fil_161_System.Net.WebHeaderCollection.dll" />
+        </Component>
+        <Component Id="cmp_162_System.Net.WebProxy.dll" Guid="{604985C7-7FDC-523F-9CE0-D32691F9EAFB}" Bitness="always64">
+          <File Id="fil_162_System.Net.WebProxy.dll" ShortName="wi0l9s5l.dll" Name="System.Net.WebProxy.dll" KeyPath="yes" Source="SourceDir\File\fil_162_System.Net.WebProxy.dll" />
+        </Component>
+        <Component Id="cmp_163_System.Net.WebSockets.Client.dll" Guid="{080101B9-A775-5E71-895A-53DB68C54EB4}" Bitness="always64">
+          <File Id="fil_163_System.Net.WebSockets.Client.dll" ShortName="ajr3ivra.dll" Name="System.Net.WebSockets.Client.dll" KeyPath="yes" Source="SourceDir\File\fil_163_System.Net.WebSockets.Client.dll" />
+        </Component>
+        <Component Id="cmp_164_System.Net.WebSockets.dll" Guid="{C06790E6-0B06-5E32-B82E-FDB2AFD09F48}" Bitness="always64">
+          <File Id="fil_164_System.Net.WebSockets.dll" ShortName="r12iwjvt.dll" Name="System.Net.WebSockets.dll" KeyPath="yes" Source="SourceDir\File\fil_164_System.Net.WebSockets.dll" />
+        </Component>
+        <Component Id="cmp_165_System.Numerics.dll" Guid="{0F1D6913-A7BF-5080-9B12-91BAB85DC18E}" Bitness="always64">
+          <File Id="fil_165_System.Numerics.dll" ShortName="fscaajjl.dll" Name="System.Numerics.dll" KeyPath="yes" Source="SourceDir\File\fil_165_System.Numerics.dll" />
+        </Component>
+        <Component Id="cmp_166_System.Numerics.Tensors.dll" Guid="{92FF1177-77A1-573F-BEB9-41A414A0DAE6}" Bitness="always64">
+          <File Id="fil_166_System.Numerics.Tensors.dll" ShortName="zpya1xhu.dll" Name="System.Numerics.Tensors.dll" KeyPath="yes" Source="SourceDir\File\fil_166_System.Numerics.Tensors.dll" />
+        </Component>
+        <Component Id="cmp_167_System.Numerics.Vectors.dll" Guid="{D3D61E01-DD61-561D-8820-8D03B2D89F14}" Bitness="always64">
+          <File Id="fil_167_System.Numerics.Vectors.dll" ShortName="acahynjb.dll" Name="System.Numerics.Vectors.dll" KeyPath="yes" Source="SourceDir\File\fil_167_System.Numerics.Vectors.dll" />
+        </Component>
+        <Component Id="cmp_168_System.ObjectModel.dll" Guid="{A4E125C6-C0C5-56F7-A5D3-56B7C985E3D7}" Bitness="always64">
+          <File Id="fil_168_System.ObjectModel.dll" ShortName="vphqwzps.dll" Name="System.ObjectModel.dll" KeyPath="yes" Source="SourceDir\File\fil_168_System.ObjectModel.dll" />
+        </Component>
+        <Component Id="cmp_169_System.Private.CoreLib.dll" Guid="{1F90957D-5896-5AC5-9110-D4294E26649E}" Bitness="always64">
+          <File Id="fil_169_System.Private.CoreLib.dll" ShortName="pujy_vsa.dll" Name="System.Private.CoreLib.dll" KeyPath="yes" Source="SourceDir\File\fil_169_System.Private.CoreLib.dll" />
+        </Component>
+        <Component Id="cmp_170_System.Private.DataContractSerialization.dll" Guid="{890B6995-C27F-5016-BE0C-EC3897F95448}" Bitness="always64">
+          <File Id="fil_170_System.Private.DataContractSerialization.dll" ShortName="fxwrilzn.dll" Name="System.Private.DataContractSerialization.dll" KeyPath="yes" Source="SourceDir\File\fil_170_System.Private.DataContractSerialization.dll" />
+        </Component>
+        <Component Id="cmp_171_System.Private.Uri.dll" Guid="{2670ED92-5E2F-5511-8897-B4EA5BF731FD}" Bitness="always64">
+          <File Id="fil_171_System.Private.Uri.dll" ShortName="t4iasbxk.dll" Name="System.Private.Uri.dll" KeyPath="yes" Source="SourceDir\File\fil_171_System.Private.Uri.dll" />
+        </Component>
+        <Component Id="cmp_172_System.Private.Xml.dll" Guid="{6691FEF8-CF9B-5159-B260-AF78078C871F}" Bitness="always64">
+          <File Id="fil_172_System.Private.Xml.dll" ShortName="s8vurjgv.dll" Name="System.Private.Xml.dll" KeyPath="yes" Source="SourceDir\File\fil_172_System.Private.Xml.dll" />
+        </Component>
+        <Component Id="cmp_173_System.Private.Xml.Linq.dll" Guid="{0C8A3348-EECB-51EA-A4FE-8DBC3BEE0F2A}" Bitness="always64">
+          <File Id="fil_173_System.Private.Xml.Linq.dll" ShortName="nh4smjxm.dll" Name="System.Private.Xml.Linq.dll" KeyPath="yes" Source="SourceDir\File\fil_173_System.Private.Xml.Linq.dll" />
+        </Component>
+        <Component Id="cmp_174_System.Reflection.DispatchProxy.dll" Guid="{E257A62C-6FE0-5C9A-B338-E6114EC155FB}" Bitness="always64">
+          <File Id="fil_174_System.Reflection.DispatchProxy.dll" ShortName="qhxr4jzu.dll" Name="System.Reflection.DispatchProxy.dll" KeyPath="yes" Source="SourceDir\File\fil_174_System.Reflection.DispatchProxy.dll" />
+        </Component>
+        <Component Id="cmp_175_System.Reflection.dll" Guid="{E5D7F2D7-85A8-568C-B4F4-4B49B1E4ADBB}" Bitness="always64">
+          <File Id="fil_175_System.Reflection.dll" ShortName="zvzztowx.dll" Name="System.Reflection.dll" KeyPath="yes" Source="SourceDir\File\fil_175_System.Reflection.dll" />
+        </Component>
+        <Component Id="cmp_176_System.Reflection.Emit.dll" Guid="{9D8B4987-E7E1-5D5E-B2B4-82E457F27749}" Bitness="always64">
+          <File Id="fil_176_System.Reflection.Emit.dll" ShortName="mihjsuec.dll" Name="System.Reflection.Emit.dll" KeyPath="yes" Source="SourceDir\File\fil_176_System.Reflection.Emit.dll" />
+        </Component>
+        <Component Id="cmp_177_System.Reflection.Emit.ILGeneration.dll" Guid="{04FBDA0E-4036-54C6-B340-F33092315D59}" Bitness="always64">
+          <File Id="fil_177_System.Reflection.Emit.ILGeneration.dll" ShortName="zdthxv44.dll" Name="System.Reflection.Emit.ILGeneration.dll" KeyPath="yes" Source="SourceDir\File\fil_177_System.Reflection.Emit.ILGeneration.dll" />
+        </Component>
+        <Component Id="cmp_178_System.Reflection.Emit.Lightweight.dll" Guid="{16C7FA89-E819-5BDE-A444-17AC9EDF4F58}" Bitness="always64">
+          <File Id="fil_178_System.Reflection.Emit.Lightweight.dll" ShortName="ne977w-s.dll" Name="System.Reflection.Emit.Lightweight.dll" KeyPath="yes" Source="SourceDir\File\fil_178_System.Reflection.Emit.Lightweight.dll" />
+        </Component>
+        <Component Id="cmp_179_System.Reflection.Extensions.dll" Guid="{E5E3FF07-87EF-577D-B6B6-5FC848189AC1}" Bitness="always64">
+          <File Id="fil_179_System.Reflection.Extensions.dll" ShortName="fuh_lgbf.dll" Name="System.Reflection.Extensions.dll" KeyPath="yes" Source="SourceDir\File\fil_179_System.Reflection.Extensions.dll" />
+        </Component>
+        <Component Id="cmp_180_System.Reflection.Metadata.dll" Guid="{AB695AEC-9497-5898-9A53-687D8A1712F0}" Bitness="always64">
+          <File Id="fil_180_System.Reflection.Metadata.dll" ShortName="jglvip3e.dll" Name="System.Reflection.Metadata.dll" KeyPath="yes" Source="SourceDir\File\fil_180_System.Reflection.Metadata.dll" />
+        </Component>
+        <Component Id="cmp_181_System.Reflection.Primitives.dll" Guid="{68BDFE09-9DFD-5299-88D6-52AED279B4AF}" Bitness="always64">
+          <File Id="fil_181_System.Reflection.Primitives.dll" ShortName="uu_ejzos.dll" Name="System.Reflection.Primitives.dll" KeyPath="yes" Source="SourceDir\File\fil_181_System.Reflection.Primitives.dll" />
+        </Component>
+        <Component Id="cmp_182_System.Reflection.TypeExtensions.dll" Guid="{1B3D77FD-0861-594D-8424-64A687380E14}" Bitness="always64">
+          <File Id="fil_182_System.Reflection.TypeExtensions.dll" ShortName="-eo1hsc6.dll" Name="System.Reflection.TypeExtensions.dll" KeyPath="yes" Source="SourceDir\File\fil_182_System.Reflection.TypeExtensions.dll" />
+        </Component>
+        <Component Id="cmp_183_System.Resources.Reader.dll" Guid="{C9ED6F33-BC1F-54CF-86E9-35905873A3BC}" Bitness="always64">
+          <File Id="fil_183_System.Resources.Reader.dll" ShortName="jbxy_fkx.dll" Name="System.Resources.Reader.dll" KeyPath="yes" Source="SourceDir\File\fil_183_System.Resources.Reader.dll" />
+        </Component>
+        <Component Id="cmp_184_System.Resources.ResourceManager.dll" Guid="{7319C014-333E-5A29-8BC1-9B8828028EB1}" Bitness="always64">
+          <File Id="fil_184_System.Resources.ResourceManager.dll" ShortName="qsg_oslz.dll" Name="System.Resources.ResourceManager.dll" KeyPath="yes" Source="SourceDir\File\fil_184_System.Resources.ResourceManager.dll" />
+        </Component>
+        <Component Id="cmp_185_System.Resources.Writer.dll" Guid="{42776943-BA72-55D7-85F8-07A6295ED219}" Bitness="always64">
+          <File Id="fil_185_System.Resources.Writer.dll" ShortName="wkhrqr8m.dll" Name="System.Resources.Writer.dll" KeyPath="yes" Source="SourceDir\File\fil_185_System.Resources.Writer.dll" />
+        </Component>
+        <Component Id="cmp_186_System.Runtime.CompilerServices.Unsafe.dll" Guid="{C5636D2D-AC0E-51F6-AAC6-E5F97EB03EF2}" Bitness="always64">
+          <File Id="fil_186_System.Runtime.CompilerServices.Unsafe.dll" ShortName="ml-wc2ig.dll" Name="System.Runtime.CompilerServices.Unsafe.dll" KeyPath="yes" Source="SourceDir\File\fil_186_System.Runtime.CompilerServices.Unsafe.dll" />
+        </Component>
+        <Component Id="cmp_187_System.Runtime.CompilerServices.VisualC.dll" Guid="{62EB331E-370B-51B8-8C52-932841AB9471}" Bitness="always64">
+          <File Id="fil_187_System.Runtime.CompilerServices.VisualC.dll" ShortName="4lyd3hej.dll" Name="System.Runtime.CompilerServices.VisualC.dll" KeyPath="yes" Source="SourceDir\File\fil_187_System.Runtime.CompilerServices.VisualC.dll" />
+        </Component>
+        <Component Id="cmp_188_System.Runtime.dll" Guid="{16F3367C-AA62-5458-BBA6-350082AAF485}" Bitness="always64">
+          <File Id="fil_188_System.Runtime.dll" ShortName="rvzu73gt.dll" Name="System.Runtime.dll" KeyPath="yes" Source="SourceDir\File\fil_188_System.Runtime.dll" />
+        </Component>
+        <Component Id="cmp_189_System.Runtime.Extensions.dll" Guid="{073295F9-34C5-5685-9017-83C5DBEE334A}" Bitness="always64">
+          <File Id="fil_189_System.Runtime.Extensions.dll" ShortName="glvyineq.dll" Name="System.Runtime.Extensions.dll" KeyPath="yes" Source="SourceDir\File\fil_189_System.Runtime.Extensions.dll" />
+        </Component>
+        <Component Id="cmp_190_System.Runtime.Handles.dll" Guid="{4DA1A01F-5481-556C-BED5-539BB1395A22}" Bitness="always64">
+          <File Id="fil_190_System.Runtime.Handles.dll" ShortName="tiyfndlj.dll" Name="System.Runtime.Handles.dll" KeyPath="yes" Source="SourceDir\File\fil_190_System.Runtime.Handles.dll" />
+        </Component>
+        <Component Id="cmp_191_System.Runtime.InteropServices.dll" Guid="{FDA7DC4B-B087-5588-AEF7-E2CAB6983FE7}" Bitness="always64">
+          <File Id="fil_191_System.Runtime.InteropServices.dll" ShortName="-f5h1eaa.dll" Name="System.Runtime.InteropServices.dll" KeyPath="yes" Source="SourceDir\File\fil_191_System.Runtime.InteropServices.dll" />
+        </Component>
+        <Component Id="cmp_192_System.Runtime.InteropServices.JavaScript.dll" Guid="{C561C6F8-F03C-5987-9618-27E32EE298D4}" Bitness="always64">
+          <File Id="fil_192_System.Runtime.InteropServices.JavaScript.dll" ShortName="kkovahiy.dll" Name="System.Runtime.InteropServices.JavaScript.dll" KeyPath="yes" Source="SourceDir\File\fil_192_System.Runtime.InteropServices.JavaScript.dll" />
+        </Component>
+        <Component Id="cmp_193_System.Runtime.InteropServices.RuntimeInformation.dll" Guid="{9F5E8B48-78C6-5F90-9459-F8AEF290598F}" Bitness="always64">
+          <File Id="fil_193_System.Runtime.InteropServices.RuntimeInformation.dll" ShortName="soph6hnt.dll" Name="System.Runtime.InteropServices.RuntimeInformation.dll" KeyPath="yes" Source="SourceDir\File\fil_193_System.Runtime.InteropServices.RuntimeInformation.dll" />
+        </Component>
+        <Component Id="cmp_194_System.Runtime.Intrinsics.dll" Guid="{824D8238-1A93-5939-994E-4CF222F5C301}" Bitness="always64">
+          <File Id="fil_194_System.Runtime.Intrinsics.dll" ShortName="b5wgbs8n.dll" Name="System.Runtime.Intrinsics.dll" KeyPath="yes" Source="SourceDir\File\fil_194_System.Runtime.Intrinsics.dll" />
+        </Component>
+        <Component Id="cmp_195_System.Runtime.Loader.dll" Guid="{F819EC39-CF78-5DBD-B8EF-8AF6115423E0}" Bitness="always64">
+          <File Id="fil_195_System.Runtime.Loader.dll" ShortName="hcorgvhj.dll" Name="System.Runtime.Loader.dll" KeyPath="yes" Source="SourceDir\File\fil_195_System.Runtime.Loader.dll" />
+        </Component>
+        <Component Id="cmp_196_System.Runtime.Numerics.dll" Guid="{EFAE6B66-79B2-5D24-B6AD-5663BAECE15E}" Bitness="always64">
+          <File Id="fil_196_System.Runtime.Numerics.dll" ShortName="yzm_3q4h.dll" Name="System.Runtime.Numerics.dll" KeyPath="yes" Source="SourceDir\File\fil_196_System.Runtime.Numerics.dll" />
+        </Component>
+        <Component Id="cmp_197_System.Runtime.Serialization.dll" Guid="{331760BC-7E8B-58F9-AA15-8FC487AA2EAA}" Bitness="always64">
+          <File Id="fil_197_System.Runtime.Serialization.dll" ShortName="iwjkhbat.dll" Name="System.Runtime.Serialization.dll" KeyPath="yes" Source="SourceDir\File\fil_197_System.Runtime.Serialization.dll" />
+        </Component>
+        <Component Id="cmp_198_System.Runtime.Serialization.Formatters.dll" Guid="{5B31DB74-F481-52DD-946B-90B6FB18E201}" Bitness="always64">
+          <File Id="fil_198_System.Runtime.Serialization.Formatters.dll" ShortName="kbdqbd4-.dll" Name="System.Runtime.Serialization.Formatters.dll" KeyPath="yes" Source="SourceDir\File\fil_198_System.Runtime.Serialization.Formatters.dll" />
+        </Component>
+        <Component Id="cmp_199_System.Runtime.Serialization.Json.dll" Guid="{FA4FC708-5937-55E8-9F2E-F64791F14C35}" Bitness="always64">
+          <File Id="fil_199_System.Runtime.Serialization.Json.dll" ShortName="zaqllfkh.dll" Name="System.Runtime.Serialization.Json.dll" KeyPath="yes" Source="SourceDir\File\fil_199_System.Runtime.Serialization.Json.dll" />
+        </Component>
+        <Component Id="cmp_200_System.Runtime.Serialization.Primitives.dll" Guid="{BB8D6594-C904-5052-B988-FDDBE23EC172}" Bitness="always64">
+          <File Id="fil_200_System.Runtime.Serialization.Primitives.dll" ShortName="alnbo2nb.dll" Name="System.Runtime.Serialization.Primitives.dll" KeyPath="yes" Source="SourceDir\File\fil_200_System.Runtime.Serialization.Primitives.dll" />
+        </Component>
+        <Component Id="cmp_201_System.Runtime.Serialization.Xml.dll" Guid="{1C108547-3E0F-56E0-A888-67C4B2726455}" Bitness="always64">
+          <File Id="fil_201_System.Runtime.Serialization.Xml.dll" ShortName="9twc4tqp.dll" Name="System.Runtime.Serialization.Xml.dll" KeyPath="yes" Source="SourceDir\File\fil_201_System.Runtime.Serialization.Xml.dll" />
+        </Component>
+        <Component Id="cmp_202_System.Security.AccessControl.dll" Guid="{07EDCC5A-CEFE-5DEA-8F23-DD79738C9B6F}" Bitness="always64">
+          <File Id="fil_202_System.Security.AccessControl.dll" ShortName="g-yph92p.dll" Name="System.Security.AccessControl.dll" KeyPath="yes" Source="SourceDir\File\fil_202_System.Security.AccessControl.dll" />
+        </Component>
+        <Component Id="cmp_203_System.Security.Claims.dll" Guid="{31A9669F-3C64-50F4-B05D-0B04C13216E0}" Bitness="always64">
+          <File Id="fil_203_System.Security.Claims.dll" ShortName="ddpyxzwr.dll" Name="System.Security.Claims.dll" KeyPath="yes" Source="SourceDir\File\fil_203_System.Security.Claims.dll" />
+        </Component>
+        <Component Id="cmp_204_System.Security.Cryptography.Algorithms.dll" Guid="{EEBA6834-E9AC-59F3-9C49-C8BE17FC64E6}" Bitness="always64">
+          <File Id="fil_204_System.Security.Cryptography.Algorithms.dll" ShortName="8dv_daao.dll" Name="System.Security.Cryptography.Algorithms.dll" KeyPath="yes" Source="SourceDir\File\fil_204_System.Security.Cryptography.Algorithms.dll" />
+        </Component>
+        <Component Id="cmp_205_System.Security.Cryptography.Cng.dll" Guid="{A2267CC1-6F6D-5201-95B7-7B5EAFFB18AF}" Bitness="always64">
+          <File Id="fil_205_System.Security.Cryptography.Cng.dll" ShortName="etwl7fhx.dll" Name="System.Security.Cryptography.Cng.dll" KeyPath="yes" Source="SourceDir\File\fil_205_System.Security.Cryptography.Cng.dll" />
+        </Component>
+        <Component Id="cmp_206_System.Security.Cryptography.Csp.dll" Guid="{9943F2B6-FCAD-5DA2-A7EE-CCCA01220FF2}" Bitness="always64">
+          <File Id="fil_206_System.Security.Cryptography.Csp.dll" ShortName="0-wcbudv.dll" Name="System.Security.Cryptography.Csp.dll" KeyPath="yes" Source="SourceDir\File\fil_206_System.Security.Cryptography.Csp.dll" />
+        </Component>
+        <Component Id="cmp_207_System.Security.Cryptography.dll" Guid="{7C3BA400-B4AD-52EC-9CB1-A0BB03E8B089}" Bitness="always64">
+          <File Id="fil_207_System.Security.Cryptography.dll" ShortName="9mwmekeo.dll" Name="System.Security.Cryptography.dll" KeyPath="yes" Source="SourceDir\File\fil_207_System.Security.Cryptography.dll" />
+        </Component>
+        <Component Id="cmp_208_System.Security.Cryptography.Encoding.dll" Guid="{D5ED3F06-5146-5997-8CFF-EB6F878C8DCA}" Bitness="always64">
+          <File Id="fil_208_System.Security.Cryptography.Encoding.dll" ShortName="og5aillf.dll" Name="System.Security.Cryptography.Encoding.dll" KeyPath="yes" Source="SourceDir\File\fil_208_System.Security.Cryptography.Encoding.dll" />
+        </Component>
+        <Component Id="cmp_209_System.Security.Cryptography.OpenSsl.dll" Guid="{DBC8B28D-4F0C-5998-9CBB-EB5D32E2221D}" Bitness="always64">
+          <File Id="fil_209_System.Security.Cryptography.OpenSsl.dll" ShortName="5wpkq3ib.dll" Name="System.Security.Cryptography.OpenSsl.dll" KeyPath="yes" Source="SourceDir\File\fil_209_System.Security.Cryptography.OpenSsl.dll" />
+        </Component>
+        <Component Id="cmp_210_System.Security.Cryptography.Primitives.dll" Guid="{7E47BDA8-3446-57F5-A6C6-DCFE16736B01}" Bitness="always64">
+          <File Id="fil_210_System.Security.Cryptography.Primitives.dll" ShortName="wgqcw7fn.dll" Name="System.Security.Cryptography.Primitives.dll" KeyPath="yes" Source="SourceDir\File\fil_210_System.Security.Cryptography.Primitives.dll" />
+        </Component>
+        <Component Id="cmp_211_System.Security.Cryptography.X509Certificates.dll" Guid="{5A5F9AE3-F9A4-5DA4-B9BD-2F2C1A0688F7}" Bitness="always64">
+          <File Id="fil_211_System.Security.Cryptography.X509Certificates.dll" ShortName="7ungagnq.dll" Name="System.Security.Cryptography.X509Certificates.dll" KeyPath="yes" Source="SourceDir\File\fil_211_System.Security.Cryptography.X509Certificates.dll" />
+        </Component>
+        <Component Id="cmp_212_System.Security.dll" Guid="{D4A9BC54-C406-58DB-8EFA-B59228E8C026}" Bitness="always64">
+          <File Id="fil_212_System.Security.dll" ShortName="pgaqx1dj.dll" Name="System.Security.dll" KeyPath="yes" Source="SourceDir\File\fil_212_System.Security.dll" />
+        </Component>
+        <Component Id="cmp_213_System.Security.Principal.dll" Guid="{0E8E67AE-26CD-5DBB-B388-1F64B95AE8AF}" Bitness="always64">
+          <File Id="fil_213_System.Security.Principal.dll" ShortName="dugtnr6p.dll" Name="System.Security.Principal.dll" KeyPath="yes" Source="SourceDir\File\fil_213_System.Security.Principal.dll" />
+        </Component>
+        <Component Id="cmp_214_System.Security.Principal.Windows.dll" Guid="{2ADEFDA7-B273-59F0-AC1B-8D55C29A6FA1}" Bitness="always64">
+          <File Id="fil_214_System.Security.Principal.Windows.dll" ShortName="foghxrho.dll" Name="System.Security.Principal.Windows.dll" KeyPath="yes" Source="SourceDir\File\fil_214_System.Security.Principal.Windows.dll" />
+        </Component>
+        <Component Id="cmp_215_System.Security.SecureString.dll" Guid="{CAAD4ABB-DF20-5EC2-AAF9-2DF1BCA2A2DE}" Bitness="always64">
+          <File Id="fil_215_System.Security.SecureString.dll" ShortName="wk28uf7i.dll" Name="System.Security.SecureString.dll" KeyPath="yes" Source="SourceDir\File\fil_215_System.Security.SecureString.dll" />
+        </Component>
+        <Component Id="cmp_216_System.ServiceModel.Web.dll" Guid="{D4FD150B-1BF9-5660-AC88-F58F93DD45DF}" Bitness="always64">
+          <File Id="fil_216_System.ServiceModel.Web.dll" ShortName="1bjfar-j.dll" Name="System.ServiceModel.Web.dll" KeyPath="yes" Source="SourceDir\File\fil_216_System.ServiceModel.Web.dll" />
+        </Component>
+        <Component Id="cmp_217_System.ServiceProcess.dll" Guid="{C95B25BF-4F0D-50AE-B207-16B10EBF07F3}" Bitness="always64">
+          <File Id="fil_217_System.ServiceProcess.dll" ShortName="hqa2-q-x.dll" Name="System.ServiceProcess.dll" KeyPath="yes" Source="SourceDir\File\fil_217_System.ServiceProcess.dll" />
+        </Component>
+        <Component Id="cmp_218_System.Text.Encoding.CodePages.dll" Guid="{56F61E24-E178-56D7-80C4-823973D622AF}" Bitness="always64">
+          <File Id="fil_218_System.Text.Encoding.CodePages.dll" ShortName="7zmkujrj.dll" Name="System.Text.Encoding.CodePages.dll" KeyPath="yes" Source="SourceDir\File\fil_218_System.Text.Encoding.CodePages.dll" />
+        </Component>
+        <Component Id="cmp_219_System.Text.Encoding.dll" Guid="{8C72DBE8-E56B-50C7-B8A3-742ADA290230}" Bitness="always64">
+          <File Id="fil_219_System.Text.Encoding.dll" ShortName="0ey7zmbe.dll" Name="System.Text.Encoding.dll" KeyPath="yes" Source="SourceDir\File\fil_219_System.Text.Encoding.dll" />
+        </Component>
+        <Component Id="cmp_220_System.Text.Encoding.Extensions.dll" Guid="{BAE2C223-E0DE-529F-B055-38BD1E2B0EC0}" Bitness="always64">
+          <File Id="fil_220_System.Text.Encoding.Extensions.dll" ShortName="iou0wsqa.dll" Name="System.Text.Encoding.Extensions.dll" KeyPath="yes" Source="SourceDir\File\fil_220_System.Text.Encoding.Extensions.dll" />
+        </Component>
+        <Component Id="cmp_221_System.Text.Encodings.Web.dll" Guid="{38319887-0B98-531B-8199-CB12A8B03EB2}" Bitness="always64">
+          <File Id="fil_221_System.Text.Encodings.Web.dll" ShortName="aban-ni6.dll" Name="System.Text.Encodings.Web.dll" KeyPath="yes" Source="SourceDir\File\fil_221_System.Text.Encodings.Web.dll" />
+        </Component>
+        <Component Id="cmp_222_System.Text.Json.dll" Guid="{5AD71BCC-41E4-57B7-90D9-21357754CAE1}" Bitness="always64">
+          <File Id="fil_222_System.Text.Json.dll" ShortName="1bdeo6f2.dll" Name="System.Text.Json.dll" KeyPath="yes" Source="SourceDir\File\fil_222_System.Text.Json.dll" />
+        </Component>
+        <Component Id="cmp_223_System.Text.RegularExpressions.dll" Guid="{2D479BF4-A1CB-59BF-B3F2-EA675C4CE057}" Bitness="always64">
+          <File Id="fil_223_System.Text.RegularExpressions.dll" ShortName="knoyzqid.dll" Name="System.Text.RegularExpressions.dll" KeyPath="yes" Source="SourceDir\File\fil_223_System.Text.RegularExpressions.dll" />
+        </Component>
+        <Component Id="cmp_224_System.Threading.Channels.dll" Guid="{6DE6F6FF-BF90-5996-B292-AF82FA03AFE3}" Bitness="always64">
+          <File Id="fil_224_System.Threading.Channels.dll" ShortName="-b4ikgmo.dll" Name="System.Threading.Channels.dll" KeyPath="yes" Source="SourceDir\File\fil_224_System.Threading.Channels.dll" />
+        </Component>
+        <Component Id="cmp_225_System.Threading.dll" Guid="{0B0E086B-18A2-5620-B835-5D8FABA2874C}" Bitness="always64">
+          <File Id="fil_225_System.Threading.dll" ShortName="eyciaqde.dll" Name="System.Threading.dll" KeyPath="yes" Source="SourceDir\File\fil_225_System.Threading.dll" />
+        </Component>
+        <Component Id="cmp_226_System.Threading.Overlapped.dll" Guid="{3B0A27DE-0BEE-5C0B-B963-9E947957BAAE}" Bitness="always64">
+          <File Id="fil_226_System.Threading.Overlapped.dll" ShortName="t3uag5pe.dll" Name="System.Threading.Overlapped.dll" KeyPath="yes" Source="SourceDir\File\fil_226_System.Threading.Overlapped.dll" />
+        </Component>
+        <Component Id="cmp_227_System.Threading.Tasks.Dataflow.dll" Guid="{C4535AB2-F4E8-533B-8E75-ACCFCCFC3A77}" Bitness="always64">
+          <File Id="fil_227_System.Threading.Tasks.Dataflow.dll" ShortName="cnfobmyk.dll" Name="System.Threading.Tasks.Dataflow.dll" KeyPath="yes" Source="SourceDir\File\fil_227_System.Threading.Tasks.Dataflow.dll" />
+        </Component>
+        <Component Id="cmp_228_System.Threading.Tasks.dll" Guid="{623B667B-E34A-5982-9A49-2887D3EB66C9}" Bitness="always64">
+          <File Id="fil_228_System.Threading.Tasks.dll" ShortName="6ky4588c.dll" Name="System.Threading.Tasks.dll" KeyPath="yes" Source="SourceDir\File\fil_228_System.Threading.Tasks.dll" />
+        </Component>
+        <Component Id="cmp_229_System.Threading.Tasks.Extensions.dll" Guid="{27D3879C-5786-57B0-A2AB-9CA8AB76DD76}" Bitness="always64">
+          <File Id="fil_229_System.Threading.Tasks.Extensions.dll" ShortName="xak7cnk9.dll" Name="System.Threading.Tasks.Extensions.dll" KeyPath="yes" Source="SourceDir\File\fil_229_System.Threading.Tasks.Extensions.dll" />
+        </Component>
+        <Component Id="cmp_230_System.Threading.Tasks.Parallel.dll" Guid="{72643050-0D22-5145-B139-4B36DE458499}" Bitness="always64">
+          <File Id="fil_230_System.Threading.Tasks.Parallel.dll" ShortName="zm5vtpn2.dll" Name="System.Threading.Tasks.Parallel.dll" KeyPath="yes" Source="SourceDir\File\fil_230_System.Threading.Tasks.Parallel.dll" />
+        </Component>
+        <Component Id="cmp_231_System.Threading.Thread.dll" Guid="{AE8D7E2A-648A-5EDB-AA2A-8D6AB31982AA}" Bitness="always64">
+          <File Id="fil_231_System.Threading.Thread.dll" ShortName="3qomq1fw.dll" Name="System.Threading.Thread.dll" KeyPath="yes" Source="SourceDir\File\fil_231_System.Threading.Thread.dll" />
+        </Component>
+        <Component Id="cmp_232_System.Threading.ThreadPool.dll" Guid="{315938FE-EFCA-5704-A37C-C6C1B98FC592}" Bitness="always64">
+          <File Id="fil_232_System.Threading.ThreadPool.dll" ShortName="qmqjafr9.dll" Name="System.Threading.ThreadPool.dll" KeyPath="yes" Source="SourceDir\File\fil_232_System.Threading.ThreadPool.dll" />
+        </Component>
+        <Component Id="cmp_233_System.Threading.Timer.dll" Guid="{3A87285E-6D60-5526-AA81-65BCB1C1FAE2}" Bitness="always64">
+          <File Id="fil_233_System.Threading.Timer.dll" ShortName="cf6sn6lu.dll" Name="System.Threading.Timer.dll" KeyPath="yes" Source="SourceDir\File\fil_233_System.Threading.Timer.dll" />
+        </Component>
+        <Component Id="cmp_234_System.Transactions.dll" Guid="{A6564A44-7613-5B21-9F0C-99DA18D8D492}" Bitness="always64">
+          <File Id="fil_234_System.Transactions.dll" ShortName="cni5al_j.dll" Name="System.Transactions.dll" KeyPath="yes" Source="SourceDir\File\fil_234_System.Transactions.dll" />
+        </Component>
+        <Component Id="cmp_235_System.Transactions.Local.dll" Guid="{DB05AFA5-C3A8-5FC8-964C-70A52015FCDF}" Bitness="always64">
+          <File Id="fil_235_System.Transactions.Local.dll" ShortName="38odes7x.dll" Name="System.Transactions.Local.dll" KeyPath="yes" Source="SourceDir\File\fil_235_System.Transactions.Local.dll" />
+        </Component>
+        <Component Id="cmp_236_System.ValueTuple.dll" Guid="{1096B376-A1A7-5E93-8713-66F5D7A3063C}" Bitness="always64">
+          <File Id="fil_236_System.ValueTuple.dll" ShortName="rxq2wyd3.dll" Name="System.ValueTuple.dll" KeyPath="yes" Source="SourceDir\File\fil_236_System.ValueTuple.dll" />
+        </Component>
+        <Component Id="cmp_237_System.Web.dll" Guid="{14831A4C-8156-5AC7-A2A8-2DEB4113D42D}" Bitness="always64">
+          <File Id="fil_237_System.Web.dll" ShortName="l-6fctdt.dll" Name="System.Web.dll" KeyPath="yes" Source="SourceDir\File\fil_237_System.Web.dll" />
+        </Component>
+        <Component Id="cmp_238_System.Web.HttpUtility.dll" Guid="{6913309A-08D6-5666-B78C-CCBFF01C59EF}" Bitness="always64">
+          <File Id="fil_238_System.Web.HttpUtility.dll" ShortName="sn1vr7za.dll" Name="System.Web.HttpUtility.dll" KeyPath="yes" Source="SourceDir\File\fil_238_System.Web.HttpUtility.dll" />
+        </Component>
+        <Component Id="cmp_239_System.Windows.dll" Guid="{C8D9091C-7D2D-5138-9CD8-12B6FAD1632A}" Bitness="always64">
+          <File Id="fil_239_System.Windows.dll" ShortName="zr0rv0hc.dll" Name="System.Windows.dll" KeyPath="yes" Source="SourceDir\File\fil_239_System.Windows.dll" />
+        </Component>
+        <Component Id="cmp_240_System.Xml.dll" Guid="{6F3E9A38-3777-5851-ABA4-8DA1E4CA0708}" Bitness="always64">
+          <File Id="fil_240_System.Xml.dll" ShortName="iswthbfv.dll" Name="System.Xml.dll" KeyPath="yes" Source="SourceDir\File\fil_240_System.Xml.dll" />
+        </Component>
+        <Component Id="cmp_241_System.Xml.Linq.dll" Guid="{596ED300-C8EF-5165-A086-9E248FB8C916}" Bitness="always64">
+          <File Id="fil_241_System.Xml.Linq.dll" ShortName="4cphq3x2.dll" Name="System.Xml.Linq.dll" KeyPath="yes" Source="SourceDir\File\fil_241_System.Xml.Linq.dll" />
+        </Component>
+        <Component Id="cmp_242_System.Xml.ReaderWriter.dll" Guid="{D71506BF-5178-51F1-BFD3-23DE5D1D8649}" Bitness="always64">
+          <File Id="fil_242_System.Xml.ReaderWriter.dll" ShortName="cmfrp5an.dll" Name="System.Xml.ReaderWriter.dll" KeyPath="yes" Source="SourceDir\File\fil_242_System.Xml.ReaderWriter.dll" />
+        </Component>
+        <Component Id="cmp_243_System.Xml.Serialization.dll" Guid="{F1A31C63-9CF7-5455-96CE-6DD88BFF9A32}" Bitness="always64">
+          <File Id="fil_243_System.Xml.Serialization.dll" ShortName="b0yynk3c.dll" Name="System.Xml.Serialization.dll" KeyPath="yes" Source="SourceDir\File\fil_243_System.Xml.Serialization.dll" />
+        </Component>
+        <Component Id="cmp_244_System.Xml.XDocument.dll" Guid="{450DE8A0-A088-5E31-9700-68B71B99D558}" Bitness="always64">
+          <File Id="fil_244_System.Xml.XDocument.dll" ShortName="gjoqsufe.dll" Name="System.Xml.XDocument.dll" KeyPath="yes" Source="SourceDir\File\fil_244_System.Xml.XDocument.dll" />
+        </Component>
+        <Component Id="cmp_245_System.Xml.XmlDocument.dll" Guid="{F11CECDB-AE81-5474-85E8-8339FC5BAD3B}" Bitness="always64">
+          <File Id="fil_245_System.Xml.XmlDocument.dll" ShortName="npox0fe4.dll" Name="System.Xml.XmlDocument.dll" KeyPath="yes" Source="SourceDir\File\fil_245_System.Xml.XmlDocument.dll" />
+        </Component>
+        <Component Id="cmp_246_System.Xml.XmlSerializer.dll" Guid="{5CE43989-DCFA-58A0-968A-46F128F17D26}" Bitness="always64">
+          <File Id="fil_246_System.Xml.XmlSerializer.dll" ShortName="stzeqwqo.dll" Name="System.Xml.XmlSerializer.dll" KeyPath="yes" Source="SourceDir\File\fil_246_System.Xml.XmlSerializer.dll" />
+        </Component>
+        <Component Id="cmp_247_System.Xml.XPath.dll" Guid="{AC3895C0-B19A-5ED5-A791-CCAFD815C3EC}" Bitness="always64">
+          <File Id="fil_247_System.Xml.XPath.dll" ShortName="vh3nxvki.dll" Name="System.Xml.XPath.dll" KeyPath="yes" Source="SourceDir\File\fil_247_System.Xml.XPath.dll" />
+        </Component>
+        <Component Id="cmp_248_System.Xml.XPath.XDocument.dll" Guid="{EC685118-4FED-5E2C-8501-66B8FF9D7C17}" Bitness="always64">
+          <File Id="fil_248_System.Xml.XPath.XDocument.dll" ShortName="y_xorfzk.dll" Name="System.Xml.XPath.XDocument.dll" KeyPath="yes" Source="SourceDir\File\fil_248_System.Xml.XPath.XDocument.dll" />
+        </Component>
+        <Component Id="cmp_249_TEMPLATE_RULES.md" Guid="{D0840201-508B-5DFE-A8D3-E69CEA8B6218}" Bitness="always64">
+          <File Id="fil_249_TEMPLATE_RULES.md" ShortName="3a-7bbsc.md" Name="TEMPLATE_RULES.md" KeyPath="yes" Source="SourceDir\File\fil_249_TEMPLATE_RULES.md" />
+        </Component>
+        <Component Id="cmp_250_WebView2Loader.dll" Guid="{ACD2F156-5506-55DB-9172-4FFCF2CE479D}" Bitness="always64">
+          <File Id="fil_250_WebView2Loader.dll" ShortName="zrnrkib-.dll" Name="WebView2Loader.dll" KeyPath="yes" Source="SourceDir\File\fil_250_WebView2Loader.dll" />
+        </Component>
+        <Component Id="cmp_251_WindowsBase.dll" Guid="{4FF996D8-9E23-55A7-B35D-2719B9976C59}" Bitness="always64">
+          <File Id="fil_251_WindowsBase.dll" ShortName="ma5bkw6z.dll" Name="WindowsBase.dll" KeyPath="yes" Source="SourceDir\File\fil_251_WindowsBase.dll" />
+        </Component>
+        <Component Id="cmp_252_WinRT.Runtime.dll" Guid="{EFBC71DE-3C8C-5B9D-BF41-FFE6548879E9}" Bitness="always64">
+          <File Id="fil_252_WinRT.Runtime.dll" ShortName="3mlkmgtc.dll" Name="WinRT.Runtime.dll" KeyPath="yes" Source="SourceDir\File\fil_252_WinRT.Runtime.dll" />
+        </Component>
+        <Component Id="cmp_253_YamlDotNet.dll" Guid="{05ABB69E-5D97-5134-8E53-E9B9EB7ED64C}" Bitness="always64">
+          <File Id="fil_253_YamlDotNet.dll" ShortName="eil8kjr6.dll" Name="YamlDotNet.dll" KeyPath="yes" Source="SourceDir\File\fil_253_YamlDotNet.dll" />
+        </Component>
+      </Directory>
+    </StandardDirectory>
+    <StandardDirectory Id="ProgramMenuFolder">
+      <Directory Id="ProgramMenuDir" ShortName="8nu7jvhc" Name="Shell Command Manager">
+        <Component Id="StartMenuShortcutComponent" Guid="{3A274ABD-1309-5336-B4DD-261024575AAB}" Bitness="always64">
+          <Shortcut Id="StartMenuShortcut" Directory="ProgramMenuDir" Arguments="/c &quot;[INSTALLFOLDER]LaunchShellCommandManager.cmd&quot;" WorkingDirectory="INSTALLFOLDER" ShortName="rtjtv8dk" Name="Shell Command Manager" Target="[SystemFolder]cmd.exe" />
+          <RemoveFolder Id="RemoveProgramMenuDir" On="uninstall" Directory="ProgramMenuDir" />
+          <RegistryValue Id="regGNQwCLEWVWzdkSUXN27ChYBB_YA" Key="Software\\F7s\\ShellCommandManager" Name="StartMenuShortcut" Root="HKLM" Type="integer" Value="1" KeyPath="yes" />
+        </Component>
+      </Directory>
+    </StandardDirectory>
+    <StandardDirectory Id="DesktopFolder">
+      <Component Id="DesktopShortcutComponent" Guid="{5518D43A-3EC8-57B6-AFC4-EE0DD3F8D6EE}" Bitness="always64">
+        <Shortcut Id="DesktopShortcut" Directory="DesktopFolder" Arguments="/c &quot;[INSTALLFOLDER]LaunchShellCommandManager.cmd&quot;" WorkingDirectory="INSTALLFOLDER" ShortName="r2ywvtvo" Name="Shell Command Manager" Target="[SystemFolder]cmd.exe" />
+        <RegistryValue Id="regM7pIZovdk9MJ4Reu2py7aisVcnA" Key="Software\\F7s\\ShellCommandManager" Name="DesktopShortcut" Root="HKLM" Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+    </StandardDirectory>
+    <Feature Id="MainFeature" Title="Shell Command Manager" Level="1">
+      <ComponentRef Id="StartMenuShortcutComponent" />
+      <ComponentRef Id="DesktopShortcutComponent" />
+      <ComponentRef Id="cmp_1_App.xbf" />
+      <ComponentRef Id="cmp_2_App1.deps.json" />
+      <ComponentRef Id="cmp_3_App1.dll" />
+      <ComponentRef Id="cmp_4_App1.exe" />
+      <ComponentRef Id="cmp_5_App1.pdb" />
+      <ComponentRef Id="cmp_6_App1.pri" />
+      <ComponentRef Id="cmp_7_App1.runtimeconfig.json" />
+      <ComponentRef Id="cmp_8_AppIcon.ico" />
+      <ComponentRef Id="cmp_9_AppIcon.png" />
+      <ComponentRef Id="cmp_10_Assets_AppIcon_redesign_256.png" />
+      <ComponentRef Id="cmp_11_Assets_AppIcon_redesign_512.png" />
+      <ComponentRef Id="cmp_12_Assets_icon_concepts_icon_A_512.png" />
+      <ComponentRef Id="cmp_13_Assets_icon_concepts_icon_B_512.png" />
+      <ComponentRef Id="cmp_14_Assets_icon_concepts_icon_C_512.png" />
+      <ComponentRef Id="cmp_15_Assets_LockScreenLogo.scale_200.png" />
+      <ComponentRef Id="cmp_16_Assets_SplashScreen.scale_200.png" />
+      <ComponentRef Id="cmp_17_Assets_Square150x150Logo.scale_200.png" />
+      <ComponentRef Id="cmp_18_Assets_Square200x200Logo.scale_200.png" />
+      <ComponentRef Id="cmp_19_Assets_Square24x24Logo.scale_200.png" />
+      <ComponentRef Id="cmp_20_Assets_Square44x44Logo.scale_200.png" />
+      <ComponentRef Id="cmp_21_Assets_Square44x44Logo.targetsize_24_altform_unplated.png" />
+      <ComponentRef Id="cmp_22_Assets_StoreLogo.png" />
+      <ComponentRef Id="cmp_23_Assets_Wide310x150Logo.scale_200.png" />
+      <ComponentRef Id="cmp_24_clretwrc.dll" />
+      <ComponentRef Id="cmp_25_clrgc.dll" />
+      <ComponentRef Id="cmp_26_clrjit.dll" />
+      <ComponentRef Id="cmp_27_coreclr.dll" />
+      <ComponentRef Id="cmp_28_createdump.exe" />
+      <ComponentRef Id="cmp_29_hostfxr.dll" />
+      <ComponentRef Id="cmp_30_hostpolicy.dll" />
+      <ComponentRef Id="cmp_31_LaunchShellCommandManager.cmd" />
+      <ComponentRef Id="cmp_32_MainWindow.xbf" />
+      <ComponentRef Id="cmp_33_Microsoft.CSharp.dll" />
+      <ComponentRef Id="cmp_34_Microsoft.DiaSymReader.Native.amd64.dll" />
+      <ComponentRef Id="cmp_35_Microsoft.Graphics.Imaging.Projection.dll" />
+      <ComponentRef Id="cmp_36_Microsoft.InteractiveExperiences.Projection.dll" />
+      <ComponentRef Id="cmp_37_Microsoft.ML.OnnxRuntime.dll" />
+      <ComponentRef Id="cmp_38_Microsoft.Security.Authentication.OAuth.Projection.dll" />
+      <ComponentRef Id="cmp_39_Microsoft.VisualBasic.Core.dll" />
+      <ComponentRef Id="cmp_40_Microsoft.VisualBasic.dll" />
+      <ComponentRef Id="cmp_41_Microsoft.Web.WebView2.Core.dll" />
+      <ComponentRef Id="cmp_42_Microsoft.Web.WebView2.Core.Projection.dll" />
+      <ComponentRef Id="cmp_43_Microsoft.Win32.Primitives.dll" />
+      <ComponentRef Id="cmp_44_Microsoft.Win32.Registry.dll" />
+      <ComponentRef Id="cmp_45_Microsoft.Windows.AI.ContentSafety.Projection.dll" />
+      <ComponentRef Id="cmp_46_Microsoft.Windows.AI.Foundation.Projection.dll" />
+      <ComponentRef Id="cmp_47_Microsoft.Windows.AI.Imaging.Projection.dll" />
+      <ComponentRef Id="cmp_48_Microsoft.Windows.AI.MachineLearning.Projection.dll" />
+      <ComponentRef Id="cmp_49_Microsoft.Windows.AI.Projection.dll" />
+      <ComponentRef Id="cmp_50_Microsoft.Windows.AI.Text.Projection.dll" />
+      <ComponentRef Id="cmp_51_Microsoft.Windows.ApplicationModel.Background.Projection.dll" />
+      <ComponentRef Id="cmp_52_Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.d" />
+      <ComponentRef Id="cmp_53_Microsoft.Windows.ApplicationModel.DynamicDependency.Projection" />
+      <ComponentRef Id="cmp_54_Microsoft.Windows.ApplicationModel.Resources.Projection.dll" />
+      <ComponentRef Id="cmp_55_Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection" />
+      <ComponentRef Id="cmp_56_Microsoft.Windows.AppLifecycle.Projection.dll" />
+      <ComponentRef Id="cmp_57_Microsoft.Windows.AppNotifications.Builder.Projection.dll" />
+      <ComponentRef Id="cmp_58_Microsoft.Windows.AppNotifications.Projection.dll" />
+      <ComponentRef Id="cmp_59_Microsoft.Windows.BadgeNotifications.Projection.dll" />
+      <ComponentRef Id="cmp_60_Microsoft.Windows.Foundation.Projection.dll" />
+      <ComponentRef Id="cmp_61_Microsoft.Windows.Management.Deployment.Projection.dll" />
+      <ComponentRef Id="cmp_62_Microsoft.Windows.Media.Capture.Projection.dll" />
+      <ComponentRef Id="cmp_63_Microsoft.Windows.PushNotifications.Projection.dll" />
+      <ComponentRef Id="cmp_64_Microsoft.Windows.SDK.NET.dll" />
+      <ComponentRef Id="cmp_65_Microsoft.Windows.Security.AccessControl.Projection.dll" />
+      <ComponentRef Id="cmp_66_Microsoft.Windows.Storage.Pickers.Projection.dll" />
+      <ComponentRef Id="cmp_67_Microsoft.Windows.Storage.Projection.dll" />
+      <ComponentRef Id="cmp_68_Microsoft.Windows.System.Power.Projection.dll" />
+      <ComponentRef Id="cmp_69_Microsoft.Windows.System.Projection.dll" />
+      <ComponentRef Id="cmp_70_Microsoft.Windows.Widgets.Projection.dll" />
+      <ComponentRef Id="cmp_71_Microsoft.WindowsAppRuntime.Bootstrap.dll" />
+      <ComponentRef Id="cmp_72_Microsoft.WindowsAppRuntime.Bootstrap.Net.dll" />
+      <ComponentRef Id="cmp_73_Microsoft.WinUI.dll" />
+      <ComponentRef Id="cmp_74_mscordaccore.dll" />
+      <ComponentRef Id="cmp_75_mscordaccore_amd64_amd64_8.0.2526.11203.dll" />
+      <ComponentRef Id="cmp_76_mscordbi.dll" />
+      <ComponentRef Id="cmp_77_mscorlib.dll" />
+      <ComponentRef Id="cmp_78_mscorrc.dll" />
+      <ComponentRef Id="cmp_79_msquic.dll" />
+      <ComponentRef Id="cmp_80_netstandard.dll" />
+      <ComponentRef Id="cmp_81_ShellCommandManager.deps.json" />
+      <ComponentRef Id="cmp_82_ShellCommandManager.dll" />
+      <ComponentRef Id="cmp_83_ShellCommandManager.exe" />
+      <ComponentRef Id="cmp_84_ShellCommandManager.pdb" />
+      <ComponentRef Id="cmp_85_ShellCommandManager.pri" />
+      <ComponentRef Id="cmp_86_ShellCommandManager.runtimeconfig.json" />
+      <ComponentRef Id="cmp_87_System.AppContext.dll" />
+      <ComponentRef Id="cmp_88_System.Buffers.dll" />
+      <ComponentRef Id="cmp_89_System.Collections.Concurrent.dll" />
+      <ComponentRef Id="cmp_90_System.Collections.dll" />
+      <ComponentRef Id="cmp_91_System.Collections.Immutable.dll" />
+      <ComponentRef Id="cmp_92_System.Collections.NonGeneric.dll" />
+      <ComponentRef Id="cmp_93_System.Collections.Specialized.dll" />
+      <ComponentRef Id="cmp_94_System.ComponentModel.Annotations.dll" />
+      <ComponentRef Id="cmp_95_System.ComponentModel.DataAnnotations.dll" />
+      <ComponentRef Id="cmp_96_System.ComponentModel.dll" />
+      <ComponentRef Id="cmp_97_System.ComponentModel.EventBasedAsync.dll" />
+      <ComponentRef Id="cmp_98_System.ComponentModel.Primitives.dll" />
+      <ComponentRef Id="cmp_99_System.ComponentModel.TypeConverter.dll" />
+      <ComponentRef Id="cmp_100_System.Configuration.dll" />
+      <ComponentRef Id="cmp_101_System.Console.dll" />
+      <ComponentRef Id="cmp_102_System.Core.dll" />
+      <ComponentRef Id="cmp_103_System.Data.Common.dll" />
+      <ComponentRef Id="cmp_104_System.Data.DataSetExtensions.dll" />
+      <ComponentRef Id="cmp_105_System.Data.dll" />
+      <ComponentRef Id="cmp_106_System.Diagnostics.Contracts.dll" />
+      <ComponentRef Id="cmp_107_System.Diagnostics.Debug.dll" />
+      <ComponentRef Id="cmp_108_System.Diagnostics.DiagnosticSource.dll" />
+      <ComponentRef Id="cmp_109_System.Diagnostics.FileVersionInfo.dll" />
+      <ComponentRef Id="cmp_110_System.Diagnostics.Process.dll" />
+      <ComponentRef Id="cmp_111_System.Diagnostics.StackTrace.dll" />
+      <ComponentRef Id="cmp_112_System.Diagnostics.TextWriterTraceListener.dll" />
+      <ComponentRef Id="cmp_113_System.Diagnostics.Tools.dll" />
+      <ComponentRef Id="cmp_114_System.Diagnostics.TraceSource.dll" />
+      <ComponentRef Id="cmp_115_System.Diagnostics.Tracing.dll" />
+      <ComponentRef Id="cmp_116_System.dll" />
+      <ComponentRef Id="cmp_117_System.Drawing.dll" />
+      <ComponentRef Id="cmp_118_System.Drawing.Primitives.dll" />
+      <ComponentRef Id="cmp_119_System.Dynamic.Runtime.dll" />
+      <ComponentRef Id="cmp_120_System.Formats.Asn1.dll" />
+      <ComponentRef Id="cmp_121_System.Formats.Tar.dll" />
+      <ComponentRef Id="cmp_122_System.Globalization.Calendars.dll" />
+      <ComponentRef Id="cmp_123_System.Globalization.dll" />
+      <ComponentRef Id="cmp_124_System.Globalization.Extensions.dll" />
+      <ComponentRef Id="cmp_125_System.IO.Compression.Brotli.dll" />
+      <ComponentRef Id="cmp_126_System.IO.Compression.dll" />
+      <ComponentRef Id="cmp_127_System.IO.Compression.FileSystem.dll" />
+      <ComponentRef Id="cmp_128_System.IO.Compression.Native.dll" />
+      <ComponentRef Id="cmp_129_System.IO.Compression.ZipFile.dll" />
+      <ComponentRef Id="cmp_130_System.IO.dll" />
+      <ComponentRef Id="cmp_131_System.IO.FileSystem.AccessControl.dll" />
+      <ComponentRef Id="cmp_132_System.IO.FileSystem.dll" />
+      <ComponentRef Id="cmp_133_System.IO.FileSystem.DriveInfo.dll" />
+      <ComponentRef Id="cmp_134_System.IO.FileSystem.Primitives.dll" />
+      <ComponentRef Id="cmp_135_System.IO.FileSystem.Watcher.dll" />
+      <ComponentRef Id="cmp_136_System.IO.IsolatedStorage.dll" />
+      <ComponentRef Id="cmp_137_System.IO.MemoryMappedFiles.dll" />
+      <ComponentRef Id="cmp_138_System.IO.Pipes.AccessControl.dll" />
+      <ComponentRef Id="cmp_139_System.IO.Pipes.dll" />
+      <ComponentRef Id="cmp_140_System.IO.UnmanagedMemoryStream.dll" />
+      <ComponentRef Id="cmp_141_System.Linq.dll" />
+      <ComponentRef Id="cmp_142_System.Linq.Expressions.dll" />
+      <ComponentRef Id="cmp_143_System.Linq.Parallel.dll" />
+      <ComponentRef Id="cmp_144_System.Linq.Queryable.dll" />
+      <ComponentRef Id="cmp_145_System.Memory.dll" />
+      <ComponentRef Id="cmp_146_System.Net.dll" />
+      <ComponentRef Id="cmp_147_System.Net.Http.dll" />
+      <ComponentRef Id="cmp_148_System.Net.Http.Json.dll" />
+      <ComponentRef Id="cmp_149_System.Net.HttpListener.dll" />
+      <ComponentRef Id="cmp_150_System.Net.Mail.dll" />
+      <ComponentRef Id="cmp_151_System.Net.NameResolution.dll" />
+      <ComponentRef Id="cmp_152_System.Net.NetworkInformation.dll" />
+      <ComponentRef Id="cmp_153_System.Net.Ping.dll" />
+      <ComponentRef Id="cmp_154_System.Net.Primitives.dll" />
+      <ComponentRef Id="cmp_155_System.Net.Quic.dll" />
+      <ComponentRef Id="cmp_156_System.Net.Requests.dll" />
+      <ComponentRef Id="cmp_157_System.Net.Security.dll" />
+      <ComponentRef Id="cmp_158_System.Net.ServicePoint.dll" />
+      <ComponentRef Id="cmp_159_System.Net.Sockets.dll" />
+      <ComponentRef Id="cmp_160_System.Net.WebClient.dll" />
+      <ComponentRef Id="cmp_161_System.Net.WebHeaderCollection.dll" />
+      <ComponentRef Id="cmp_162_System.Net.WebProxy.dll" />
+      <ComponentRef Id="cmp_163_System.Net.WebSockets.Client.dll" />
+      <ComponentRef Id="cmp_164_System.Net.WebSockets.dll" />
+      <ComponentRef Id="cmp_165_System.Numerics.dll" />
+      <ComponentRef Id="cmp_166_System.Numerics.Tensors.dll" />
+      <ComponentRef Id="cmp_167_System.Numerics.Vectors.dll" />
+      <ComponentRef Id="cmp_168_System.ObjectModel.dll" />
+      <ComponentRef Id="cmp_169_System.Private.CoreLib.dll" />
+      <ComponentRef Id="cmp_170_System.Private.DataContractSerialization.dll" />
+      <ComponentRef Id="cmp_171_System.Private.Uri.dll" />
+      <ComponentRef Id="cmp_172_System.Private.Xml.dll" />
+      <ComponentRef Id="cmp_173_System.Private.Xml.Linq.dll" />
+      <ComponentRef Id="cmp_174_System.Reflection.DispatchProxy.dll" />
+      <ComponentRef Id="cmp_175_System.Reflection.dll" />
+      <ComponentRef Id="cmp_176_System.Reflection.Emit.dll" />
+      <ComponentRef Id="cmp_177_System.Reflection.Emit.ILGeneration.dll" />
+      <ComponentRef Id="cmp_178_System.Reflection.Emit.Lightweight.dll" />
+      <ComponentRef Id="cmp_179_System.Reflection.Extensions.dll" />
+      <ComponentRef Id="cmp_180_System.Reflection.Metadata.dll" />
+      <ComponentRef Id="cmp_181_System.Reflection.Primitives.dll" />
+      <ComponentRef Id="cmp_182_System.Reflection.TypeExtensions.dll" />
+      <ComponentRef Id="cmp_183_System.Resources.Reader.dll" />
+      <ComponentRef Id="cmp_184_System.Resources.ResourceManager.dll" />
+      <ComponentRef Id="cmp_185_System.Resources.Writer.dll" />
+      <ComponentRef Id="cmp_186_System.Runtime.CompilerServices.Unsafe.dll" />
+      <ComponentRef Id="cmp_187_System.Runtime.CompilerServices.VisualC.dll" />
+      <ComponentRef Id="cmp_188_System.Runtime.dll" />
+      <ComponentRef Id="cmp_189_System.Runtime.Extensions.dll" />
+      <ComponentRef Id="cmp_190_System.Runtime.Handles.dll" />
+      <ComponentRef Id="cmp_191_System.Runtime.InteropServices.dll" />
+      <ComponentRef Id="cmp_192_System.Runtime.InteropServices.JavaScript.dll" />
+      <ComponentRef Id="cmp_193_System.Runtime.InteropServices.RuntimeInformation.dll" />
+      <ComponentRef Id="cmp_194_System.Runtime.Intrinsics.dll" />
+      <ComponentRef Id="cmp_195_System.Runtime.Loader.dll" />
+      <ComponentRef Id="cmp_196_System.Runtime.Numerics.dll" />
+      <ComponentRef Id="cmp_197_System.Runtime.Serialization.dll" />
+      <ComponentRef Id="cmp_198_System.Runtime.Serialization.Formatters.dll" />
+      <ComponentRef Id="cmp_199_System.Runtime.Serialization.Json.dll" />
+      <ComponentRef Id="cmp_200_System.Runtime.Serialization.Primitives.dll" />
+      <ComponentRef Id="cmp_201_System.Runtime.Serialization.Xml.dll" />
+      <ComponentRef Id="cmp_202_System.Security.AccessControl.dll" />
+      <ComponentRef Id="cmp_203_System.Security.Claims.dll" />
+      <ComponentRef Id="cmp_204_System.Security.Cryptography.Algorithms.dll" />
+      <ComponentRef Id="cmp_205_System.Security.Cryptography.Cng.dll" />
+      <ComponentRef Id="cmp_206_System.Security.Cryptography.Csp.dll" />
+      <ComponentRef Id="cmp_207_System.Security.Cryptography.dll" />
+      <ComponentRef Id="cmp_208_System.Security.Cryptography.Encoding.dll" />
+      <ComponentRef Id="cmp_209_System.Security.Cryptography.OpenSsl.dll" />
+      <ComponentRef Id="cmp_210_System.Security.Cryptography.Primitives.dll" />
+      <ComponentRef Id="cmp_211_System.Security.Cryptography.X509Certificates.dll" />
+      <ComponentRef Id="cmp_212_System.Security.dll" />
+      <ComponentRef Id="cmp_213_System.Security.Principal.dll" />
+      <ComponentRef Id="cmp_214_System.Security.Principal.Windows.dll" />
+      <ComponentRef Id="cmp_215_System.Security.SecureString.dll" />
+      <ComponentRef Id="cmp_216_System.ServiceModel.Web.dll" />
+      <ComponentRef Id="cmp_217_System.ServiceProcess.dll" />
+      <ComponentRef Id="cmp_218_System.Text.Encoding.CodePages.dll" />
+      <ComponentRef Id="cmp_219_System.Text.Encoding.dll" />
+      <ComponentRef Id="cmp_220_System.Text.Encoding.Extensions.dll" />
+      <ComponentRef Id="cmp_221_System.Text.Encodings.Web.dll" />
+      <ComponentRef Id="cmp_222_System.Text.Json.dll" />
+      <ComponentRef Id="cmp_223_System.Text.RegularExpressions.dll" />
+      <ComponentRef Id="cmp_224_System.Threading.Channels.dll" />
+      <ComponentRef Id="cmp_225_System.Threading.dll" />
+      <ComponentRef Id="cmp_226_System.Threading.Overlapped.dll" />
+      <ComponentRef Id="cmp_227_System.Threading.Tasks.Dataflow.dll" />
+      <ComponentRef Id="cmp_228_System.Threading.Tasks.dll" />
+      <ComponentRef Id="cmp_229_System.Threading.Tasks.Extensions.dll" />
+      <ComponentRef Id="cmp_230_System.Threading.Tasks.Parallel.dll" />
+      <ComponentRef Id="cmp_231_System.Threading.Thread.dll" />
+      <ComponentRef Id="cmp_232_System.Threading.ThreadPool.dll" />
+      <ComponentRef Id="cmp_233_System.Threading.Timer.dll" />
+      <ComponentRef Id="cmp_234_System.Transactions.dll" />
+      <ComponentRef Id="cmp_235_System.Transactions.Local.dll" />
+      <ComponentRef Id="cmp_236_System.ValueTuple.dll" />
+      <ComponentRef Id="cmp_237_System.Web.dll" />
+      <ComponentRef Id="cmp_238_System.Web.HttpUtility.dll" />
+      <ComponentRef Id="cmp_239_System.Windows.dll" />
+      <ComponentRef Id="cmp_240_System.Xml.dll" />
+      <ComponentRef Id="cmp_241_System.Xml.Linq.dll" />
+      <ComponentRef Id="cmp_242_System.Xml.ReaderWriter.dll" />
+      <ComponentRef Id="cmp_243_System.Xml.Serialization.dll" />
+      <ComponentRef Id="cmp_244_System.Xml.XDocument.dll" />
+      <ComponentRef Id="cmp_245_System.Xml.XmlDocument.dll" />
+      <ComponentRef Id="cmp_246_System.Xml.XmlSerializer.dll" />
+      <ComponentRef Id="cmp_247_System.Xml.XPath.dll" />
+      <ComponentRef Id="cmp_248_System.Xml.XPath.XDocument.dll" />
+      <ComponentRef Id="cmp_249_TEMPLATE_RULES.md" />
+      <ComponentRef Id="cmp_250_WebView2Loader.dll" />
+      <ComponentRef Id="cmp_251_WindowsBase.dll" />
+      <ComponentRef Id="cmp_252_WinRT.Runtime.dll" />
+      <ComponentRef Id="cmp_253_YamlDotNet.dll" />
+    </Feature>
+    <Media Id="1" EmbedCab="yes" Cabinet="cab1.cab" />
+    <MajorUpgrade DowngradeErrorMessage="A newer version is already installed." />
+  </Package>
+</Wix>
