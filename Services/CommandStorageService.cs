@@ -1,4 +1,4 @@
-using App1.Models;
+﻿using ShellCommandManager.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace App1.Services;
+namespace ShellCommandManager.Services;
 
 public sealed class CommandStorageService
 {
@@ -21,7 +21,7 @@ public sealed class CommandStorageService
         {
             string root = Path.Combine(
                 Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                "App1");
+                "ShellCommandManager");
 
             return Path.Combine(root, "shell-commands.json");
         }

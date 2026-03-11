@@ -1,11 +1,11 @@
-using App1.Models;
+﻿using ShellCommandManager.Models;
 using System;
 using System.Diagnostics;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App1.Services;
+namespace ShellCommandManager.Services;
 
 public sealed class CommandRunResult
 {

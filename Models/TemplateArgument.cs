@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace App1.Models;
+namespace ShellCommandManager.Models;
 
 public sealed class TemplateArgument
 {

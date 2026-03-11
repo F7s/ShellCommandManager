@@ -1,15 +1,15 @@
-using System;
+﻿using System;
 using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace App1.Services
+namespace ShellCommandManager.Services
 {
     public sealed class UiSettingsService
     {
         private static readonly string SettingsPath = Path.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-            "App1",
+            "ShellCommandManager",
             "ui-settings.json");
 
         public async Task<string?> LoadLanguageAsync()

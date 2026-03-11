@@ -1,5 +1,5 @@
-﻿using App1.Models;
-using App1.Services;
+﻿using ShellCommandManager.Models;
+using ShellCommandManager.Services;
 using Microsoft.UI;
 using Microsoft.UI.Dispatching;
 using Microsoft.UI.Windowing;
@@ -17,7 +17,7 @@ using System.Threading.Tasks;
 using Windows.Graphics;
 using Windows.Storage.Pickers;
 
-namespace App1
+namespace ShellCommandManager
 {
     public sealed partial class MainWindow : Window
     {
@@ -38,7 +38,7 @@ namespace App1
 
         private static readonly string LogFilePath = Path.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-            "App1",
+            "ShellCommandManager",
             "logs",
             "app.log");
 

@@ -1,7 +1,7 @@
-﻿using App1.Models;
+﻿using ShellCommandManager.Models;
 using System.Collections.Generic;
 
-namespace App1.Services;
+namespace ShellCommandManager.Services;
 
 public sealed class TemplateArgumentRenderService
 {
