@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="MainWindow.Title" xml:space="preserve">
+    <value>Shell Command Manager</value>
+  </data>
+  <data name="TitleText.Text" xml:space="preserve">
+    <value>Shell Command Manager</value>
+  </data>
+  <data name="ToggleEditorButton.Label" xml:space="preserve">
+    <value>Add Command</value>
+  </data>
+  <data name="SaveCommandAppBarButton.Label" xml:space="preserve">
+    <value>Save Command</value>
+  </data>
+  <data name="RunSelectedAppBarButton.Label" xml:space="preserve">
+    <value>Run Selected</value>
+  </data>
+  <data name="DeleteSelectedAppBarButton.Label" xml:space="preserve">
+    <value>Delete Selected</value>
+  </data>
+  <data name="ClearInputAppBarButton.Label" xml:space="preserve">
+    <value>Clear Inputs</value>
+  </data>
+  <data name="EditorTitleTextBlock.Text" xml:space="preserve">
+    <value>Command Configuration</value>
+  </data>
+  <data name="TemplateLabelTextBlock.Text" xml:space="preserve">
+    <value>Command Template</value>
+  </data>
+  <data name="TemplateComboBox.PlaceholderText" xml:space="preserve">
+    <value>Select an imported template</value>
+  </data>
+  <data name="ImportTemplateButton.Content" xml:space="preserve">
+    <value>Import Template</value>
+  </data>
+  <data name="ImportTemplateCodeButton.Content" xml:space="preserve">
+    <value>Import Code</value>
+  </data>
+  <data name="ClearTemplateButton.Content" xml:space="preserve">
+    <value>Clear Template</value>
+  </data>
+  <data name="NameLabelTextBlock.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NameTextBox.PlaceholderText" xml:space="preserve">
+    <value>e.g. Start API Service</value>
+  </data>
+  <data name="CommandLabelTextBlock.Text" xml:space="preserve">
+    <value>PowerShell Command</value>
+  </data>
+  <data name="CommandTextBox.PlaceholderText" xml:space="preserve">
+    <value>e.g. dotnet run --project .\Api\Api.csproj</value>
+  </data>
+  <data name="ManualArgsLabelTextBlock.Text" xml:space="preserve">
+    <value>Startup Arguments (appended after command)</value>
+  </data>
+  <data name="ArgsTextBox.PlaceholderText" xml:space="preserve">
+    <value>e.g. --environment Development</value>
+  </data>
+  <data name="TemplateArgsLabelTextBlock.Text" xml:space="preserve">
+    <value>Template Arguments</value>
+  </data>
+  <data name="WorkingDirectoryLabelTextBlock.Text" xml:space="preserve">
+    <value>Working Directory (optional)</value>
+  </data>
+  <data name="WorkingDirectoryTextBox.PlaceholderText" xml:space="preserve">
+    <value>e.g. C:\Projects\MyApp</value>
+  </data>
+  <data name="SavedCommandsTitleTextBlock.Text" xml:space="preserve">
+    <value>Saved Commands</value>
+  </data>
+  <data name="SavedCommandsHintTextBlock.Text" xml:space="preserve">
+    <value>Select to run directly, or edit and click Save Command to overwrite.</value>
+  </data>
+  <data name="AppBar.AddCommand" xml:space="preserve">
+    <value>Add Command</value>
+  </data>
+  <data name="AppBar.CollapseAdd" xml:space="preserve">
+    <value>Collapse Add</value>
+  </data>
+  <data name="Status.CommandsLoaded" xml:space="preserve">
+    <value>Loaded {0} commands.</value>
+  </data>
+  <data name="Status.LoadCommandsFailed" xml:space="preserve">
+    <value>Failed to load commands: {0}</value>
+  </data>
+  <data name="Status.LoadCommandsFailedSimple" xml:space="preserve">
+    <value>Failed to load commands. Please check command storage.</value>
+  </data>
+  <data name="Status.LoadTemplatesFailed" xml:space="preserve">
+    <value>Failed to load templates: {0}</value>
+  </data>
+  <data name="Status.LoadTemplatesFailedSimple" xml:space="preserve">
+    <value>Failed to load templates. Please check template format.</value>
+  </data>
+  <data name="Status.CommandAdded" xml:space="preserve">
+    <value>Command added. You can continue adding another one.</value>
+  </data>
+  <data name="Status.CommandUpdated" xml:space="preserve">
+    <value>Command updated.</value>
+  </data>
+  <data name="Status.SelectBeforeDelete" xml:space="preserve">
+    <value>Please select a command before deleting.</value>
+  </data>
+  <data name="Status.CommandDeleted" xml:space="preserve">
+    <value>Command deleted.</value>
+  </data>
+  <data name="Status.RunningCommand" xml:space="preserve">
+    <value>Running: {0}</value>
+  </data>
+  <data name="Status.CommandStartedWithPid" xml:space="preserve">
+    <value>Started in PowerShell window: {0} (PID: {1})</value>
+  </data>
+  <data name="Status.RunFailed" xml:space="preserve">
+    <value>Execution failed: {0}</value>
+  </data>
+  <data name="Status.RunFailedSimple" xml:space="preserve">
+    <value>Execution failed. Please verify command and arguments.</value>
+  </data>
+  <data name="Status.EditorCleared" xml:space="preserve">
+    <value>Input area cleared.</value>
+  </data>
+  <data name="Status.TemplateImported" xml:space="preserve">
+    <value>Template imported: {0}</value>
+  </data>
+  <data name="Status.ImportTemplateFailed" xml:space="preserve">
+    <value>Template import failed: {0}</value>
+  </data>
+  <data name="Status.ImportTemplateFailedSimple" xml:space="preserve">
+    <value>Template import failed. Please validate JSON/YAML structure.</value>
+  </data>
+  <data name="Status.ImportTemplateCodeFailed" xml:space="preserve">
+    <value>Code import failed: {0}</value>
+  </data>
+  <data name="Status.ImportTemplateCodeFailedSimple" xml:space="preserve">
+    <value>Code import failed. Please validate pasted content.</value>
+  </data>
+  <data name="Dialog.ImportTemplateCode.Placeholder" xml:space="preserve">
+    <value>Paste JSON/YAML template content</value>
+  </data>
+  <data name="Dialog.ImportTemplateCode.Title" xml:space="preserve">
+    <value>Import Template from Code</value>
+  </data>
+  <data name="Dialog.ImportTemplateCode.ImportButton" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="Dialog.ImportTemplateCode.CancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Template.Applied" xml:space="preserve">
+    <value>Template applied</value>
+  </data>
+  <data name="TemplateArg.AskBeforeRun" xml:space="preserve">
+    <value>Ask before run</value>
+  </data>
+  <data name="Common.SelectFile" xml:space="preserve">
+    <value>Select File</value>
+  </data>
+  <data name="Common.SelectFolder" xml:space="preserve">
+    <value>Select Folder</value>
+  </data>
+  <data name="Common.History" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="Common.NoHistory" xml:space="preserve">
+    <value>No history</value>
+  </data>
+  <data name="Validation.NameRequired" xml:space="preserve">
+    <value>Name is required.</value>
+  </data>
+  <data name="Validation.CommandRequired" xml:space="preserve">
+    <value>PowerShell command is required.</value>
+  </data>
+  <data name="Validation.WorkingDirectoryNotFound" xml:space="preserve">
+    <value>Working directory does not exist. Please check the path.</value>
+  </data>
+  <data name="Validation.TemplateControlMissing" xml:space="preserve">
+    <value>Template input control missing: {0}</value>
+  </data>
+  <data name="Validation.ArgumentRequired" xml:space="preserve">
+    <value>Argument "{0}" is required.</value>
+  </data>
+  <data name="Validation.ArgumentMustBeNumber" xml:space="preserve">
+    <value>Argument "{0}" must be a number.</value>
+  </data>
+  <data name="Validation.ArgumentMustSelect" xml:space="preserve">
+    <value>Argument "{0}" must select an option.</value>
+  </data>
+  <data name="Dialog.RuntimeArgs.Title" xml:space="preserve">
+    <value>Runtime Parameters</value>
+  </data>
+  <data name="Dialog.RuntimeArgs.RunButton" xml:space="preserve">
+    <value>Run</value>
+  </data>
+  <data name="Dialog.RuntimeArgs.CancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+</root>
