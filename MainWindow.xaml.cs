@@ -5,6 +5,7 @@ using Microsoft.UI.Dispatching;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using System;
 using System.Collections.Generic;
@@ -47,10 +48,12 @@ namespace ShellCommandManager
         private bool _isInitialized;
         private bool _isEditorVisible;
         private bool _isLanguageApplying;
+        private bool _isTemplateSelectionApplying;
         private int _currentMinWindowWidth = CollapsedMinWidth;
         private IntPtr _hwnd;
         private IntPtr _originalWndProc;
         private CommandTemplate? _selectedTemplate;
+        private ShellCommandEntry? _editingCommand;
         private string _languageCode = string.Empty;
         private bool _blurBackgroundEnabled = true;
         private string _themePreference = "Default";
@@ -139,16 +142,29 @@ namespace ShellCommandManager
 
         private async void SaveCommandButton_Click(object sender, RoutedEventArgs e)
         {
+            double editorOffset = EditorPanel.VerticalOffset;
+            await EnsurePendingEditorInputCommittedAsync();
             if (!TryReadEditorCommand(out ShellCommandEntry? editorCommand))
             {
                 return;
             }
 
-            int selectedIndex = CommandsListView.SelectedIndex;
+            int selectedIndex = -1;
+            if (_editingCommand is not null)
+            {
+                selectedIndex = Commands.IndexOf(_editingCommand);
+            }
+
+            if (selectedIndex < 0 && CommandsListView.SelectedItems.Count == 1 && CommandsListView.SelectedItem is ShellCommandEntry selectedItem)
+            {
+                selectedIndex = Commands.IndexOf(selectedItem);
+            }
+
             bool hasValidSelection = selectedIndex >= 0 && selectedIndex < Commands.Count;
             if (!hasValidSelection)
             {
                 Commands.Add(editorCommand);
+                _editingCommand = null;
                 CommandsListView.SelectedItem = null;
                 ClearEditor();
                 ShowStatus(T("Status.CommandAdded"), InfoBarSeverity.Success);
@@ -157,12 +173,14 @@ namespace ShellCommandManager
             {
                 // Replace the selected item instead of mutating in place to ensure ListView refreshes reliably.
                 Commands[selectedIndex] = editorCommand;
+                _editingCommand = Commands[selectedIndex];
                 CommandsListView.SelectedItem = Commands[selectedIndex];
                 ShowStatus(T("Status.CommandUpdated"), InfoBarSeverity.Success);
             }
 
             await PersistCommandsAsync();
             UpdateSelectionActionVisibility();
+            RestoreEditorScroll(editorOffset);
         }
 
         private async void DeleteSelectedButton_Click(object sender, RoutedEventArgs e)
@@ -186,8 +204,19 @@ namespace ShellCommandManager
 
         private async void RunSelectedButton_Click(object sender, RoutedEventArgs e)
         {
+            await EnsurePendingEditorInputCommittedAsync();
             List<ShellCommandEntry> selectedCommands = GetSelectedCommands();
-            if (selectedCommands.Count == 0)
+            if (selectedCommands.Count == 1 && _isEditorVisible)
+            {
+                if (!TryReadEditorCommand(out ShellCommandEntry? editorCommand))
+                {
+                    return;
+                }
+
+                selectedCommands[0] = editorCommand;
+                ShowStatus(T("Status.RunUsingEditorValues"), InfoBarSeverity.Informational);
+            }
+            else if (selectedCommands.Count == 0)
             {
                 ShellCommandEntry? selected = null;
                 if (!TryReadEditorCommand(out selected))
@@ -270,30 +299,41 @@ namespace ShellCommandManager
 
         private void CommandsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            double editorOffset = EditorPanel.VerticalOffset;
             UpdateSelectionActionVisibility();
 
             if (CommandsListView.SelectedItems.Count != 1 || CommandsListView.SelectedItem is not ShellCommandEntry selected)
             {
+                _editingCommand = null;
+                RestoreEditorScroll(editorOffset);
                 return;
             }
 
+            _editingCommand = selected;
             NameTextBox.Text = selected.Name;
             CommandTextBox.Text = selected.PowerShellCommand;
             ArgsTextBox.Text = selected.StartupArguments;
             WorkingDirectoryTextBox.Text = selected.WorkingDirectory;
+            EnvVarsTextBox.Text = selected.EnvironmentVariables;
 
             if (TryGetTemplateById(selected.TemplateId, out CommandTemplate? template))
             {
                 Dictionary<string, object?> values = BuildTemplateValues(template, selected.TemplateValuesJson);
                 HashSet<string> runtimePromptKeys = ParseRuntimePromptKeys(selected.RuntimePromptKeysJson);
+                _isTemplateSelectionApplying = true;
                 TemplateComboBox.SelectedItem = template;
+                _isTemplateSelectionApplying = false;
                 SetTemplate(template, values, runtimePromptKeys);
             }
             else
             {
+                _isTemplateSelectionApplying = true;
                 TemplateComboBox.SelectedItem = null;
+                _isTemplateSelectionApplying = false;
                 SetTemplate(null);
             }
+
+            RestoreEditorScroll(editorOffset);
         }
 
         private async void ImportTemplateButton_Click(object sender, RoutedEventArgs e)
@@ -393,6 +433,11 @@ namespace ShellCommandManager
 
         private void TemplateComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (_isTemplateSelectionApplying)
+            {
+                return;
+            }
+
             SetTemplate(TemplateComboBox.SelectedItem as CommandTemplate);
         }
 
@@ -489,13 +534,18 @@ namespace ShellCommandManager
 
         private static FrameworkElement CreateNumberInput(TemplateArgument argument, string initialValue)
         {
-            NumberBox box = new() { PlaceholderText = argument.Key };
-            if (double.TryParse(initialValue, out double num))
+            return new TextBox
             {
-                box.Value = num;
-            }
-
-            return box;
+                PlaceholderText = argument.Key,
+                Text = initialValue,
+                InputScope = new InputScope
+                {
+                    Names =
+                    {
+                        new InputScopeName(InputScopeNameValue.Number)
+                    }
+                }
+            };
         }
 
         private FrameworkElement CreatePathInput(TemplateArgument argument, bool isFile, string initialValue)
@@ -531,11 +581,19 @@ namespace ShellCommandManager
                 combo.Items.Add(option);
             }
 
-            if (!string.IsNullOrWhiteSpace(initialValue) && argument.Options.Contains(initialValue))
+            if (!string.IsNullOrWhiteSpace(initialValue))
             {
-                combo.SelectedItem = initialValue;
+                foreach (string option in argument.Options)
+                {
+                    if (string.Equals(option, initialValue, StringComparison.OrdinalIgnoreCase))
+                    {
+                        combo.SelectedItem = option;
+                        break;
+                    }
+                }
             }
-            else if (combo.Items.Count > 0)
+
+            if (combo.SelectedItem is null && combo.Items.Count > 0)
             {
                 combo.SelectedIndex = 0;
             }
@@ -573,6 +631,7 @@ namespace ShellCommandManager
             string name = NameTextBox.Text.Trim();
             string shellCommand = CommandTextBox.Text.Trim();
             string workingDirectory = WorkingDirectoryTextBox.Text.Trim();
+            string environmentVariables = NormalizeEnvironmentVariablesText(EnvVarsTextBox.Text);
 
             if (string.IsNullOrWhiteSpace(name))
             {
@@ -589,6 +648,12 @@ namespace ShellCommandManager
             if (!string.IsNullOrWhiteSpace(workingDirectory) && !Directory.Exists(workingDirectory))
             {
                 ShowStatus(T("Validation.WorkingDirectoryNotFound"), InfoBarSeverity.Warning);
+                return false;
+            }
+
+            if (!TryValidateEnvironmentVariables(environmentVariables, out string envValidationError))
+            {
+                ShowStatus(envValidationError, InfoBarSeverity.Warning);
                 return false;
             }
 
@@ -623,7 +688,8 @@ namespace ShellCommandManager
                 Name = name,
                 PowerShellCommand = shellCommand,
                 StartupArguments = startupArgs,
-                WorkingDirectory = workingDirectory
+                WorkingDirectory = workingDirectory,
+                EnvironmentVariables = environmentVariables
             };
 
             return true;
@@ -723,8 +789,61 @@ namespace ShellCommandManager
                 Name = sourceCommand.Name,
                 PowerShellCommand = sourceCommand.PowerShellCommand,
                 StartupArguments = startupArgs,
-                WorkingDirectory = sourceCommand.WorkingDirectory
+                WorkingDirectory = sourceCommand.WorkingDirectory,
+                EnvironmentVariables = sourceCommand.EnvironmentVariables
             };
+        }
+
+        private static string NormalizeEnvironmentVariablesText(string? text)
+        {
+            if (string.IsNullOrWhiteSpace(text))
+            {
+                return string.Empty;
+            }
+
+            string normalized = text.Replace("\r\n", "\n").Replace('\r', '\n');
+            string[] lines = normalized.Split('\n', StringSplitOptions.None);
+            List<string> cleaned = new();
+            foreach (string line in lines)
+            {
+                string trimmed = line.Trim();
+                if (!string.IsNullOrWhiteSpace(trimmed))
+                {
+                    cleaned.Add(trimmed);
+                }
+            }
+
+            return string.Join('\n', cleaned);
+        }
+
+        private bool TryValidateEnvironmentVariables(string environmentVariables, out string error)
+        {
+            error = string.Empty;
+            if (string.IsNullOrWhiteSpace(environmentVariables))
+            {
+                return true;
+            }
+
+            string[] lines = environmentVariables.Split('\n', StringSplitOptions.RemoveEmptyEntries);
+            for (int i = 0; i < lines.Length; i++)
+            {
+                string line = lines[i].Trim();
+                int index = line.IndexOf('=');
+                if (index <= 0)
+                {
+                    error = string.Format(T("Validation.EnvVarFormat"), i + 1);
+                    return false;
+                }
+
+                string key = line[..index].Trim();
+                if (string.IsNullOrWhiteSpace(key) || key.Contains(' '))
+                {
+                    error = string.Format(T("Validation.EnvVarKey"), i + 1);
+                    return false;
+                }
+            }
+
+            return true;
         }
 
         private Dictionary<string, object?> BuildTemplateValues(CommandTemplate template, string templateValuesJson)
@@ -1029,9 +1148,36 @@ namespace ShellCommandManager
 
         private static object? ReadNumberValue(FrameworkElement control, TemplateArgument argument)
         {
+            if (control is TextBox textBox)
+            {
+                string typedText = textBox.Text.Trim();
+                if (string.IsNullOrWhiteSpace(typedText))
+                {
+                    return string.Empty;
+                }
+
+                if (!TryParseFlexibleNumber(typedText, out double parsedFromText))
+                {
+                    return typedText;
+                }
+
+                return FormatNumberForArgument(parsedFromText, argument);
+            }
+
             if (control is not NumberBox numberBox)
             {
                 return string.Empty;
+            }
+
+            string typed = (numberBox.Text ?? string.Empty).Trim();
+            if (!string.IsNullOrWhiteSpace(typed))
+            {
+                if (!TryParseFlexibleNumber(typed, out double parsed))
+                {
+                    return typed;
+                }
+
+                return FormatNumberForArgument(parsed, argument);
             }
 
             if (double.IsNaN(numberBox.Value))
@@ -1039,8 +1185,13 @@ namespace ShellCommandManager
                 return string.Empty;
             }
 
+            return FormatNumberForArgument(numberBox.Value, argument);
+        }
+
+        private static string FormatNumberForArgument(double value, TemplateArgument argument)
+        {
             bool preferDecimal = argument.DefaultValue?.Contains('.') == true;
-            return numberBox.Value.ToString(preferDecimal ? "0.################" : "0");
+            return value.ToString(preferDecimal ? "0.################" : "0.################");
         }
 
         private static object? ReadPathValue(FrameworkElement control)
@@ -1065,19 +1216,74 @@ namespace ShellCommandManager
 
         private static bool TryParseFlexibleNumber(string value)
         {
-            if (double.TryParse(value, NumberStyles.Float | NumberStyles.AllowThousands, CultureInfo.CurrentCulture, out _))
+            return TryParseFlexibleNumber(value, out _);
+        }
+
+        private static bool TryParseFlexibleNumber(string value, out double parsedValue)
+        {
+            if (double.TryParse(value, NumberStyles.Float | NumberStyles.AllowThousands, CultureInfo.CurrentCulture, out parsedValue))
             {
                 return true;
             }
 
-            if (double.TryParse(value, NumberStyles.Float | NumberStyles.AllowThousands, CultureInfo.InvariantCulture, out _))
+            if (double.TryParse(value, NumberStyles.Float | NumberStyles.AllowThousands, CultureInfo.InvariantCulture, out parsedValue))
             {
                 return true;
             }
 
             string swapped = value.Contains(',') ? value.Replace(',', '.') : value.Replace('.', ',');
-            return double.TryParse(swapped, NumberStyles.Float | NumberStyles.AllowThousands, CultureInfo.InvariantCulture, out _)
-                || double.TryParse(swapped, NumberStyles.Float | NumberStyles.AllowThousands, CultureInfo.CurrentCulture, out _);
+            return double.TryParse(swapped, NumberStyles.Float | NumberStyles.AllowThousands, CultureInfo.InvariantCulture, out parsedValue)
+                || double.TryParse(swapped, NumberStyles.Float | NumberStyles.AllowThousands, CultureInfo.CurrentCulture, out parsedValue);
+        }
+
+        private async Task EnsurePendingEditorInputCommittedAsync()
+        {
+            MoreButton.Focus(FocusState.Programmatic);
+            await Task.Yield();
+            CommitPendingNumberBoxInput();
+        }
+
+        private void CommitPendingNumberBoxInput()
+        {
+            foreach (FrameworkElement control in _templateInputControls.Values)
+            {
+                if (control is not NumberBox numberBox)
+                {
+                    continue;
+                }
+
+                CommitNumberBoxText(numberBox);
+            }
+        }
+
+        private static void CommitNumberBoxText(NumberBox numberBox)
+        {
+            string typed = (numberBox.Text ?? string.Empty).Trim();
+            if (string.IsNullOrWhiteSpace(typed))
+            {
+                return;
+            }
+
+            if (TryParseFlexibleNumber(typed, out double parsed))
+            {
+                numberBox.Value = parsed;
+            }
+        }
+
+        private void RestoreEditorScroll(double offset)
+        {
+            if (!_isEditorVisible || EditorPanel.Visibility != Visibility.Visible)
+            {
+                return;
+            }
+
+            _ = DispatcherQueue.TryEnqueue(() =>
+            {
+                _ = DispatcherQueue.TryEnqueue(() =>
+                {
+                    EditorPanel.ChangeView(null, offset, null, true);
+                });
+            });
         }
 
         private async Task PersistCommandsAsync()
@@ -1106,12 +1312,14 @@ namespace ShellCommandManager
 
         private void ClearEditor()
         {
+            _editingCommand = null;
             SetTemplate(null);
             TemplateComboBox.SelectedItem = null;
             NameTextBox.Text = string.Empty;
             CommandTextBox.Text = string.Empty;
             ArgsTextBox.Text = string.Empty;
             WorkingDirectoryTextBox.Text = string.Empty;
+            EnvVarsTextBox.Text = string.Empty;
         }
 
         private void ShowStatus(string message, InfoBarSeverity severity)
@@ -1337,6 +1545,7 @@ namespace ShellCommandManager
                 "Status.RunningCommand" => zh ? "正在运行：{0}" : "Running: {0}",
                 "Status.CommandStartedWithPid" => zh ? "已在 PowerShell 窗口启动：{0} (PID: {1})" : "Started in PowerShell: {0} (PID: {1})",
                 "Status.RunFailedSimple" => zh ? "执行失败，请检查命令与参数后重试。" : "Run failed. Check command and arguments.",
+                "Status.RunUsingEditorValues" => zh ? "运行所选将使用当前编辑区的最新参数。" : "Run Selected will use the latest values from the editor.",
                 "Status.EditorCleared" => zh ? "输入区域已清空。" : "Editor cleared.",
                 "Status.TemplateImported" => zh ? "模板导入成功：{0}" : "Template imported: {0}",
                 "Status.TemplateDeleted" => zh ? "模板已删除：{0}" : "Template deleted: {0}",
@@ -1363,6 +1572,8 @@ namespace ShellCommandManager
                 "Validation.ArgumentRequired" => zh ? "参数“{0}”为必填。" : "Argument \"{0}\" is required.",
                 "Validation.ArgumentMustBeNumber" => zh ? "参数“{0}”必须是数字。" : "Argument \"{0}\" must be a number.",
                 "Validation.ArgumentMustSelect" => zh ? "参数“{0}”必须选择一个选项。" : "Argument \"{0}\" must select an option.",
+                "Validation.EnvVarFormat" => zh ? "环境变量第 {0} 行格式错误，应为 KEY=VALUE。" : "Environment variable line {0} is invalid. Use KEY=VALUE.",
+                "Validation.EnvVarKey" => zh ? "环境变量第 {0} 行键名无效。" : "Environment variable key on line {0} is invalid.",
                 "Dialog.RuntimeArgs.Title" => zh ? "运行前参数" : "Runtime Arguments",
                 "Dialog.RuntimeArgs.RunButton" => zh ? "运行" : "Run",
                 "Dialog.RuntimeArgs.CancelButton" => zh ? "取消" : "Cancel",
@@ -1383,6 +1594,8 @@ namespace ShellCommandManager
                 "Editor.TemplateArgs" => zh ? "模板参数" : "Template Arguments",
                 "Editor.WorkDir" => zh ? "工作目录（可选）" : "Working Directory (Optional)",
                 "Editor.WorkDir.Placeholder" => zh ? "例如：C:\\Projects\\MyApp" : "e.g. C:\\Projects\\MyApp",
+                "Editor.EnvVars" => zh ? "环境变量（可选）" : "Environment Variables (Optional)",
+                "Editor.EnvVars.Placeholder" => zh ? "每行一个：KEY=VALUE\n例如：ASPNETCORE_ENVIRONMENT=Development" : "One per line: KEY=VALUE\ne.g. ASPNETCORE_ENVIRONMENT=Development",
                 "Editor.Template.Placeholder" => zh ? "选择已导入模板" : "Select an imported template",
                 "List.Title" => zh ? "已保存命令" : "Saved Commands",
                 "List.Hint" => zh ? "选中后可直接运行，也可编辑后点击“保存命令”覆盖更新。" : "Select a command to run directly, or edit and click Save to update.",
@@ -1475,6 +1688,8 @@ namespace ShellCommandManager
             TemplateArgsLabelTextBlock.Text = T("Editor.TemplateArgs");
             WorkingDirectoryLabelTextBlock.Text = T("Editor.WorkDir");
             WorkingDirectoryTextBox.PlaceholderText = T("Editor.WorkDir.Placeholder");
+            EnvVarsLabelTextBlock.Text = T("Editor.EnvVars");
+            EnvVarsTextBox.PlaceholderText = T("Editor.EnvVars.Placeholder");
             SavedCommandsTitleTextBlock.Text = T("List.Title");
             SavedCommandsHintTextBlock.Text = T("List.Hint");
             SaveCommandAppBarButton.Label = T("AppBar.SaveCommand");

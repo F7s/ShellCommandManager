@@ -36,7 +36,8 @@ public sealed class PowerShellCommandRunner
             "if ($null -eq $machinePath) { $machinePath = '' };" +
             "if ($null -eq $userPath) { $userPath = '' };" +
             "$env:Path = ($machinePath + ';' + $userPath).Trim(';');";
-        string script = $"{refreshPathScript} {fullCommand}";
+        string envScript = BuildEnvironmentVariableScript(command.EnvironmentVariables);
+        string script = $"{refreshPathScript}{envScript} {fullCommand}";
         string encodedScript = Convert.ToBase64String(Encoding.Unicode.GetBytes(script));
 
         ProcessStartInfo startInfo = new()
@@ -64,5 +65,38 @@ public sealed class PowerShellCommandRunner
         {
             ProcessId = process.Id
         };
+    }
+
+    private static string BuildEnvironmentVariableScript(string? environmentVariables)
+    {
+        if (string.IsNullOrWhiteSpace(environmentVariables))
+        {
+            return string.Empty;
+        }
+
+        StringBuilder script = new();
+        string normalized = environmentVariables.Replace("\r\n", "\n").Replace('\r', '\n');
+        string[] lines = normalized.Split('\n', StringSplitOptions.RemoveEmptyEntries);
+        foreach (string raw in lines)
+        {
+            string line = raw.Trim();
+            int index = line.IndexOf('=');
+            if (index <= 0)
+            {
+                continue;
+            }
+
+            string key = line[..index].Trim();
+            string value = line[(index + 1)..].Trim();
+            if (string.IsNullOrWhiteSpace(key))
+            {
+                continue;
+            }
+
+            string escapedValue = value.Replace("'", "''");
+            script.Append($"$env:{key}='{escapedValue}';");
+        }
+
+        return script.ToString();
     }
 }

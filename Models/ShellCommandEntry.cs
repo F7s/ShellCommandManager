@@ -15,4 +15,6 @@ public sealed class ShellCommandEntry
     public string StartupArguments { get; set; } = string.Empty;
 
     public string WorkingDirectory { get; set; } = string.Empty;
+
+    public string EnvironmentVariables { get; set; } = string.Empty;
 }

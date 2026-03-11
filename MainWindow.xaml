@@ -54,12 +54,12 @@
 
             <CommandBar DefaultLabelPosition="Right">
                 <AppBarButton x:Uid="SaveCommandAppBarButton" x:Name="SaveCommandAppBarButton" Icon="Save" Label="保存命令" Click="SaveCommandButton_Click" Visibility="Collapsed" />
-                <AppBarButton x:Uid="RunSelectedAppBarButton" x:Name="RunSelectedAppBarButton" Icon="Play" Label="运行所选" Click="RunSelectedButton_Click" Visibility="Collapsed" />
-                <AppBarButton x:Uid="DeleteSelectedAppBarButton" x:Name="DeleteSelectedAppBarButton" Icon="Delete" Label="删除所选" Click="DeleteSelectedButton_Click" Visibility="Collapsed" />
                 <AppBarButton x:Uid="ClearInputAppBarButton" x:Name="ClearInputAppBarButton" Icon="Clear" Label="清空输入" Click="ClearEditorButton_Click" Visibility="Collapsed" />
                 <AppBarButton x:Uid="ImportTemplateButton" x:Name="ImportTemplateButton" Icon="OpenFile" Label="导入模板" Click="ImportTemplateButton_Click" Visibility="Collapsed" />
                 <AppBarButton x:Uid="ImportTemplateCodeButton" x:Name="ImportTemplateCodeButton" Icon="Paste" Label="代码导入" Click="ImportTemplateCodeButton_Click" Visibility="Collapsed" />
                 <AppBarButton x:Uid="ClearTemplateButton" x:Name="ClearTemplateButton" Icon="ClearSelection" Label="删除模板" Click="ClearTemplateButton_Click" Visibility="Collapsed" />
+                <AppBarButton x:Uid="RunSelectedAppBarButton" x:Name="RunSelectedAppBarButton" Icon="Play" Label="运行所选" Click="RunSelectedButton_Click" Visibility="Collapsed" />
+                <AppBarButton x:Uid="DeleteSelectedAppBarButton" x:Name="DeleteSelectedAppBarButton" Icon="Delete" Label="删除所选" Click="DeleteSelectedButton_Click" Visibility="Collapsed" />
                 <AppBarButton x:Uid="ToggleEditorButton" x:Name="ToggleEditorButton" Icon="Add" Label="添加命令" Click="ToggleEditorButton_Click" />
                 <AppBarButton x:Uid="MoreButton" x:Name="MoreButton" Icon="Setting" Label="" IsCompact="True" Click="MoreButton_Click" />
             </CommandBar>
@@ -102,6 +102,15 @@
 
                     <TextBlock x:Uid="WorkingDirectoryLabelTextBlock" x:Name="WorkingDirectoryLabelTextBlock" Text="工作目录（可选）" />
                     <TextBox x:Uid="WorkingDirectoryTextBox" x:Name="WorkingDirectoryTextBox" PlaceholderText="例如：C:\Projects\MyApp" />
+
+                    <TextBlock x:Uid="EnvVarsLabelTextBlock" x:Name="EnvVarsLabelTextBlock" Text="环境变量（可选）" />
+                    <TextBox
+                        x:Uid="EnvVarsTextBox"
+                        x:Name="EnvVarsTextBox"
+                        PlaceholderText="每行一个：KEY=VALUE&#10;例如：ASPNETCORE_ENVIRONMENT=Development"
+                        TextWrapping="Wrap"
+                        AcceptsReturn="True"
+                        MinHeight="88" />
                 </StackPanel>
             </ScrollViewer>
 
@@ -127,6 +136,7 @@
                                 <TextBlock Text="{x:Bind PowerShellCommand, Mode=OneWay}" TextWrapping="WrapWholeWords" />
                                 <TextBlock Text="{x:Bind StartupArguments, Mode=OneWay}" Opacity="0.8" TextWrapping="WrapWholeWords" />
                                 <TextBlock Text="{x:Bind WorkingDirectory, Mode=OneWay}" Opacity="0.6" TextWrapping="WrapWholeWords" />
+                                <TextBlock Text="{x:Bind EnvironmentVariables, Mode=OneWay}" Opacity="0.6" TextWrapping="WrapWholeWords" />
                             </StackPanel>
                         </DataTemplate>
                     </ListView.ItemTemplate>
